@@ -1,0 +1,174 @@
+.project-image {
+  margin: .5em 0;
+
+  @include breakpoint(large) {
+    margin: 1.25em 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .l-2up > .l-2up > & {
+    @include breakpoint(large) {
+      margin: 0 0 .75em;
+    }
+  }
+}
+
+.project-image__img {
+  position: relative;
+}
+
+figcaption {
+  font-size: .7em;
+  margin-top: .5em;
+  color: $gray-medium;
+  display: block;
+}
+
+.project-image--has-shadow {
+  img {
+    box-shadow: 0 0 30px transparentize($black, .8);
+  }
+}
+
+.project-image--small {
+  @include breakpoint(medium) {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.project-image--gif {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    @include trans();
+    content: '';
+    top: 50%;
+    left: 50%;
+    background-color: transparentize($white, .2);
+    background-image: url('../imgs/play-solid.svg');
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 10px transparentize($black, .5);
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+
+    @include breakpoint(large) {
+      &::before {
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  &.play::before {
+    display: none;
+  }
+}
+
+.project-image__fade {
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  z-index: 2;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+90&0+0,1+90 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.project-mobile-wrapper {
+  display: flex;
+}
+
+.project-mobile {
+  margin: .5em 0;
+  width: calc(50% - .5em);
+
+  &:nth-child(2n+1) {
+    margin-right: .5em;
+  }
+
+  &:nth-child(2n+2) {
+    margin-left: .5em;
+  }
+
+  @include breakpoint(medium) {
+    width: auto;
+    margin: rhythm(.75) 0;
+
+    &:nth-child(2n+1) {
+      margin-right: 4.34783%;
+    }
+
+    &:nth-child(2n+2) {
+      margin-left: 4.34783%;
+    }
+  }
+
+  figcaption {
+    padding: 0 .75em;
+  }
+}
+
+.project-mobile__phone {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20% .5em;
+  border-radius: 1em;
+  box-shadow: 0 0 30px transparentize($black, .8);
+  background-color: $white-60;
+}
+
+.project-mobile__inner {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.project-mobile__shadow {
+  box-shadow: 0 0 5px transparentize($black, .9) inset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.project-styleguide {
+  .project-image {
+    @include breakpoint(large) {
+      margin: 0 0 rhythm(.5);
+    }
+  }
+}
