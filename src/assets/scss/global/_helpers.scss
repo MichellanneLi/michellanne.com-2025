@@ -16,3 +16,27 @@
 section {
   padding: 2em 0;
 }
+
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  border-width: 8px;
+  border-style: solid;
+  -moz-border-image: -moz-linear-gradient(left, $bubblegum 0%, $magenta 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $bubblegum 0%, $magenta 100%);
+  border-image: linear-gradient(to right, $bubblegum 0%, $magenta 100%);
+  border-image-slice: 1;
+
+  @include breakpoint(medium) {
+    border-width: 10px;
+  }
+
+  @include breakpoint(large) {
+    border-width: 12px;
+  }
+}
+
+.content-wrapper {
+  flex: 1;
+}
