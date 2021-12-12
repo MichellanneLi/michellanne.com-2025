@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Define writing styles.
+ *
+ * @copyright Copyright (c) 2018 Michellanne Li
+ */
+
+.writing-list {
+	margin-left: 1.5em !important;
+
+  li {
+    margin-bottom: rhythm(.5);
+    color: $link-color;
+  }
+
+  .annotation {
+  	color: $text-color;
+  }
+}
+
+.writing-list__teaser {
+	@include adjust-font-size-to($sm-text);
+	color: $text-color;
+}
