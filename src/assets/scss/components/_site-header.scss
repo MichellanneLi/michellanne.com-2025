@@ -79,7 +79,7 @@
     }
   }
 
-  @include breakpoint($xlarge) {
+  @include breakpoint(xlarge) {
     max-width: 1600px;
   }
 }
