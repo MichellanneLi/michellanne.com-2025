@@ -1,0 +1,14 @@
+.main--interior {
+  // padding-top: rhythm(3.5);
+
+  @include breakpoint(large) {
+    // padding-top: rhythm(5);
+  }
+}
+
+#fullpage {
+	height: 100%;
+	position: relative;
+	touch-action: none;
+	transform: translate3d(0px, 0px, 0px);
+}
