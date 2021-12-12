@@ -85,7 +85,8 @@
 }
 
 .site-header__logo {
-  @include adjust-font-size-to($lg-heading, 1.35);
+  font-size: 1.5em;
+  line-height: 1.35em;
   font-family: $mercury-display;
   font-weight: 700;
   float: left;
