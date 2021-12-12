@@ -20,3 +20,47 @@ a:hover {
     transform: translateY(-2px);
   }
 }
+
+h1 {
+	line-height: 1em;
+  margin-bottom: 1em;
+  font-family: $mercury-display;
+  font-weight: 700;
+}
+
+h2 {
+  line-height: 1.2em;
+  margin-bottom: .5em;
+  font-family: $mercury-display;
+  font-weight: 600;
+}
+
+h3 {
+  line-height: 1.1em;
+  margin-bottom: .5em;
+  font-family: $gotham-narrow;
+  font-weight: 700;
+  color: $medium-gray;
+}
+
+h4 {
+  line-height: 1em;
+  margin-bottom: .5em;
+  font-family: $gotham;
+  font-weight: 500;
+}
+
+h5 {
+  line-height: .85em;
+  margin-top: .75em;
+  margin-bottom: .25em;
+  font-family: $gotham;
+  font-weight: 400;
+}
+
+h6 {
+  line-height: .75em;
+  margin-top: .75em;
+  margin-bottom: .25em;
+  font-weight: 400;
+}
