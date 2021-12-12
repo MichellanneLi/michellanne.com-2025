@@ -1,0 +1,41 @@
+<!-- {% for job in page.jobs %}
+{% if job.titles|length == 1 %}
+	<h3 class="resume__job-header">
+		<span>
+			<a href="{{job.url}}">{{job.company}}</a> &middot; {{job.titles.child.title}} &middot; <span class="resume__job-location">{{job.city}}, {{job.state}}</span>
+		</span>
+		<span class="resume__job-dates">
+			<span class="resume__middot"> &middot; </span>
+			{{job.titles.child.startDate}}{% if job.titles.child.endDate %}&ndash;{{job.titles.child.endDate}}{% endif %}
+		</span>
+	</h3>
+
+	<ul class="resume__accomplishments-list">
+	  {% for accomplishment in job.titles.child.accomplishments %}
+	    <li>{{accomplishment}}</li>
+	  {% endfor %}
+	</ul>
+
+{% else %}
+
+	<h3>
+		<a href="{{job.url}}">{{job.company}}</a> &middot; <span class="resume__job-location">{{job.city}}, {{job.state}}</span>
+	</h3>
+
+	{% for child in job.titles %}
+		<h4 class="resume__job-title">
+			<span>{{child.title}}</span>
+			<span class="resume__job-dates">
+				<span class="resume__middot"> &middot; </span>
+				{{child.startDate}}&ndash;{{child.endDate}}
+			</span>
+		</h4>
+
+		<ul class="resume__accomplishments-list">
+		  {% for accomplishment in child.accomplishments %}
+		    <li>{{accomplishment}}</li>
+		  {% endfor %}
+		</ul>
+	{% endfor %}
+{% endif %}
+{% endfor %} -->

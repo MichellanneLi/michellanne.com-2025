@@ -1,0 +1,26 @@
+<!-- <li>
+	<span class="fa-li" >
+	{% if writingspeaking.type == 'video' %}
+		<i aria-hidden class="fab fa-youtube fa-fw fa-sm" title="video"></i> <span class="element-invisible">video:</span> 
+		{% elseif writingspeaking.type == 'blog' %}
+		<i aria-hidden class="fas fa-pen-alt fa-fw fa-sm" title="blog post"></i> <span class="element-invisible">blog post:</span> 
+		{% elseif writingspeaking.type == 'podcast' %}
+		<i aria-hidden class="fas fa-microphone fa-fw fa-sm" title="podcast"></i> <span class="element-invisible">podcast:</span> 
+		{% elseif writingspeaking.type == 'pdf' %}
+		<i aria-hidden class="fas fa-file-pdf fa-fw fa-sm" title="pdf"></i> <span class="element-invisible">pdf:</span> 
+	{% endif %}
+	</span>
+	<a href="{{writingspeaking.url}}">
+		{{writingspeaking.title}}
+	</a> 
+	{% if writingspeaking.annotation %}
+		<span class="annotation">
+			({{writingspeaking.annotation}})
+		</span>
+	{% endif %}
+	{% if writingspeaking.teaser %}
+		<p class="writing-list__teaser">{{writingspeaking.teaser}}<p>
+	{% endif %}
+</li>
+
+{% endfor %} -->

@@ -1,0 +1,38 @@
+<!-- <section class="project__intro">
+  <div class="container">
+    <div class="l-1up">
+      <div class="project__tags">
+        {% if tags|length == 1 %}
+          {% for tag in page.tags %}
+            <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a>
+          {% endfor %}
+        {% else %}
+          {% for tag in page.tags %}
+            {% if loop.last %}
+              <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a>
+            {% else %}
+              <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a> &middot; 
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      <header class="project__header">
+        {% if page.projectclient %}
+          <h1>{{page.projectclient}}</h1>
+          <h2>{{page.projecttitle}}</h2>
+        {% else %}
+        <h1>{{page.projecttitle}}</h1>
+        {% endif %}
+      </header>
+      {{page.projectdesc}}
+      <div class="project__roles">
+        <h3>Role</h3>
+        <ul>
+        {% for role in page.roles %}
+          <li>{{ role.child }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
