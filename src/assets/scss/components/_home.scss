@@ -1,0 +1,19 @@
+#home-main {
+  padding-top: 62px;
+
+  @include breakpoint(medium) {
+    padding-top: 65px;
+  }
+
+  @include breakpoint(large) {
+    padding-top: 92px;
+  }
+}
+
+.connect {
+  position: relative;
+
+  svg {
+    margin: 0 .2em;
+  }
+}
