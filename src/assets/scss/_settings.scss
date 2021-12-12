@@ -65,6 +65,11 @@
 // 1. Global
 // ---------
 
+$gotham: "Gotham SSm A", "Gotham SSm B", sans-serif;
+$gotham-narrow: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
+$mercury-display: "Mercury Display A", "Mercury Display B", serif;
+$fontawesome: "Font Awesome 5 Free", sans-serif;
+
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -91,10 +96,9 @@ $bubblegum: #ef5d97;
 $blush: #f7b3ce;
 $peony: #fce1ec;
 $peony-lt: lighten($peony, 7%);
-
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: $dark-gray;
+$body-font-family: $gotham-narrow, Helvetica, Roboto, Arial, sans-serif;
 $body-safe-padding: false;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -151,7 +155,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: $mercury-display;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -162,24 +166,32 @@ $header-styles: (
   small: (
     'h1': ('font-size': 24),
     'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h3': ('font-size': 14),
+    'h4': ('font-size': 12),
+    'h5': ('font-size': 10),
+    'h6': ('font-size': 9),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 25),
+    'h2': ('font-size': 21),
+    'h3': ('font-size': 15),
+    'h4': ('font-size': 13),
+    'h5': ('font-size': 11),
+    'h6': ('font-size': 10),
+  ),
+  large: (
+    'h1': ('font-size': 29),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 17),
+    'h4': ('font-size': 14),
+    'h5': ('font-size': 12),
+    'h6': ('font-size': 11),
   ),
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+$small-font-size: 90%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.5;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
@@ -305,39 +317,39 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
-$button-font-weight: null;
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
-$button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
-$button-radius: $global-radius;
-$button-border: 1px solid transparent;
-$button-hollow-border-width: 1px;
-$button-sizes: (
-  tiny: 0.6rem,
-  small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem,
-);
-$button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-$button-responsive-expanded: false;
+// $button-font-family: inherit;
+// $button-font-weight: null;
+// $button-padding: 0.85em 1em;
+// $button-margin: 0 0 $global-margin 0;
+// $button-fill: solid;
+// $button-background: $primary-color;
+// $button-background-hover: scale-color($button-background, $lightness: -15%);
+// $button-color: $white;
+// $button-color-alt: $black;
+// $button-radius: $global-radius;
+// $button-border: 1px solid transparent;
+// $button-hollow-border-width: 1px;
+// $button-sizes: (
+//   tiny: 0.6rem,
+//   small: 0.75rem,
+//   default: 0.9rem,
+//   large: 1.25rem,
+// );
+// $button-palette: $foundation-palette;
+// $button-opacity-disabled: 0.25;
+// $button-background-hover-lightness: -20%;
+// $button-hollow-hover-lightness: -50%;
+// $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+// $button-responsive-expanded: false;
 
 // 12. Button Group
 // ----------------
 
-$buttongroup-margin: 1rem;
-$buttongroup-spacing: 1px;
-$buttongroup-child-selector: '.button';
-$buttongroup-expand-max: 6;
-$buttongroup-radius-on-each: true;
+// $buttongroup-margin: 1rem;
+// $buttongroup-spacing: 1px;
+// $buttongroup-child-selector: '.button';
+// $buttongroup-expand-max: 6;
+// $buttongroup-radius-on-each: true;
 
 // 13. Callout
 // -----------
