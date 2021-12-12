@@ -1,0 +1,265 @@
+.bubbles-wrapper {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -2;
+  display: block;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: .3;
+  }
+
+  to {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@mixin bubble-size($size) {
+  width: $size;
+  height: $size;
+}
+
+.bubble {
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(left, circle cover,  #ffffff 25%, #fad1e2 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(left, circle cover,  #ffffff 25%,#fad1e2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(circle at left,  #ffffff 25%,#fad1e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fad1e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  mix-blend-mode: multiply;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+
+.bubble--50 {
+  @include bubble-size(75vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(50vw);
+  }
+}
+
+.bubble--35 {
+  @include bubble-size(53vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(35vw);
+  }
+}
+
+.bubble--25 {
+  @include bubble-size(45vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(25vw);
+  }
+}
+
+.bubble--20 {
+  @include bubble-size(38vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(20vw);
+  }
+}
+
+.bubble--15 {
+  @include bubble-size(23vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(15vw);
+  }
+}
+
+.bubble--10 {
+  @include bubble-size(15vw);
+
+  @include breakpoint(large) {
+    @include bubble-size(10vw);
+  }
+}
+
+.bubble-c,
+.bubble-d {
+  animation-duration: 1.5s;
+}
+
+.bubble-a,
+.bubble-e {
+  animation-duration: 1.75s;
+}
+
+.bubble-b,
+.bubble-f {
+  animation-duration: 2s;
+}
+
+.bubble-g,
+.bubble-k {
+  animation-duration: 2.5s;
+}
+
+.bubble-i,
+.bubble-m {
+  animation-duration: 3s;
+}
+
+.bubble-j,
+.bubble-n {
+  animation-duration: 3.5s;
+}
+
+.bubble-h,
+.bubble-l {
+  animation-duration: 4s;
+}
+
+.bubble-a {
+  top: -10vw;
+  left: -10vw;
+
+  @include breakpoint(large) {
+    left: 5vw;
+  }
+}
+
+.bubble-b {
+  top: 35vw;
+  right: -5vw;
+
+  @include breakpoint(large) {
+    top: -20vw;
+    left: 40vw;
+  }
+}
+
+.bubble-c {
+  top: 55vw;
+  left: -20vw;
+
+  @include breakpoint(large) {
+    top: 20vw;
+    left: 48vw;
+  }
+}
+
+.bubble-d {
+  top: 95vw;
+  left: 35vw;
+
+  @include breakpoint(large) {
+    top: 18vw;
+    left: -3vw;
+  }
+}
+
+.bubble-e {
+  top: 150vw;
+  left: -6vw;
+
+  @include breakpoint(large) {
+    top: 3vw;
+    right: -4vw;
+    left: auto;
+  }
+}
+
+.bubble-f {
+  top: 124vw;
+  right: 8vw;
+
+  @include breakpoint(large) {
+    top: 35vw;
+    right: 2vw;
+  }
+}
+
+.bubble-g {
+  top: 146vw;
+  right: -6vw;
+
+  @include breakpoint(large) {
+    top: 49vw;
+    right: -4vw;
+  }
+}
+
+.bubble-h {
+  top: 204vw;
+  left: 7vw;
+
+  @include breakpoint(large) {
+    top: 45vw;
+    left: 8vw;
+  }
+}
+
+.bubble-i {
+  top: 263vw;
+  left: 36vw;
+
+  @include breakpoint(large) {
+    top: 72vw;
+    left: 31vw;
+  }
+}
+
+.bubble-j {
+  top: 305vw;
+  left: -11vw;
+
+  @include breakpoint(large) {
+    top: 92vw;
+    left: 3vw;
+  }
+}
+
+.bubble-k {
+  top: 305vw;
+  right: -11vw;
+
+  @include breakpoint(large) {
+    top: 96vw;
+    right: 4vw;
+  }
+}
+
+.bubble-l {
+  top: 367vw;
+  left: 14vw;
+
+  @include breakpoint(large) {
+    top: 130vw;
+    left: 14vw;
+  }
+}
+
+.bubble-m {
+  top: 400vw;
+  right: 24vw;
+
+  @include breakpoint(large) {
+    top: 153vw;
+    right: 30vw;
+  }
+}
+
+.bubble-n {
+  top: 440vw;
+  left: 20vw;
+
+  @include breakpoint(large) {
+    top: 175vw;
+    left: 4vw;
+  }
+}
