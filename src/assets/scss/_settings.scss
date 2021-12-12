@@ -75,11 +75,23 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$light-gray: #d0d2d3;
+$medium-gray: #6d6e71;
+$dark-gray: #414042;
+$black: #000000;
+$white: #ffffff;
+$off-white: #f2f2f2;
+$white-60: rgba($white, .6);
+$white-30: rgba($white, .3);
+$berry: #a00058;
+$fuchsia: #bc0461;
+$magenta: #d6126b;
+$rose: #e23b80;
+$bubblegum: #ef5d97;
+$blush: #f7b3ce;
+$peony: #fce1ec;
+$peony-lt: lighten($peony, 7%);
+
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
