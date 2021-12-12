@@ -3,12 +3,12 @@
 button,
 input[type='submit'],
 input[type='button'] {
-  // @include trans();
+  @include trans();
   display: block;
   width: calc(100% - 10px);
   text-align: center;
-  // margin-top: rhythm(.5);
-  // margin-bottom: rhythm(1);
+  margin-top: .5em;
+  margin-bottom: 1em;
   margin-left: 3px;
   color: $white;
   font-weight: 500;
@@ -22,8 +22,7 @@ input[type='button'] {
   cursor: pointer;
 
   @include breakpoint(medium) {
-    // @include adjust-font-size-to($label);
-    // margin-right: rhythm(1);
+    font-size: $global-font-size * .8;
     display: inline-block;
     padding: .75em 1.5em;
     width: auto;
