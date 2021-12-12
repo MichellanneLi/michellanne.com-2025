@@ -73,13 +73,7 @@ $fontawesome: "Font Awesome 5 Free", sans-serif;
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
-);
+
 $light-gray: #d0d2d3;
 $medium-gray: #6d6e71;
 $dark-gray: #414042;
@@ -96,6 +90,14 @@ $bubblegum: #ef5d97;
 $blush: #f7b3ce;
 $peony: #fce1ec;
 $peony-lt: lighten($peony, 7%);
+$foundation-palette: (
+  primary: $fuchsia,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
 $body-background: $white;
 $body-font-color: $dark-gray;
 $body-font-family: $gotham-narrow, Helvetica, Roboto, Arial, sans-serif;

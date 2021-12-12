@@ -1,0 +1,22 @@
+$link-color: $fuchsia;
+$link-hover: $berry;
+
+a {
+  @include trans();
+  background-color: transparent; /* Remove the gray background on active links in IE 10. */
+  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
+  color: $link-color;
+  text-decoration: underline;
+  display: inline-block;
+  font-weight: 500;
+}
+
+a:active,
+a:hover {
+  background-color: transparentize($bubblegum, .8);
+  color: $link-hover;
+
+  @include breakpoint(large) {
+    transform: translateY(-2px);
+  }
+}
