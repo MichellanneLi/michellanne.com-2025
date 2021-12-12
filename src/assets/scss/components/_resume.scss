@@ -1,0 +1,74 @@
+.resume {
+  section {
+    padding: 0 0 1.5em 0;
+  }
+}
+
+.resume__job-header,
+.resume__job-title {
+  color: $dark-gray;
+
+  @include breakpoint(large) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.resume__job-title {
+  padding-left: 1em;
+  font-weight: 700;
+  font-family: $gotham-narrow;
+}
+
+.resume__job-location {
+  font-size: .85em;
+  font-weight: 400;
+}
+
+.resume__job-dates {
+  @include breakpoint(large) {
+    margin-left: 1em;
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+.resume__middot {
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+.resume__accomplishments-list {
+  margin-left: 1em;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+.resume__skills-list {
+  @extend %list--simple;
+  font-size: $global-font-size;
+  line-height: .9em;
+  columns: 2;
+
+  li {
+    margin-bottom: .25em;
+  }
+
+  @include breakpoint(large) {
+    columns: 4;
+  }
+}
+
+.resume__recognition-list {
+  @extend %list--simple;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
