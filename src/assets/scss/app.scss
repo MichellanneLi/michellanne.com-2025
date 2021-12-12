@@ -65,5 +65,6 @@
 @include motion-ui-animations;
 
 // Custom
+@import 'global/mixins';
 @import 'global/typography';
 @import 'global/buttons';
