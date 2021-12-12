@@ -9,16 +9,16 @@
 	margin-left: 1.5em !important;
 
   li {
-    margin-bottom: rhythm(.5);
+    margin-bottom: .5em;
     color: $link-color;
   }
 
   .annotation {
-  	color: $text-color;
+  	color: $body-font-color;
   }
 }
 
 .writing-list__teaser {
-	@include adjust-font-size-to($sm-text);
-	color: $text-color;
+  font-size: .9em;
+	color: $body-font-color;
 }
