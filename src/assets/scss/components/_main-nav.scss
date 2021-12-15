@@ -28,6 +28,10 @@
       margin-left: .5em;
       width: auto;
       font-family: $gotham-narrow;
+
+      .is-stuck & {
+        font-size: .8em;
+      }
     }
   }
 

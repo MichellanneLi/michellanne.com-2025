@@ -1,60 +1,25 @@
 .site-header {
   @include trans();
-  width: 100%;
-  margin-left: -8px;
-  background-color: $white-30;
+  margin: -8px -8px 0 -8px;
+  width: calc(100% + 16px);
   box-shadow: 0 0 30px transparentize($black, .8);
 
-  &.sticky {
-    position: fixed;
-    top: 0;
-    z-index: 999;
+  .is-anchored & {
+    background-color: $white-30;
   }
 
-  &.sticky::before,
-  &.sticky::after {
-    content: '';
-    display: table;
-  }
-
-  &.stuck {
-    @include trans();
+  .is-stuck & {
     background-color: $white;
-
-    .site-header__inner {
-      padding-top: .5em;
-    }
   }
 
   @include breakpoint(medium) {
-    margin-left: -10px;
-    background-color: $white-30;
-    box-shadow: 0 0 30px transparentize($black, .8);
-    padding: 1em 0 .25em;
-
-    &.stuck {
-      padding: .25em 0;
-
-      .site-header__logo {
-        font-size: 1.2em;
-      }
-
-      .site-header__top-bar {
-        background-color: transparent;
-        padding: 0;
-      }
-
-      .main-nav {
-        li {
-          font-size: .8em;
-        }
-      }
-    }
+    margin: -10px -10px 0 -10px;
+    width: calc(100% + 20px);
   }
 
   @include breakpoint(large) {
-    padding: 1.5em 0 .5em;
-    margin-left: -12px;
+    margin: -12px -12px 0 -12px;
+    width: calc(100% + 24px);
   }
 }
 
@@ -76,6 +41,14 @@
 
     &::after {
       display: none;
+    }
+
+    .is-anchored & {
+      padding: 1em 1em .25em 1em;
+    }
+
+    .is-stuck & {
+      padding: calc(.5em + 10px) 1em .25em 1em;
     }
   }
 
@@ -107,6 +80,10 @@
 
   @include breakpoint(medium) {
     float: none;
+
+    .is-stuck & {
+      font-size: 1.2em;
+    }
   }
 
   @include breakpoint(large) {
