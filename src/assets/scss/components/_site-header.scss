@@ -29,11 +29,10 @@
   width: 100%;
   min-width: 260px; /* enforces a min-width in FF. */
   margin: 0 auto;
-  padding: 1em 1em .25em;
+  padding: 1.5em 1em .25em;
   position: relative;
 
   @include breakpoint(medium) {  
-    padding: 0 2em;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -44,11 +43,22 @@
     }
 
     .is-anchored & {
-      padding: 1.5em 1.5em .25em 1.5em;
+      padding: 1.5em 2em .25em 2em;
     }
 
     .is-stuck & {
-      padding: calc(.5em + 10px) 1em .25em 1em;
+      padding: calc(.5em + 10px) 2em .25em 2em;
+    }
+  }
+
+  @include breakpoint(large) {  
+
+    .is-anchored & {
+      padding: 2em 3em .25em 3em;
+    }
+
+    .is-stuck & {
+      padding: calc(.5em + 10px) 3em .25em 3em;
     }
   }
 
