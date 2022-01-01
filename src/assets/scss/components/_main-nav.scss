@@ -1,36 +1,20 @@
 .main-nav {
-  display: block;
-
-  @include breakpoint(medium) {
-    display: inline-block;
-    margin: 0;
-  }
-
-  ul {
-    @extend %list--simple;
-
-    @include breakpoint(medium) {
-      display: block;
-    }
-  }
+  background-color: white;
+  border: 1px solid green;
 
   li {
     font-size: 1.5em;
-    display: block;
-    font-family: $mercury-display;
-    text-align: center;
+    font-family: $gotham-narrow;
     margin: .5em 0;
 
     @include breakpoint(medium) {
-      font-size: .9em;
-      display: inline-block;
+      font-size: 1em;
       margin: 0;
-      margin-left: .5em;
+      margin-left: 1em;
       width: auto;
-      font-family: $gotham-narrow;
 
       .is-stuck & {
-        font-size: .8em;
+        font-size: .9em;
       }
     }
   }
@@ -71,6 +55,7 @@
     @include breakpoint(medium) {
       transform: translateY(0);
       padding: 0;
+      margin-bottom: -10px;
 
       &::before {
         display: none;
@@ -81,7 +66,7 @@
         height: 6px;
         border-radius: 3px;
         background-color: transparent;
-        margin: 0 auto;
+        margin: 4px auto 0;
         border: 0;
         position: relative;
       }
@@ -99,7 +84,7 @@
     }
 
     @include breakpoint(medium) {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       text-decoration: none;
 
       &::after {
@@ -111,82 +96,5 @@
 
   svg {
     vertical-align: baseline;
-  }
-}
-
-.main-nav__trigger {
-  width: auto;
-  margin: 5px 0 0 0;
-  padding: 0;
-  background-color: transparent;
-  float: right;
-
-  @include breakpoint(medium) {
-    display: none;
-  }
-}
-
-.main-nav__drawer {
-  @extend %clearfix;
-  width: 100%;
-  overflow-y: scroll;
-  display: none;
-  padding: 1em 2em;
-
-  &.is-open {
-    display: block;
-  }
-
-  .site-header.sticky & {
-    max-height: calc(100vh - 62px);
-  }
-
-  .site-header.stuck & {
-    max-height: calc(100vh - 55px);
-  }
-
-  @include breakpoint(medium) {
-    width: auto;
-    position: relative;
-    overflow-y: visible;
-    display: block;
-    background-color: transparent;
-    padding: 0;
-    z-index: 0;
-
-    .site-header.sticky &,
-    .site-header.stuck & {
-      height: auto;
-      top: 0;
-    }
-  }
-}
-
-.overlay {
-  top: 8px;
-  right: 8px;
-  bottom: 8px;
-  left: 8px;
-  position: absolute;
-  z-index: 1;
-  display: none;
-  background-color: transparentize($white, .15);
-
-  &.is-active {
-    display: block;
-  }
-
-  @include breakpoint(medium) {
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-  }
-
-  @include breakpoint(large) {
-    top: 12px;
-    right: 12px;
-    bottom: 12px;
-    left: 12px;
   }
 }

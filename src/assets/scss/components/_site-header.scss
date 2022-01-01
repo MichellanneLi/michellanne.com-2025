@@ -1,16 +1,21 @@
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
 .site-header {
   @include trans();
   margin: -8px -8px 0 -8px;
   width: calc(100% + 16px);
-  box-shadow: 0 0 30px transparentize($black, .8);
-
-  .is-anchored & {
-    background-color: $white-30;
-  }
-
-  .is-stuck & {
-    background-color: $white;
-  }
 
   @include breakpoint(medium) {
     margin: -10px -10px 0 -10px;
@@ -29,36 +34,39 @@
   width: 100%;
   min-width: 260px; /* enforces a min-width in FF. */
   margin: 0 auto;
-  padding: 1.5em 1em .25em;
-  position: relative;
+  padding: 1em 1.5em .25em;
+  box-shadow: 0 0 30px transparentize($black, .8);
+
+  &.is-anchored {
+    background-color: $white-30;
+  }
+
+  &.is-stuck {
+    background-color: $white;
+  }
 
   @include breakpoint(medium) {  
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;
-
     &::after {
       display: none;
     }
 
-    .is-anchored & {
-      padding: 1.5em 2em .25em 2em;
+    &.is-anchored {
+      padding: 1.5em 2em 1em 2em;
     }
 
-    .is-stuck & {
-      padding: calc(.5em + 10px) 2em .25em 2em;
+    &.is-stuck {
+      padding: calc(.5em + 8px) 2em .5em 2em;
     }
   }
 
   @include breakpoint(large) {  
 
-    .is-anchored & {
-      padding: 2em 3em .25em 3em;
+    &.is-anchored {
+      padding: 2em 3em 1em 3em;
     }
 
-    .is-stuck & {
-      padding: calc(.5em + 10px) 3em .25em 3em;
+    &.is-stuck {
+      padding: calc(.5em + 8px) 3em .5em 3em;
     }
   }
 
@@ -67,13 +75,39 @@
   }
 }
 
-.site-header__logo {
-  font-size: 1.5em;
-  line-height: 1.35em;
+.site-header__title-bar {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.title-bar .menu-icon {
+  margin: 0;
+  background: transparent;
+  display: block;
+
+  &::after{
+    height: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.site-header__top-bar {
+
+
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.site-header__logo--small,
+.site-header__logo--medium {
   font-family: $mercury-display;
   font-weight: 700;
-  float: left;
-  display: block;
 
   &:link,
   &:visited {
@@ -87,17 +121,16 @@
     transform: rotate(2deg);
     background-color: transparent;
   }
+}
 
-  @include breakpoint(medium) {
-    float: none;
+.site-header__logo--small {
+  font-size: 1.5em;
+}
 
-    .is-stuck & {
-      font-size: 1.2em;
-    }
-  }
+.site-header__logo--medium {
+  font-size: 2em;
 
-  @include breakpoint(large) {
-    font-size: 2em;
-    line-height: 1.5em;
+  .is-stuck & {
+    font-size: 1.5em;
   }
 }
