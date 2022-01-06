@@ -98,11 +98,8 @@
 
 .site-header__top-bar {
   height: calc(100vh - 68px);
+  top: 68px;
   border: 1px solid blue;
-
-  &.position-top {
-    top: 68px;
-  }
 
   @include breakpoint(medium) {
     display: flex;
