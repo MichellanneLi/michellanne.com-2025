@@ -2,19 +2,23 @@
   <div class="site-header__inner sticky" data-sticky data-margin-top="0" data-sticky-on="small">
     
     <div class="title-bar site-header__title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-      <a class="site-header__logo--small" href="index.html">
+      <!-- Logo -->
+      <a class="site-header__logo" href="index.html">
         Michellanne Li
       </a>
-      <button class="menu-icon hamburger hamburger--squeeze" type="button" data-toggle="main-menu">
+      <!-- Open/close button -->
+      <button class="menu-icon hamburger hamburger--squeeze" type="button" data-toggle="main-menu" aria-expanded="false" aria-controls="main-menu">
         <span class="show-for-sr">Menu</span>
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
     </div>
 
-    <div class="top-bar site-header__top-bar" id="main-menu" data-animate="hinge-in-from-top spin-out">
-      <a class="site-header__logo--medium hide-for-small-only" href="index.html">
+    <div class="top-bar site-header__top-bar off-canvas position-top in-canvas-for-medium" id="main-menu" data-off-canvas data-transition="overlap" data-off-canvas-sticky>
+      <!-- Logo -->
+      <a class="site-header__logo hide-for-small" href="index.html">
         Michellanne Li
       </a>
+      <!-- Menu -->
       <nav class="main-nav">
         <ul class="menu vertical medium-horizontal">
           <li><a href="about.html">About</a></li>
@@ -27,3 +31,4 @@
 
   </div>
 </header>
+

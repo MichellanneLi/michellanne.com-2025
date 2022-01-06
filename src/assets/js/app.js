@@ -19,11 +19,11 @@ $(document).foundation();
 ////////////////////////////////////////
 // Mobile Nav Trigger
 ////////////////////////////////////////
-$('.menu-icon').click(function() {
-  if ($(this).hasClass('is-active')) {
-    $(this).removeClass('is-active');
-  } else {
-    // If clicked item not active, add classes
-    $(this).addClass('is-active');
-  }
-});
+// Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });

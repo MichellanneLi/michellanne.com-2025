@@ -34,7 +34,7 @@
   width: 100%;
   min-width: 260px; /* enforces a min-width in FF. */
   margin: 0 auto;
-  padding: 1em 1.5em .25em;
+  padding: 1.25em 1.5em .75em 1.5em;
   box-shadow: 0 0 30px transparentize($black, .8);
 
   &.is-anchored {
@@ -45,7 +45,8 @@
     background-color: $white;
   }
 
-  @include breakpoint(medium) {  
+  @include breakpoint(medium) {
+
     &::after {
       display: none;
     }
@@ -81,10 +82,12 @@
   align-items: baseline;
 }
 
-.title-bar .menu-icon {
+.menu-icon {
   margin: 0;
   background: transparent;
   display: block;
+  width: auto;
+  padding: .5em;
 
   &::after{
     height: 0;
@@ -94,7 +97,12 @@
 }
 
 .site-header__top-bar {
+  height: calc(100vh - 68px);
+  border: 1px solid blue;
 
+  &.position-top {
+    top: 68px;
+  }
 
   @include breakpoint(medium) {
     display: flex;
@@ -104,10 +112,18 @@
   }
 }
 
-.site-header__logo--small,
-.site-header__logo--medium {
+.site-header__logo {
   font-family: $mercury-display;
   font-weight: 700;
+  font-size: 1.5em;
+
+  @include breakpoint(medium) {
+    font-size: 2em;
+
+    .is-stuck & {
+      font-size: 1.5em;
+    }
+  }
 
   &:link,
   &:visited {
@@ -120,17 +136,5 @@
   &:active {
     transform: rotate(2deg);
     background-color: transparent;
-  }
-}
-
-.site-header__logo--small {
-  font-size: 1.5em;
-}
-
-.site-header__logo--medium {
-  font-size: 2em;
-
-  .is-stuck & {
-    font-size: 1.5em;
   }
 }
