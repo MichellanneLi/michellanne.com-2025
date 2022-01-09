@@ -1,5 +1,5 @@
 .main-nav {
-  width: 100%;
+  // width: 100%;
 
   li {
     font-size: 1em;
@@ -9,9 +9,8 @@
     @include breakpoint(medium) {
       font-size: 1em;
       margin-left: 1em;
-      width: auto;
 
-      .is-stuck & {
+      .stuck & {
         font-size: .9em;
       }
     }
@@ -94,5 +93,55 @@
 
   svg {
     vertical-align: baseline;
+  }
+}
+
+.main-nav__trigger {
+  width: auto;
+  margin: 5px 0 0 0;
+  padding: 0;
+  background-color: transparent;
+  float: right;
+  display: block;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.main-nav__drawer {
+  @extend %clearfix;
+  width: 100%;
+  overflow-y: scroll;
+  display: none;
+  // padding: rhythm(1) rhythm(2);
+  padding: 1.5em 3em;
+
+  &.is-open {
+    display: block;
+  }
+
+  .site-header.sticky & {
+    max-height: calc(100vh - 62px);
+  }
+
+  .site-header.stuck & {
+    max-height: calc(100vh - 55px);
+  }
+
+  @include breakpoint(medium) {
+    width: auto;
+    position: relative;
+    overflow-y: visible;
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    z-index: 0;
+
+    .site-header.sticky &,
+    .site-header.stuck & {
+      height: auto;
+      top: 0;
+    }
   }
 }

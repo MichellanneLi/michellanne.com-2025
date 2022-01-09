@@ -1,37 +1,23 @@
-<header data-sticky-container class="site-header">
-  <div class="sticky" data-sticky data-options="marginTop:0;" data-margin-top="0" data-sticky-on="small">
-
-    <div class="site-header__inner">
-    
-      <div class="title-bar site-header__title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-        <!-- Logo -->
-        <a class="site-header__logo" href="index.html">
-          Michellanne Li
-        </a>
-        <!-- Open/close button -->
-        <button class="menu-icon hamburger hamburger--squeeze" data-toggle>
-          <span class="show-for-sr">Menu</span>
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-        </button>
+<header class="site-header sticky">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="http://michellanne.com">
+      Michellanne Li
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__trigger hamburger hamburger--squeeze" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="show-for-sr">menu</span>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="main-nav__drawer" id="nav-drawer">
+        <ul class="menu medium-align-right vertical medium-horizontal">
+          <li><a href="http://michellanne.com/about">About</a></li>
+          <li><a href="http://michellanne.com/resume">Resume</a></li>
+           <li><a href="http://michellanne.com/thoughts">Thoughts</a></li>
+          <li><a href="http://michellanne.com/portfolio">Portfolio</a></li>
+        </ul> 
       </div>
-
-      <div class="top-bar site-header__top-bar" id="main-menu">
-        <!-- Logo -->
-        <a class="site-header__logo show-for-medium" href="index.html">
-          Michellanne Li
-        </a>
-        <!-- Menu -->
-        <nav class="main-nav">
-          <ul class="menu vertical medium-horizontal">
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-             <li><a href="thoughts.html">Thoughts</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-          </ul>
-        </nav>
-      </div>
-
-    </div>
+    </nav>
   </div>
 </header>
-

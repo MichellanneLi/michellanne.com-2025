@@ -1,30 +1,54 @@
-.no-js {
-  @include breakpoint(small only) {
-    .top-bar {
-      display: none;
-    }
-  }
-
-  @include breakpoint(medium) {
-    .title-bar {
-      display: none;
-    }
-  }
-}
-
 .site-header {
   @include trans();
-  margin: -8px -8px 0 -8px;
-  width: calc(100% + 16px);
+  width: 100%;
+  margin-left: -8px;
+  background-color: $white-30;
+  box-shadow: 0 0 30px transparentize($black, .8);
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+
+  &.sticky::before,
+  &.sticky::after {
+    content: '';
+    display: table;
+  }
+
+  &.stuck {
+    @include trans();
+    background-color: $white;
+
+    .site-header__inner {
+      padding-top: .75em;
+    }
+  }
 
   @include breakpoint(medium) {
-    margin: -10px -10px 0 -10px;
-    width: calc(100% + 20px);
+    margin-left: -10px;
+    background-color: $white-30;
+    box-shadow: 0 0 30px transparentize($black, .8);
+    padding: 1.5em 0 0.375em;
+
+    &.stuck {
+      padding: .375em 0;
+
+      .site-header__logo {
+        font-size: 1.2em;
+      }
+
+      .site-header__top-bar {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
   }
 
   @include breakpoint(large) {
-    margin: -12px -12px 0 -12px;
-    width: calc(100% + 24px);
+    padding: 2.25em 0 .75em;
+    margin-left: -12px;
   }
 }
 
@@ -32,115 +56,32 @@
   @extend %clearfix;
   @include trans();
   width: 100%;
+  max-width: 1600px;
   min-width: 260px; /* enforces a min-width in FF. */
   margin: 0 auto;
-  padding: 1.25em 1.5em .75em 1.5em;
-  box-shadow: 0 0 30px transparentize($black, .8);
+  padding: 1.5em 1.5em .375em;
+  position: relative;
 
-  .is-anchored & {
-    background-color: $white-30;
-  }
-
-  .is-stuck &{
-    background-color: $white;
-  }
-
-  &.is-expanded {
-    height: 100vh;
-    background-color: white;
-  }
-
-  @include breakpoint(medium) {
-
-    &::after {
-      display: none;
-    }
-
-    .is-anchored &{
-      padding: 1.5em 2em 1em 2em;
-    }
-
-    .is-stuck &{
-      padding: calc(.5em + 8px) 2em .5em 2em;
-    }
-  }
-
-  @include breakpoint(large) {  
-
-    .is-anchored &{
-      padding: 2em 3em 1em 3em;
-    }
-
-    .is-stuck &{
-      padding: calc(.5em + 8px) 3em .5em 3em;
-    }
-  }
-
-  @include breakpoint(xlarge) {
-    max-width: 1600px;
-  }
-}
-
-.site-header__title-bar {
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.menu-icon {
-  margin: 0;
-  background: transparent;
-  display: block;
-  width: auto;
-  padding: .5em;
-
-  &::after{
-    height: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-}
-
-.site-header__top-bar {
-  @include trans();
-  z-index: 14;
-  display: block;
-  position: absolute;
-  padding-top: .5em;
-  width: 100%;
-  margin-left: -1.5em;
-  // height: calc(100vh - 68px);
-  // left: 0px;
-  // top: 68px;
-  // background-color: white;
-
-  @include breakpoint(medium) {
-    width: calc(100% + 20px);
+  @include breakpoint(medium) {  
+    padding: 0 3em;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    position: relative;
-    padding: 0;
-  }
 
-  @include breakpoint(large) {
-    width: calc(100% + 24px);
+    &::after {
+      display: none;
+    }
   }
 }
 
 .site-header__logo {
+  font-size: 1.5em;
+  line-height: 1.35em;
   font-family: $mercury-display;
   font-weight: 700;
-  font-size: 1.5em;
-
-  @include breakpoint(medium) {
-    font-size: 2em;
-
-    .is-stuck & {
-      font-size: 1.5em;
-    }
-  }
+  float: left;
+  display: block;
 
   &:link,
   &:visited {
@@ -153,5 +94,14 @@
   &:active {
     transform: rotate(2deg);
     background-color: transparent;
+  }
+
+  @include breakpoint(medium) {
+    float: none;
+  }
+
+  @include breakpoint(large) {
+    font-size: 2em;
+    line-height: 1.125em;
   }
 }
