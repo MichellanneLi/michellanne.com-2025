@@ -37,12 +37,17 @@
   padding: 1.25em 1.5em .75em 1.5em;
   box-shadow: 0 0 30px transparentize($black, .8);
 
-  &.is-anchored {
+  .is-anchored & {
     background-color: $white-30;
   }
 
-  &.is-stuck {
+  .is-stuck &{
     background-color: $white;
+  }
+
+  &.is-expanded {
+    height: 100vh;
+    background-color: white;
   }
 
   @include breakpoint(medium) {
@@ -51,22 +56,22 @@
       display: none;
     }
 
-    &.is-anchored {
+    .is-anchored &{
       padding: 1.5em 2em 1em 2em;
     }
 
-    &.is-stuck {
+    .is-stuck &{
       padding: calc(.5em + 8px) 2em .5em 2em;
     }
   }
 
   @include breakpoint(large) {  
 
-    &.is-anchored {
+    .is-anchored &{
       padding: 2em 3em 1em 3em;
     }
 
-    &.is-stuck {
+    .is-stuck &{
       padding: calc(.5em + 8px) 3em .5em 3em;
     }
   }
@@ -97,15 +102,30 @@
 }
 
 .site-header__top-bar {
-  height: calc(100vh - 68px);
-  top: 68px;
-  border: 1px solid blue;
+  @include trans();
+  z-index: 14;
+  display: block;
+  position: absolute;
+  padding-top: .5em;
+  width: 100%;
+  margin-left: -1.5em;
+  // height: calc(100vh - 68px);
+  // left: 0px;
+  // top: 68px;
+  // background-color: white;
 
   @include breakpoint(medium) {
+    width: calc(100% + 20px);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
+    position: relative;
+    padding: 0;
+  }
+
+  @include breakpoint(large) {
+    width: calc(100% + 24px);
   }
 }
 

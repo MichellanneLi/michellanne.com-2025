@@ -5,7 +5,6 @@
 {{> head}}
   <body>
     <div class="site-wrapper">
-      <div class="overlay"></div>
 
       {{#ifpage 'index'}}
         {{> bubbles}}
@@ -16,7 +15,7 @@
         {{> site-header}}
 
         <!-- Template content -->
-        <main id="main" class="off-canvas-content" data-off-canvas-content>
+        <main id="main">
           {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
           {{> body}}
         </main>
@@ -25,7 +24,5 @@
       {{> site-footer}}
     </div>
     <script src="{{root}}assets/js/app.js"></script>
-    <!-- custom script -->
-    <script src="{{root}}assets/js/site.js"></script>
   </body>
 </html>

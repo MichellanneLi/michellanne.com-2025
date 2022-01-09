@@ -15,3 +15,17 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+////////////////////////////////////////
+// Mobile Nav Trigger
+////////////////////////////////////////
+$('.menu-icon').click(function() {
+  if ($(this).hasClass('is-active')) {
+    $(this).removeClass('is-active');
+    $('.site-header__inner').removeClass('is-expanded');
+  } else {
+    // If clicked item not active, add classes
+    $(this).addClass('is-active');
+    $('.site-header__inner').addClass('is-expanded');
+  }
+});
