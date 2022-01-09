@@ -1,5 +1,12 @@
 .main-nav {
-  // width: 100%;
+
+  ul {
+    padding-top: 1em;
+
+    @include breakpoint(medium) {
+      padding: 0;
+    }
+  }
 
   li {
     font-size: 1em;
@@ -19,7 +26,7 @@
   a:link,
   a:visited {
     @include trans();
-    padding: 1em 1.5em;
+    padding: 1em 0;
     text-decoration: none;
     font-weight: 700;
     color: $dark-gray;
@@ -114,19 +121,17 @@
   width: 100%;
   overflow-y: scroll;
   display: none;
-  // padding: rhythm(1) rhythm(2);
-  padding: 1.5em 3em;
 
   &.is-open {
     display: block;
   }
 
   .site-header.sticky & {
-    max-height: calc(100vh - 62px);
+    height: calc(100vh - 62px);
   }
 
   .site-header.stuck & {
-    max-height: calc(100vh - 55px);
+    height: calc(100vh - 50px);
   }
 
   @include breakpoint(medium) {

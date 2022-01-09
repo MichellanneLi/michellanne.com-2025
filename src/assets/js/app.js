@@ -48,7 +48,8 @@ $(window).scroll(function() {
 $('.main-nav__trigger').click(function() {
   if ($(this).hasClass('is-active')) {
     $(this).removeClass('is-active');
-    $('.main-nav__drawer').slideUp('400', function() {$(this).removeAttr('style')}).removeClass('is-open');      $('#fp-nav').show();
+    $('.site-header').removeClass('is-active');
+    $('.main-nav__drawer').slideUp('400', function() {$(this).removeAttr('style')}).removeClass('is-open');
   } else {
     // If clicked item not active, add classes
     $(this).addClass('is-active');
