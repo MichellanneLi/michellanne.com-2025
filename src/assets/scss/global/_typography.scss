@@ -1,5 +1,5 @@
 $link-color: $fuchsia;
-$link-hover: $berry;
+$link-active: $berry;
 
 a {
   @include trans();
@@ -13,12 +13,11 @@ a {
 
 a:active,
 a:hover {
-  background-color: transparentize($bubblegum, .8);
-  color: $link-hover;
+  text-decoration: none;
+}
 
-  @include breakpoint(large) {
-    transform: translateY(-2px);
-  }
+a:active {
+  color: $link-active;
 }
 
 h1 {
