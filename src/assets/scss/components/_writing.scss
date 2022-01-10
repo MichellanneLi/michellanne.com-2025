@@ -9,16 +9,13 @@
 	margin-left: 1.5em !important;
 
   li {
-    margin-bottom: .5em;
+    margin-bottom: 1.5em;
     color: $link-color;
-  }
-
-  .annotation {
-  	color: $body-font-color;
   }
 }
 
 .writing-list__teaser {
   font-size: .9em;
 	color: $body-font-color;
+  margin-top: .5em;
 }

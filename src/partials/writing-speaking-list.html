@@ -1,3 +1,24 @@
-<!-- <ul class="writing-list fa-ul">
-	{{> writing-speaking-list-item}}
-</ul> -->
+<ul class="writing-list fa-ul">
+	{{#each writingspeaking}}
+	<li>
+		<span class="fa-li">
+		{{#ifequal type 'video'}}
+			<i aria-hidden class="fab fa-youtube fa-fw fa-sm" title="video"></i> <span class="show-for-sr">video:</span> 
+		{{/ifequal}}
+		{{#ifequal type 'blog'}}
+			<i aria-hidden class="fas fa-pen-alt fa-fw fa-sm" title="blog post"></i> <span class="show-for-sr">blog post:</span> 
+		{{/ifequal}}
+		{{#ifequal type 'podcast'}}
+			<i aria-hidden class="fas fa-microphone fa-fw fa-sm" title="podcast"></i> <span class="show-for-sr">podcast:</span>
+		{{/ifequal}}
+		{{#ifequal type 'pdf'}}
+			<i aria-hidden class="fas fa-file-pdf fa-fw fa-sm" title="pdf"></i> <span class="show-for-sr">pdf:</span> 
+		{{/ifequal}}
+		</span>
+		<a href="{{url}}">
+			{{title}}
+		</a> 
+		<p class="writing-list__teaser">{{teaser}}<p>
+	</li>
+	{{/each}}
+</ul>
