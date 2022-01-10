@@ -15,7 +15,12 @@
         {{> site-header}}
 
         <!-- Template content -->
+        {{#ifpage 'index'}}
         <main id="main">
+        {{/ifpage}}
+        {{#unlesspage 'index'}}
+        <main id="main" class="main--interior">
+        {{/unlesspage}}
           {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
           {{> body}}
         </main>

@@ -5,10 +5,10 @@ body {
 }
 
 .main--interior {
-  // padding-top: rhythm(3.5);
+  padding-top: 5.25em;
 
-  @include breakpoint(large) {
-    // padding-top: rhythm(5);
+  @include breakpoint(medium) {
+    padding-top: 6em;
   }
 }
 
