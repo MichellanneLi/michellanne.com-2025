@@ -29,31 +29,21 @@
     padding: 1em 0;
     text-decoration: none;
     font-weight: 700;
-    color: $dark-gray;
+    color: $medium-gray;
     position: relative;
 
-    &::before,
     &::after {
       @include trans();
       content: '';
-      width: .5em;
-      height: .5em;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: transparent;
+      border: 0;
       display: block;
       position: absolute;
-    }
-
-    &::before {
-      border-top: 3px solid transparent;
-      border-left: 3px solid transparent;
-      top: 0;
+      top: calc(1em + 4px);
       left: 0;
-    }
-
-    &::after {
-      border-right: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      bottom: 0;
-      right: 0;
     }
 
     @include breakpoint(medium) {
@@ -61,41 +51,32 @@
       padding: 0;
       margin-bottom: -10px;
 
-      &::before {
-        display: none;
-      }
-
       &::after {
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
-        background-color: transparent;
         margin: 4px auto 0;
-        border: 0;
         position: relative;
+        top: auto;
       }
     }
   }
 
   a:hover,
   a:active {
-    color: $black;
     background-color: transparent;
+    padding-left: 1em;
+    text-decoration: none;
 
-    &::before,
     &::after {
-      border-color: $rose;
+      background-color: $bubblegum;
     }
 
     @include breakpoint(medium) {
       transform: translateY(-8px);
-      text-decoration: none;
-
-      &::after {
-        background-color: $bubblegum;
-        border: 0;
-      }
+      padding: 0;
     }
+  }
+
+  a:active {
+    color: $black;
   }
 
   svg {
