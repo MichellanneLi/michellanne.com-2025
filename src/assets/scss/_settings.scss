@@ -70,9 +70,9 @@ $gotham-narrow: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
 $mercury-display: "Mercury Display A", "Mercury Display B", serif;
 $fontawesome: "Font Awesome 5 Free", sans-serif;
 
-$global-font-size: 100%;
+$global-font-size: 18px;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-lineheight: 1.6;
 
 $light-gray: #d0d2d3;
 $medium-gray: #6d6e71;
@@ -162,34 +162,34 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
-$header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
-$header-styles: (
-  small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 14),
-    'h4': ('font-size': 12),
-    'h5': ('font-size': 10),
-    'h6': ('font-size': 9),
-  ),
-  medium: (
-    'h1': ('font-size': 25),
-    'h2': ('font-size': 21),
-    'h3': ('font-size': 15),
-    'h4': ('font-size': 13),
-    'h5': ('font-size': 11),
-    'h6': ('font-size': 10),
-  ),
-  large: (
-    'h1': ('font-size': 29),
-    'h2': ('font-size': 24),
-    'h3': ('font-size': 17),
-    'h4': ('font-size': 14),
-    'h5': ('font-size': 12),
-    'h6': ('font-size': 11),
-  ),
-);
+$header-lineheight: 1.2;
+$header-margin-bottom: 0.5em;
+// $header-styles: (
+//   small: (
+//     'h1': ('font-size': 16),
+//     'h2': ('font-size': 20),
+//     'h3': ('font-size': 14),
+//     'h4': ('font-size': 12),
+//     'h5': ('font-size': 10),
+//     'h6': ('font-size': 9),
+//   ),
+//   medium: (
+//     'h1': ('font-size': 36),
+//     'h2': ('font-size': 21),
+//     'h3': ('font-size': 15),
+//     'h4': ('font-size': 13),
+//     'h5': ('font-size': 11),
+//     'h6': ('font-size': 10),
+//   ),
+//   large: (
+//     'h1': ('font-size': 36),
+//     'h2': ('font-size': 24),
+//     'h3': ('font-size': 17),
+//     'h4': ('font-size': 14),
+//     'h5': ('font-size': 12),
+//     'h6': ('font-size': 11),
+//   ),
+// );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 90%;
 $header-small-font-color: $medium-gray;

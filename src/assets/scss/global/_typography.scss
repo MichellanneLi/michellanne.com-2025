@@ -1,6 +1,21 @@
 $link-color: $fuchsia;
 $link-active: $berry;
 
+html {
+  font-size: .9em;
+
+  // Adjust font-size globally per breakpoint.
+  // As you adjust the percentage growth of font-size, translate
+  // to the value to the mixin adjust-font-size-to in the mixins
+  // file as a point value to maintain font-size across breakpoints.
+  @include breakpoint(medium) {
+    font-size: .95em;
+  }
+  @include breakpoint(large) {
+    font-size: 1em;
+  }
+}
+
 a {
   @include trans();
   background-color: transparent; /* Remove the gray background on active links in IE 10. */
@@ -21,13 +36,20 @@ a:active {
 }
 
 h1 {
+  font-size: 1.5em;
 	line-height: 1.3em;
   margin-bottom: 1em;
   font-family: $mercury-display;
   font-weight: 700;
+
+  @include breakpoint(medium) {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
 }
 
 h2 {
+  font-size: 1.5em;
   line-height: 1.2em;
   margin-bottom: .5em;
   font-family: $mercury-display;
@@ -35,6 +57,7 @@ h2 {
 }
 
 h3 {
+  font-size: 1.1em;
   line-height: 1.1em;
   margin-bottom: .5em;
   font-family: $gotham-narrow;
@@ -43,6 +66,7 @@ h3 {
 }
 
 h4 {
+  font-size: 1em;
   line-height: 1em;
   margin-bottom: .5em;
   font-family: $gotham;
@@ -50,6 +74,7 @@ h4 {
 }
 
 h5 {
+  font-size: .9em;
   line-height: .85em;
   margin-top: .75em;
   margin-bottom: .25em;
@@ -58,6 +83,7 @@ h5 {
 }
 
 h6 {
+  font-size: .8em;
   line-height: .75em;
   margin-top: .75em;
   margin-bottom: .25em;
