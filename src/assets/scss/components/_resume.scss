@@ -4,35 +4,59 @@
   }
 }
 
-.resume__job-header,
-.resume__job-title {
-  color: $dark-gray;
-
-  @include breakpoint(large) {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;
+.resume__job-header {
+  a {
+    font-weight: 700;
   }
-}
-
-.resume__job-title {
-  padding-left: 1em;
-  font-weight: 700;
-  font-family: $gotham-narrow;
 }
 
 .resume__job-location {
   font-size: .85em;
   font-weight: 400;
+  margin-left: .25em;
 }
 
-.resume__job-dates {
+.resume__position {
+  font-weight: 700;
+  font-family: $gotham-narrow;
+  color: $dark-gray;
+
   @include breakpoint(large) {
-    margin-left: 1em;
-    text-align: right;
+    // display: flex;
+    width: 100%;
+    // justify-content: space-between;
+    // flex-direction: row;
+    // align-items: baseline;
+    overflow-x: hidden;
+  }
+
+  &::after {
+    float: left;
+    width: 0;
     white-space: nowrap;
+    content: 
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . ";
+  }
+}
+
+.title {
+  @include breakpoint(large) {
+    padding-right: 0.25em;
+    background: white;
+  }
+}
+
+.dates {
+  @include breakpoint(large) {
+    padding-left: .25em;
+    // text-align: right;
+    float: right;
+    white-space: nowrap;
+    background: white;
   }
 }
 

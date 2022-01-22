@@ -2,8 +2,8 @@
 layout: default
 title: Resume
 
-jobs:
-  - job: 
+job:
+  - 
     company: Aon
     url: https://www.aon.com/home/index.html
     city: Chicago
@@ -16,21 +16,7 @@ jobs:
         accomplishments:
           - Define the user experience of e-commerce insurance websites for markets in Singapore, Hong Kong, China, and Thailand.
           - Identify and advocate for user needs in overseas markets.
-  - job: 
-    company: Devbridge Group
-    url: https://www.devbridge.com/
-    city: Chicago
-    state: IL
-    titles: 
-      child: 
-        title: Product Designer
-        startDate: 2019
-        endDate: 
-        accomplishments:
-          - Improved user flows and UI for e-commerce insurance website. 
-          - Conducted exploration into potential business solution for validating user identity through facial recognition.
-          - Consulted on accessibility for major airline client.
-  - job: 
+  - 
     company: Palantir.net
     url: https://www.palantir.net/
     city: Chicago
@@ -45,7 +31,7 @@ jobs:
           - Built in-browser living style guides to document atomic components and UI patterns for both clients and developers.
           - Presented design deliverables, ran brainstorming exercises, and held meetings with client teams to educate them about the design process, facilitate dialogue, and solicit feedback.
           - Developed processes to improve Section 508 compliance, educated clients and colleagues about accessibility, and contributed to the development of WCAG 2.1 and Silver guidelines.
-  - job:
+  - 
     company: Sidley Austin
     url: https://www.sidley.com
     city: Chicago
@@ -58,7 +44,7 @@ jobs:
         accomplishments:
           - Redesigned recruiting materials for London and Hong Kong offices.
           - Produced the annual pro bono report, in collaboration with marketing professionals, partners, and vendors.
-  - job: 
+  - 
     company: Top Shelf Design
     url: https://topshelfdesign.net/
     city: Arlington
@@ -100,29 +86,31 @@ recognitions:
 ---
 
 <article class="resume">
-  <div class="container">
-    <div class="l-1up">
-      <h1>Resume</h1>
-      <section aria-labelledby="section-label-a">
-        <h2 id="section-label-a">Professional Experience</h2>
-        {{>resume-job-desc}}
-      </section>
-      <section aria-labelledby="section-label-c">
-        <h2 id="section-label-c">Skills</h2>
-        <ul class="resume__skills-list">
-          <!-- {% for skill in page.skills %}
-          <li>{{skill}}</li>
-          {% endfor %} -->
-        </ul>
-      </section>
-      <section aria-labelledby="section-label-b" class="resume__section">
-        <h2 id="section-label-b">Education and Recognition</h2>
-        <ul class="resume__recognition-list">
-          <!-- {% for recognition in page.recognitions %}
-          <li>{{recognition}}</li>
-          {% endfor %} -->
-        </ul>
-      </section>
+  <div class="grid-container full">
+    <div class="grid-x">
+      <div class="cell medium-6 medium-offset-3">
+        <h1>Resume</h1>
+        <section aria-labelledby="section-label-a">
+          <h2 id="section-label-a">Professional Experience</h2>
+          {{>resume-job-desc}}
+        </section>
+        <section aria-labelledby="section-label-c">
+          <h2 id="section-label-c">Skills</h2>
+          <ul class="resume__skills-list">
+            <!-- {% for skill in page.skills %}
+            <li>{{skill}}</li>
+            {% endfor %} -->
+          </ul>
+        </section>
+        <section aria-labelledby="section-label-b" class="resume__section">
+          <h2 id="section-label-b">Education and Recognition</h2>
+          <ul class="resume__recognition-list">
+            <!-- {% for recognition in page.recognitions %}
+            <li>{{recognition}}</li>
+            {% endfor %} -->
+          </ul>
+        </section>
+      </div>
     </div>
   </div>
 </article>
