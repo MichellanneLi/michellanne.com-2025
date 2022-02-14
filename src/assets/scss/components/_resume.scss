@@ -20,17 +20,11 @@
   font-weight: 700;
   font-family: $gotham-narrow;
   color: $dark-gray;
+  max-width: 100%;
+  padding: 0;
+  overflow-x: hidden;
 
-  @include breakpoint(large) {
-    // display: flex;
-    width: 100%;
-    // justify-content: space-between;
-    // flex-direction: row;
-    // align-items: baseline;
-    overflow-x: hidden;
-  }
-
-  &::after {
+  &::before {
     float: left;
     width: 0;
     white-space: nowrap;
@@ -44,24 +38,18 @@
 }
 
 .title {
-  @include breakpoint(large) {
-    padding-right: 0.25em;
-    background: white;
-  }
+  padding-right: 0.25em;
+  background: white;
 }
 
 .dates {
-  @include breakpoint(large) {
-    padding-left: .25em;
-    // text-align: right;
-    float: right;
-    white-space: nowrap;
-    background: white;
-  }
+  padding-left: .25em;
+  float: right;
+  background: white;
 }
 
 .resume__middot {
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     display: none;
   }
 }
@@ -84,7 +72,7 @@
     margin-bottom: .25em;
   }
 
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     columns: 4;
   }
 }
