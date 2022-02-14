@@ -97,9 +97,9 @@ recognitions:
         <section aria-labelledby="section-label-c">
           <h2 id="section-label-c">Skills</h2>
           <ul class="resume__skills-list">
-            <!-- {% for skill in page.skills %}
-            <li>{{skill}}</li>
-            {% endfor %} -->
+            {{#each skills}}
+              <li>{{.}}</li>
+            {{/each}}
           </ul>
         </section>
         <section aria-labelledby="section-label-b" class="resume__section">

@@ -69,11 +69,11 @@
   columns: 2;
 
   li {
-    margin-bottom: .25em;
+    margin-bottom: 1em;
   }
 
   @include breakpoint(medium) {
-    columns: 4;
+    columns: 3;
   }
 }
 
