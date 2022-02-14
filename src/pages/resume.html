@@ -79,9 +79,9 @@ skills:
   - Sketch
   - Twig
 
-recognitions:
+recognition:
   - Bachelor of Fine Arts from Washington University in St. Louis, 2009
-  - Winner of the <a href="http://gdusa.com/">Graphic Design USA American Package Design Awards</a> Food + Beverage Category, 2014
+  - Winner of the Graphic Design USA American Package Design Awards Food + Beverage Category, 2014
 
 ---
 
@@ -105,9 +105,9 @@ recognitions:
         <section aria-labelledby="section-label-b" class="resume__section">
           <h2 id="section-label-b">Education and Recognition</h2>
           <ul class="resume__recognition-list">
-            <!-- {% for recognition in page.recognitions %}
-            <li>{{recognition}}</li>
-            {% endfor %} -->
+            {{#each recognition}}
+              <li>{{.}}</li>
+            {{/each}}
           </ul>
         </section>
       </div>
