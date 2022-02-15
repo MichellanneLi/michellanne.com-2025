@@ -12,11 +12,15 @@
 
 .page-anchor {
   border-top: 1px solid $light-gray;
+  
+  &:first-child {
+    margin-top: 3.5em !important;
+  }
 
   &::before { 
-    content: " "; 
-    margin-top: -5em; 
-    height: 5em; 
+    content: ""; 
+    margin-top: -3.5em; 
+    height: 3.5em; 
     visibility: hidden; 
     pointer-events: none;
     display: inline-block;
@@ -25,18 +29,20 @@
   & > section:last-child {
     margin-bottom: 1em !important;
   }
+
+  @include breakpoint(medium) {
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &::before { 
+      margin-top: -5em; 
+      height: 5em; 
+    }
+  }
 }
 
 .project-intro {
-  margin-bottom: 1em !important;
-
-  // &::after {
-  //   content: '• • • • • • • • • •';
-  //   text-align: center;
-  //   display: block;
-  //   color: $bubblegum;
-  //   margin-top: 1em;
-  // }
 
   h1 {
     margin-bottom: .25em;
@@ -46,10 +52,8 @@
     margin-bottom: 1em;
   }
 
-  @include breakpoint(large) {
-    &::after {
-      margin-top: 1.5em;
-    }
+  @include breakpoint(medium) {
+    margin-bottom: 1em !important;
   }
 }
 
@@ -58,16 +62,28 @@
 }
 
 .project-nav {
+  background-color: $petal;
+  margin-bottom: 1em;
+
   ul {
     margin: 0;
     padding: 0;
   }
 
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    padding: 1rem 1.5rem;
+  }
+
   h2 {
-    padding: 0 1rem;
+    padding: 1.5rem 1.5rem 1rem;
+    margin: 0;
     font-size: 1.2em;
     line-height: 1em;
-    margin-bottom: 1em;
     font-family: $gotham-narrow;
     font-weight: 700;
     color: $medium-gray;
@@ -75,5 +91,26 @@
 
   a:active, a:hover {
     text-decoration: underline;
+  }
+
+  @include breakpoint(medium) {
+    padding: 1.5em;
+
+    h2 {
+      padding: 0;
+      margin-bottom: 1em;
+    }
+
+    li {
+      margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      padding: 0;
+    }
   }
 }
