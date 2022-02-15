@@ -15,10 +15,10 @@ main {
 }
 
 .main--interior {
-  padding-top: 5.25em;
+  padding-top: 3.5em;
 
   @include breakpoint(medium) {
-    padding-top: 6em;
+    padding-top: 5em;
   }
 }
 
