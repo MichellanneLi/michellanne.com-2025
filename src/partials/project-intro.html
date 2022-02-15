@@ -1,38 +1,14 @@
-<!-- <section class="project__intro">
-  <div class="container">
-    <div class="l-1up">
-      <div class="project__tags">
-        {% if tags|length == 1 %}
-          {% for tag in page.tags %}
-            <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a>
-          {% endfor %}
-        {% else %}
-          {% for tag in page.tags %}
-            {% if loop.last %}
-              <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a>
-            {% else %}
-              <a href="{{site.url}}/portfolio/{{tag.child}}" class="tag">{{ tag.child }}</a> &middot; 
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      </div>
-      <header class="project__header">
-        {% if page.projectclient %}
-          <h1>{{page.projectclient}}</h1>
-          <h2>{{page.projecttitle}}</h2>
-        {% else %}
-        <h1>{{page.projecttitle}}</h1>
-        {% endif %}
-      </header>
-      {{page.projectdesc}}
-      <div class="project__roles">
-        <h3>Role</h3>
-        <ul>
-        {% for role in page.roles %}
-          <li>{{ role.child }}</li>
-        {% endfor %}
-        </ul>
+<section class="project__intro">
+  <div class="grid-container full">
+    <div class="grid-x">
+      <div class="cell large-8 large-offset-2 medium-10 medium-offset-1">
+        <h1>{{title}}</h1>
+        <h2>{{tagline}}</h2>
+        <p>{{description}}</p>
+        <p><span class="project__label">Clients include: </span>{{clients}}</p>
+        <p><span class="project__label">Users: </span>{{users}}</p>
+        <p><span class="project__label">My Role:</span> {{roles}}</p>
       </div>
     </div>
   </div>
-</section> -->
+</section>

@@ -51,14 +51,15 @@ h1 {
 h2 {
   font-size: 1.5em;
   line-height: 1.2em;
+  margin-top: 0;
   margin-bottom: .5em;
   font-family: $mercury-display;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.3em;
-  line-height: 1.1em;
+  font-size: 1.2em;
+  line-height: 1em;
   margin-bottom: .5em;
   font-family: $gotham-narrow;
   font-weight: 700;
@@ -88,4 +89,12 @@ h6 {
   margin-top: .75em;
   margin-bottom: .25em;
   font-weight: 400;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 1em;
 }

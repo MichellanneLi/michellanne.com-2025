@@ -1,8 +1,29 @@
----
-layout: "default"
----
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+{{> head}}
+  <body>
+    <div class="site-wrapper">
 
-<article class="project">
-  {{> project-intro}}
-  {{> body}}
-</article>
+      {{#ifpage 'index'}}
+        {{> bubbles}}
+      {{/ifpage}}
+
+      <div class="content-wrapper">
+        <a class="show-on-focus" href="#main">Skip to Main Content</a>
+        {{> site-header}}
+
+        <!-- Template content -->
+        <main id="main" class="main--interior">
+          {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+          <article class="project">
+            {{> project-intro}}
+            {{> body}}
+          </article>
+        </main>
+      </div>
+
+      {{> site-footer}}
+    </div>
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>
