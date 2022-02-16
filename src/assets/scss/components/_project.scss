@@ -5,8 +5,9 @@
   }
 
   section {
-    padding: 1em 0;
+    padding: .5em 0;
     margin: 0;
+    clear: both;
   }
 }
 
@@ -108,7 +109,7 @@
 
   @include breakpoint(medium) {
     padding: 1.5em;
-    margin-top: 3.5em;
+    margin-top: 3em;
 
     h2 {
       padding: 0;
@@ -126,9 +127,5 @@
     a {
       padding: 0;
     }
-  }
-
-  @include breakpoint(large) {
-    margin-top: 4em;
   }
 }

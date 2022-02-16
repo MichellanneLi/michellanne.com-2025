@@ -1,13 +1,20 @@
 .project-image {
-  margin: .5em 0;
+  margin: 1em 0;
 
   @include breakpoint(large) {
-    margin: 1em 0;
+    margin: 1.5em 0;
   }
 
   img {
     display: block;
     width: 100%;
+  }
+
+  figcaption {
+    font-size: .9em;
+    margin-top: 1em;
+    color: $medium-gray;
+    display: block;
   }
 }
 
@@ -22,6 +29,38 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.float-left {
+  @include breakpoint(medium) {
+    float: left;
+    margin-right: 1.5em;
+  }
+}
+
+.float-right {
+  @include breakpoint(medium) {
+    float: right;
+    margin-left: 1.5em;
+  }
+}
+
+.width-50 {
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+}
+
+.width-60 {
+  @include breakpoint(medium) {
+    width: 60%;
+  }
+}
+
+.width-70 {
+  @include breakpoint(medium) {
+    width: 70%;
   }
 }
 
@@ -40,13 +79,6 @@
 
 .project-image__inner {
   position: relative;
-}
-
-figcaption {
-  font-size: .7em;
-  margin-top: .5em;
-  color: $medium-gray;
-  display: block;
 }
 
 .project-image__fade {

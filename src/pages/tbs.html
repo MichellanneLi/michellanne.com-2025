@@ -38,18 +38,11 @@ heroalt: alt text
         </section>
         <section>
           <h3>Goals</h3>
-          <ul>
-            <li>
-              <p><span class="project__label">Goal: </span>Simplify the user experience by addressing friction points and offering key information at the right times.</p>
-              <p><span class="project__label">Success metric: </span> Reduction in poor feedback and customer service calls.</p></li>
-            <li>
-              <p><span class="project__label">Goal: </span>Boost year-round engagement through new wellness and financial tools.</p>
-              <p><span class="project__label">Success metric: </span>Increased usage overall and usage of these tools.
-            </li>
-            <li>
-              <p><span class="project__label">Goal: </span>Provide employers with a centralized platform to demonstrate the value of their benefits, thus increasing employee retention.</p>
-            </li>
-          </ul>
+          <p><span class="project-label">Goal: </span>Simplify the user experience by addressing friction points and offering key information at the right times.</p>
+          <p><span class="project-label">Success metric: </span> Reduction in poor feedback and customer service calls.</p>
+          <p><span class="project-label">Goal: </span>Boost year-round engagement through new wellness and financial tools.</p>
+          <p><span class="project-label">Success metric: </span>Increased usage overall and usage of these tools.</p>
+          <p><span class="project-label">Goal: </span>Provide employers with a centralized platform to demonstrate the value of their benefits, thus increasing employee retention.</p>
         </section>
         <section>
           <h3>Challenges and Constraints</h3>
@@ -63,20 +56,14 @@ heroalt: alt text
         <section>
           <h3>Timeline</h3>
           <h4>2020</h4>
-          <ul>
-            <li>Proof of concept prototypes delivered for UK and Singapore markets.</li>
-            <li>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either: 1.) In-person prototype demonstration, followed by a survey, or 2.) Video demonstration, followed by a survey.</li>
-          </ul>
+          <p>Proof of concept prototypes delivered for UK and Singapore markets.</p>
+          <p>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either: 1.) In-person prototype demonstration, followed by a survey, or 2.) Video demonstration, followed by a survey.</p>
           <h4>2021</h4>
-            <ul>
-              <li>Entered delivery.</li>
-              <li>MVP iteration completed.</li>
-            </ul>
+            <p>Entered delivery.</p>
+            <p>MVP iteration completed.</p>
           <h4>2022</h4>
-          <ul>
-            <li>Currently working on MMP iteration.</li>
-            <li>First client platform slated for April.</li>
-          </ul>
+          <p>Currently working on MMP iteration.</p>
+          <p>First client platform slated for April.</p>
         </section>
       </section>
       <section id="poc" class="page-anchor">
@@ -85,10 +72,27 @@ heroalt: alt text
           <h3>User Dashboard</h3>
           <p>The user dashboard brings together all of the platform’s tools in one place.</p>
           <p>In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
-          {{> project-image style='' 
+          {{> project-image 
+            style='' 
             classes='has-shadow width-100' 
             img='tbs/poc/tbs-dashboard-01.png' 
-            alt='tbs dashboard'}}
+            alt='tbs dashboard'
+            caption='TBS Dashboard'}}
+
+          <p>Each “module” represents a tool, such as:</p>
+          <ul>
+            <li>Personal Finance,</li>
+            <li>Total rewards, and</li>
+            <li>Pensions</li>
+          </ul>
+
+          {{> project-image 
+            style='' 
+            classes='has-shadow width-80' 
+            img='tbs/poc/tbs-dashboard-finance-rewards-pension.png' 
+            alt='finance, rewards, and pension modules on the tbs dashboard'
+            caption='Finance, Rewards, and Pension modules'}}
+          
         </section>
 
         <section>
