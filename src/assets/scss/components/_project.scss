@@ -70,6 +70,12 @@
   }
 }
 
+.project-intro__content {
+  @include breakpoint(medium) {
+    padding: 1em 0 3em;
+  }
+}
+
 .project-label {
   font-weight: 700;
 }
