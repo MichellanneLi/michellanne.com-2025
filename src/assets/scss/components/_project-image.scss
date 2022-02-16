@@ -2,22 +2,43 @@
   margin: .5em 0;
 
   @include breakpoint(large) {
-    margin: 1.25em 0;
+    margin: 1em 0;
   }
 
   img {
     display: block;
     width: 100%;
   }
+}
 
-  .l-2up > .l-2up > & {
-    @include breakpoint(large) {
-      margin: 0 0 .75em;
-    }
+.has-shadow {
+  img {
+    box-shadow: 0 0 30px transparentize($black, .8);
   }
 }
 
-.project-image__img {
+.small {
+  @include breakpoint(medium) {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.width-80 {
+  @include breakpoint(medium) {
+    width: 80%;
+  }
+}
+
+.width-50 {
+  @include breakpoint(medium) {
+    width: 50%;
+    float: left;
+  }
+}
+
+.project-image__inner {
   position: relative;
 }
 
@@ -26,61 +47,6 @@ figcaption {
   margin-top: .5em;
   color: $medium-gray;
   display: block;
-}
-
-.project-image--has-shadow {
-  img {
-    box-shadow: 0 0 30px transparentize($black, .8);
-  }
-}
-
-.project-image--small {
-  @include breakpoint(medium) {
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.project-image--gif {
-  position: relative;
-  cursor: pointer;
-
-  &::before {
-    @include trans();
-    content: '';
-    top: 50%;
-    left: 50%;
-    background-color: transparentize($white, .2);
-    background-image: url('../imgs/play-solid.svg');
-    background-position: center;
-    background-size: 30%;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: block;
-    box-shadow: 0 0 10px transparentize($black, .5);
-    margin-top: -30px;
-    margin-left: -30px;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    position: absolute;
-    z-index: 2;
-
-    @include breakpoint(large) {
-      &::before {
-        margin-top: -50px;
-        margin-left: -50px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-      }
-    }
-  }
-
-  &.play::before {
-    display: none;
-  }
 }
 
 .project-image__fade {

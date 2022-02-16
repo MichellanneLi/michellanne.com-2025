@@ -1,4 +1,4 @@
-<!-- <figure class="project-image {% if shadow == 'yes' %} project-image--has-shadow {% endif %} {% if small == 'yes' %} project-image--small {% endif %} {% if gif %}js-gif project-image--gif{% endif %} js-scroll-animation">
+<!-- <figure class="project-image {% if shadow == 'yes' %} project-image--has-shadow {% endif %} {% if small == 'yes' %} project-image--small {% endif %} ">
 	{% if fade == 'yes' %}
 	<div class="project-image__img">
 		<div class="project-image__fade"></div>
@@ -10,4 +10,18 @@
   {% if caption %}
   <figcaption>{{caption}}</figcaption>
   {% endif %}
-</figure> -->
+</figure>
+ -->
+
+<figure class="project-image {{classes}}">
+	{{#ifequal style 'fade'}}
+	<div class="project-image__inner">
+		<div class="project-image__fade"></div>
+	{{/ifequal}}
+
+	<img src="{{root}}/assets/img/{{img}}" alt="{{alt}}" />
+
+	{{#ifequal style 'fade'}}
+	</div>
+	{{/ifequal}}
+</figure>
