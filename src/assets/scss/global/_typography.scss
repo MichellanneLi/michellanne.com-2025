@@ -102,3 +102,11 @@ ul {
 li {
   margin-bottom: 1em;
 }
+
+blockquote {
+  border-left: $blockquote-border;
+  padding: $blockquote-padding;
+  color: $blockquote-color;
+  margin: 1.5em 0;
+  font-size: 1.1em;
+}

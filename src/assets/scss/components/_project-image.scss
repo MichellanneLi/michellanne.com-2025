@@ -1,8 +1,8 @@
 .project-image {
   margin: 1em 0;
 
-  @include breakpoint(large) {
-    margin: 1.5em 0;
+  @include breakpoint(medium) {
+    margin: 2em 0;
   }
 
   img {
