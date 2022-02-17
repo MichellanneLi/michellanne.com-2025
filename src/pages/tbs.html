@@ -12,108 +12,98 @@ roles: UX Designer, Team Lead
 heroimg: tbs/poc/tbs-dashboard-01.png
 heroalt: alt text
 
+pageNavItems:
+  -
+    anchor: background
+    title: Background
+  -
+    anchor: poc
+    title: Proof of Concept
+  -
+    anchor: delivery
+    title: Delivery (Ongoing)
+
 ---
+<section id="background" class="page-anchor">
+  <section>
+    <h2>Background</h2>
+    <p>The existing online benefits platform is confusing and difficult to navigate. Client HR departments are overwhelmed with requests for guidance. Competitors that center user experience threaten Aon’s market share.</p>
+  </section>
+  <section>
+    <h3>Goals</h3>
+    <ul>
+      <li>Simplify the user experience by addressing friction points and offering key information at the right times. Success will look like a reduction in poor feedback and customer service calls.</li>
+      <li>Boost year-round engagement through new wellness and financial tools. Success will look like increased usage overall and usage of these tools.</li>
+      <li>Provide employers with a centralized platform to demonstrate the value of their benefits, thus increasing employee retention.</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Challenges and Constraints</h3>
+    <ul>
+      <li>Reducing friction around benefits enrollment, without being able to structure the carrier plans.</li>
+      <li>Demonstrating the value of benefits and helping users choose the options that best meet their individual needs.</li>
+      <li>Tailoring the platform for the Asia Pacific, Europe, and Middle East markets.</li>
+      <li>Building in sufficient flexibility to account for individual client configuration.</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Timeline</h3>
+    <h4>2020</h4>
+    <ul>
+      <li>Proof of concept prototypes delivered for UK and Singapore markets.</li>
+      <li>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either in-person prototype demonstration or video demonstration, followed by a survey.</li>
+    </ul>
+    <h4>2021</h4>
+    <ul>
+      <li>Entered delivery.</li>
+      <li>MVP iteration completed.</li>
+    </ul>
+    <h4>2022</h4>
+    <ul>
+      <li>Currently working on MMP iteration.</li>
+      <li>First client platform slated for April.</li>
+    </ul>
+  </section>
+</section>
+<section id="poc" class="page-anchor">
+  <section>
+    <h2>Proof of Concept</h2>
+    <h3>User Dashboard</h3>
+    <p>The user dashboard brings together all of the platform’s tools in one place.</p>
+    <p>In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow width-100' 
+      img='tbs/poc/tbs-dashboard-01.png' 
+      alt='tbs dashboard'
+      caption='TBS Dashboard'}}
 
-<div class="grid-container full">
-  <div class="grid-x grid-padding-x">
-    <div class="cell medium-4 large-3">
-      <div data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="5" data-top-anchor="contentArea:top" data-sticky-on="medium">
-          <nav class="project-nav">
-            <h2>On this page:</h2>
-            <ul class="vertical menu" data-smooth-scroll>
-              <li><a href="#background">Background</a></li>
-              <li><a href="#poc">Proof of Concept</a></li>
-              <li><a href="#poc">Delivery (Ongoing)</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div class="cell medium-8 large-6" id="contentArea">
-      <section id="background" class="page-anchor">
-        <section>
-          <h2>Background</h2>
-          <p>The existing online benefits platform is confusing and difficult to navigate. Client HR departments are overwhelmed with requests for guidance. Competitors that center user experience threaten Aon’s market share.</p>
-        </section>
-        <section>
-          <h3>Goals</h3>
-          <ul>
-            <li>Simplify the user experience by addressing friction points and offering key information at the right times. Success will look like a reduction in poor feedback and customer service calls.</li>
-            <li>Boost year-round engagement through new wellness and financial tools. Success will look like increased usage overall and usage of these tools.</li>
-            <li>Provide employers with a centralized platform to demonstrate the value of their benefits, thus increasing employee retention.</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Challenges and Constraints</h3>
-          <ul>
-            <li>Reducing friction around benefits enrollment, without being able to structure the carrier plans.</li>
-            <li>Demonstrating the value of benefits and helping users choose the options that best meet their individual needs.</li>
-            <li>Tailoring the platform for the Asia Pacific, Europe, and Middle East markets.</li>
-            <li>Building in sufficient flexibility to account for individual client configuration.</li>
-          </ul>
-        </section>
-        <section>
-          <h3>Timeline</h3>
-          <h4>2020</h4>
-          <ul>
-            <li>Proof of concept prototypes delivered for UK and Singapore markets.</li>
-            <li>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either in-person prototype demonstration or video demonstration, followed by a survey.</li>
-          </ul>
-          <h4>2021</h4>
-          <ul>
-            <li>Entered delivery.</li>
-            <li>MVP iteration completed.</li>
-          </ul>
-          <h4>2022</h4>
-          <ul>
-            <li>Currently working on MMP iteration.</li>
-            <li>First client platform slated for April.</li>
-          </ul>
-        </section>
-      </section>
-      <section id="poc" class="page-anchor">
-        <section>
-          <h2>Proof of Concept</h2>
-          <h3>User Dashboard</h3>
-          <p>The user dashboard brings together all of the platform’s tools in one place.</p>
-          <p>In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
-          {{> project-image 
-            style='' 
-            classes='has-shadow width-100' 
-            img='tbs/poc/tbs-dashboard-01.png' 
-            alt='tbs dashboard'
-            caption='TBS Dashboard'}}
+    <p>Each “module” represents a tool, such as:</p>
+    <ul>
+      <li>Personal Finance,</li>
+      <li>Total Rewards (or compensation),</li>
+      <li>Pensions, and</li>
+      <li>Health Score</li>
+    </ul>
 
-          <p>Each “module” represents a tool, such as:</p>
-          <ul>
-            <li>Personal Finance,</li>
-            <li>Total Rewards (or compensation),</li>
-            <li>Pensions, and</li>
-            <li>Health Score</li>
-          </ul>
+    <p>Pensions and health tracking are new features we introduced to boost engagment. However, employees told us they are already using apps to track these types of metrics, so our additions have to compete or integrate with trackers such as Fitbit.</p>
 
-          <p>Pensions and health tracking are new features we introduced to boost engagment. However, employees told us they are already using apps to track these types of metrics, so our additions have to compete or integrate with trackers such as Fitbit.</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/poc/tbs-dashboard-top.png' 
+      alt='finance, rewards, and pension modules on the tbs dashboard'
+      caption='Finance, Rewards, Pensions, and Health modules'}}
 
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs/poc/tbs-dashboard-top.png' 
-            alt='finance, rewards, and pension modules on the tbs dashboard'
-            caption='Finance, Rewards, Pensions, and Health modules'}}
+  </section>
 
-        </section>
-
-        <section>
-          <h3>User Feedback</h3>
-          <p>After completing our proof of concept, we conducted user testing on the updated benefit enrolment flow.</p>
-          <p>97% of users in Asia Pacific and 98% of users in the Europe and Middle East said the experience was simpler than before.</p>
-          <p>98% of users in all markets felt the process was significantly improved.</p>
-          
-          <p>Users primarily care about the ease of executing core tasks, such as filing a claim and enrolling in benefits.</p>
-          <p>The market is saturated with lifestyle apps and tools. Users don’t want more apps, but they are interested in aggregating their data onto a single platform.</p>
-        </section>
-      </section>
-    </div>
-  </div>
-</div>
+  <section>
+    <h3>User Feedback</h3>
+    <p>After completing our proof of concept, we conducted user testing on the updated benefit enrolment flow.</p>
+    <p>97% of users in Asia Pacific and 98% of users in the Europe and Middle East said the experience was simpler than before.</p>
+    <p>98% of users in all markets felt the process was significantly improved.</p>
+    
+    <p>Users primarily care about the ease of executing core tasks, such as filing a claim and enrolling in benefits.</p>
+    <p>The market is saturated with lifestyle apps and tools. Users don’t want more apps, but they are interested in aggregating their data onto a single platform.</p>
+  </section>
+</section>

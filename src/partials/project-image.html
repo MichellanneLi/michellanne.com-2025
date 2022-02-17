@@ -1,18 +1,3 @@
-<!-- <figure class="project-image {% if shadow == 'yes' %} project-image--has-shadow {% endif %} {% if small == 'yes' %} project-image--small {% endif %} ">
-	{% if fade == 'yes' %}
-	<div class="project-image__img">
-		<div class="project-image__fade"></div>
-	{% endif %}
-	  <img src="{{site.url}}/assets/imgs/{{page.projectcode}}/{{image}}" alt="{{alt}}" {% if gif %}data-alt="{{site.url}}/assets/imgs/{{page.projectcode}}/{{gif}}"{% endif %} />
-	{% if fade == 'yes' %}
-	</div>
-	{% endif %}
-  {% if caption %}
-  <figcaption>{{caption}}</figcaption>
-  {% endif %}
-</figure>
- -->
-
 <figure class="project-image {{classes}}">
 	{{#ifequal style 'fade'}}
 	<div class="project-image__inner">

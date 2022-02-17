@@ -1,0 +1,14 @@
+<div class="cell medium-4 large-3">
+  <div data-sticky-container>
+    <div class="sticky" data-sticky data-margin-top="5" data-top-anchor="contentArea:top" data-sticky-on="medium">
+      <nav class="project-nav">
+        <h2>On this page:</h2>
+        <ul class="vertical menu" data-smooth-scroll>
+          {{#each pageNavItems}}
+          <li><a href="#{{anchor}}">{{title}}</a></li>
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
