@@ -5,7 +5,7 @@ tagline: An employee benefits platform
 
 clients: Multinational Fortune 500 Companies, such as Microsoft, Accenture, and Johnson & Johnson
 users: Employees of Aon client companies
-description: Insurance broking is a core offering for Aon United. Our bespoke platform TBS brings together multiple HR applications and carrier data. It provides the underpinnings of most of our insurance enrollment websites, accounting for 1.4 billion in revenue.
+description: Aon's bespoke employee benefits platform TBS (Total Benefits Solutions) brings together multiple HR applications and carrier data. It provides the underpinnings of most of our insurance enrollment websites, accounting for 1.4 billion in revenue.
 
 roles: UX Designer, Team Lead
 
@@ -20,6 +20,9 @@ pageNavItems:
     anchor: poc
     title: Proof of Concept
   -
+    anchor: customization
+    title: Customization
+  -
     anchor: delivery
     title: Delivery (Ongoing)
 
@@ -27,7 +30,7 @@ pageNavItems:
 <section id="background" class="page-anchor">
   <section>
     <h2>Background</h2>
-    <p>The existing online benefits platform is confusing and difficult to navigate. Client HR departments are overwhelmed with requests for guidance. Competitors that center user experience threaten Aon’s market share.</p>
+    <p>My team was tasked with redesigning Aon's signature online benefits platform after client feedback indicated that the existing user experience is confusing and difficult to navigate. Our clients' HR departments are overwhelmed with requests for guidance. As a result, there is concern that competitors that center user experience will threaten Aon’s market share.</p>
     <h3>Goals</h3>
     <ul>
       <li>Simplify the user experience by addressing friction points and offering key information at the right times. Success will look like a reduction in poor feedback and customer service calls.</li>
@@ -39,7 +42,7 @@ pageNavItems:
       <li>Reducing friction around benefits enrollment, without being able to structure the carrier plans.</li>
       <li>Demonstrating the value of benefits and helping users choose the options that best meet their individual needs.</li>
       <li>Tailoring the platform for the Asia Pacific, Europe, and Middle East markets.</li>
-      <li>Building in sufficient flexibility to account for individual client configuration.</li>
+      <li>Building in flexibility to account for individual client configuration.</li>
     </ul>
   </section>
   <section>
@@ -106,6 +109,7 @@ pageNavItems:
   <section>
     <h3>Annual Enrollment</h3>
     <p>During annual enrollment, the user will be prompted to enroll in next year’s benefits.</p>
+    <h4>Pension Enrolment</h4>
     <p>This is the pension page. We introduced a number of decision support features to help guide the user through their selections.</p>
     {{> project-image 
       style='' 
@@ -136,8 +140,28 @@ pageNavItems:
       img='tbs/poc/tbs-pension-chart-2.png' 
       alt='chart showing pension growth if user contributes 6 percent of their salary'}}
 
-    <!-- <p>The benefit cost summary helps the user understand how much they are spending on benefits. The user can expand each section to see a breakdown of their spending and their take home pay. This component dynamically updates based on the user’s selections.</p> -->
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-6">
+          <h4>Benefit Cost Summary</h4>
+          <p>The benefit cost summary helps the user understand how much they are spending on benefits. The user can expand each section to see a breakdown of their spending and their take home pay. This component dynamically updates based on the user’s selections.</p>
+        </div>
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/poc/tbs-benefit-cost-summary-1.png' 
+            alt='benefit cost summary with all sections closed'}}
+            {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/poc/tbs-benefit-cost-summary-2.png' 
+            alt='benefit cost summary with first section open'}}
+        </div>
+      </div>
+    </div>
 
+    <h4>Private Medical Enrolment</h4>
     <p>This is the private medical benefit page. For private medical, the user can choose to cover dependents. They can also add or edit dependents.</p>
     <p>In testing, employees really valued the ability to add dependents on a per benefit basis, which is not something the current platform accommodates.</p>
 
@@ -173,6 +197,92 @@ They can also add or edit dependents.</p>
 </section>
 
 
+<section id="customization" class="page-anchor">
+  <section>
+    <h2>Customization</h2>
+    <p>For our clients, it's very important that TBS reflects their brands. In the past, Aon's configuration team wrote custom CSS for every individual client site. Our clients appreciated the flexibility of this approach, but it's a time-consuming process, and the resulting color combinations rarely meet accessibility criteria.</p>
+    <h4>Theme Color Application</h4>
+    <p>The first thing we tackled in delivery was creating a system that allows clients to customize TBS with one of 8 theme colors.</p>
+    <h5>Aqua Theme Components</h5>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-theme-aqua.png' 
+      alt='aqua theme components'
+      caption=''}}
+    <h5>Navy Theme Components</h5>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-theme-navy.png' 
+      alt='navy theme components'
+      caption=''}}
+    <h5>Red Theme Components</h5>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-theme-red.png' 
+      alt='red theme components'
+      caption=''}}
+  </section>
+  <section>
+    <h4>Brand Color Application</h4>
+    <p>Clients can also apply their brand colors to select components. We have two different approaches to brand color application, depending on whether it's a darker or brighter hue.</p>
+    <h4>Light and Dark Modes</h4>
+    <p>Finally, clients can choose between light and dark mode, which impacts how their brand and theme colors are expressed.</p>
+    <h4>Visual Assets</h4>
+    <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
+    <p>Here's a client branded dashboard in dark and light mode:</p>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/delivery/tbs-dash-clienta-light-mode.png' 
+            alt='Client Dashboard in Light Mode'
+            caption='Client Dashboard in Light Mode'}}
+        </div>
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/delivery/tbs-dash-clienta-dark-mode.png' 
+            alt='Client Dashboard in Dark Mode'
+            caption='Client Dashboard in Dark Mode'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
 <section id="delivery" class="page-anchor">
-  <h2>Delivery (Ongoing)</h2>
+  <section>
+    <h2>Delivery (Ongoing)</h2>
+    <h3>Benefit Selection</h3>
+    <p>When we revisited the enrolment flow in delivery, we knew we needed to rethink the step at which the user selects their benefits. Our original proof of concept design <span class="show-for-medium">(left)</span> showed all of the benefits in every category on one page. This was overwhelming for the user. In delivery<span class="show-for-medium"> (right)</span>, we present only one category of benefits on a page at a time, thus reducing cognitive overload.</p>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/poc/tbs-benefits-selection.png' 
+            alt=''
+            caption='original design'}}
+        </div>
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/delivery/tbs-benefits-selection.png' 
+            alt=''
+            caption='updated design'}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Plan Selection</h3>
+    <p>When the user enrolls in a particular benefit, the way their benefit options are presented to them varies depending on how the benefit is structured by the carrier.</p>
+  </section>
 </section>

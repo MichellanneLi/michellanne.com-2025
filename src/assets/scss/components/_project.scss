@@ -49,6 +49,16 @@
   }
 }
 
+.project-hero__tagline {
+  font-size: 1.4em;
+  line-height: 1em;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  font-family: $gotham-narrow;
+  font-weight: 700;
+  color: $medium-gray;
+}
+
 .project-label {
   font-weight: 700;
 }
