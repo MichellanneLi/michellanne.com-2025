@@ -40,10 +40,6 @@
     margin-bottom: .25em;
   }
 
-  h2 {
-    margin-bottom: 1em;
-  }
-
   @include breakpoint(medium) {
     padding: 1em 0 3em;
   }

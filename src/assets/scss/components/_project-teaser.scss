@@ -1,93 +1,37 @@
 .project-teaser {
-  width: 50%;
-  padding-bottom: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $light-gray;
+}
+
+.project-teaser__img {
+  width: 100%;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: relative;
 
-  @include breakpoint(0 medium) {
-    &:nth-child(2n+1) {
-      padding-right: .5em;
-    }
+  @include breakpoint(medium) {
+    height: 100%;
+  }
+}
 
-    &:nth-child(2n+2) {
-      padding-left: .5em;
-    }
+.project-teaser__content {
+  h2 {
+    margin-bottom: .5em;
   }
 
   @include breakpoint(medium) {
-    width: 25%;
-
-    &:nth-child(4n+1) {
-      padding-left: 0;
-      padding-right: .75em;
-    }
-
-    &:nth-child(4n+2) {
-      padding-left: .25em;
-      padding-right: .5em;
-    }
-
-    &:nth-child(4n+3) {
-      padding-left: .5em;
-      padding-right: .25em;
-    }
-
-    &:nth-child(4n+4) {
-      padding-left: .75em;
-      padding-right: 0;
-    }
+    padding: 1em 0 3em;
   }
 }
 
-.project-teaser__link {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:link,
-  &:visited {
-    background-color: $peony;
-    color: $dark-gray;
-
-    img {
-      @include trans();
-      width: 100%;
-      display: block;
-      box-shadow: 2px 3px 5px transparentize($black, .6);
-    }
-  }
-
-  &:hover,
-  &:active {
-    background-color: $blush;
-
-    img {
-      mix-blend-mode: multiply;
-
-      @include breakpoint(large) {
-        box-shadow: 2px 5px 7px transparentize($black, .6);
-      }
-    }
-
-    .project-teaser__title {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
-}
-
-.project-teaser__title {
-  font-size: .7em;
-  @include trans();
-  position: absolute;
-  z-index: 2;
-  background-color: $white;
-  padding: .5em .8em;
-  box-shadow: 2px 3px 5px transparentize($black, .6);
-  opacity: 0;
-  text-align: center;
-  max-width: 85%;
-  transform: translateY(10px);
+.project-teaser__tagline {
+  font-size: 1.2em;
+  line-height: 1em;
+  margin-top: .5em;
+  margin-bottom: 1.5em;
   font-family: $gotham-narrow;
+  font-weight: 700;
+  color: $medium-gray;
 }

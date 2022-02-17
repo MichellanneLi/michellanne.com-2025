@@ -1,12 +1,24 @@
 {{#each project}}
 
 <div class="project-teaser">
-  <a class="project-teaser__link" href="">
-    <div class="project-teaser__title">
-      {{title}}
+  <div class="grid-container full">
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6 large-6">
+        <div class="project-teaser__img" style="background-image: url('{{root}}/assets/img/{{img}}');">
+          <div class="project-image__fade"></div>
+        </div>
+      </div>
+      <div class="cell medium-6 large-6">
+        <div class="project-teaser__content">
+          <h2>{{title}}
+          </h2>
+          <p class="project-teaser__tagline">{{tagline}}</p>
+          <p>{{description}}</p>
+          <a href="{{root}}{{url}}">Read the <span class="show-for-sr">{{title}}</span>Case Study</a>
+        </div>
+      </div>
     </div>
-    <img src="" alt="#" role="presentation"/>
-  </a>
+  </div>
 </div>
 
 {{/each}}
