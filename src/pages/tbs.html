@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Total Benefits Solutions"
+title: Total Benefits Solutions
 tagline: An employee benefits platform
 
 clients: Multinational Fortune 500 Companies, such as Microsoft, Accenture, and Johnson & Johnson
@@ -22,8 +22,8 @@ pageNavItems:
     anchor: customization
     title: Customization
   -
-    anchor: delivery
-    title: Delivery (Ongoing)
+    anchor: mmp
+    title: Initial Release
 
 ---
 <section id="background" class="page-anchor">
@@ -32,9 +32,9 @@ pageNavItems:
     <p>My team was tasked with redesigning Aon's signature online benefits platform after client feedback indicated that the existing user experience is confusing and difficult to navigate. Our clients' HR departments are overwhelmed with requests for guidance. As a result, there is concern that competitors that center user experience will threaten Aon’s market share.</p>
     <h3>Goals</h3>
     <ul>
-      <li>Simplify the user experience by addressing friction points and offering key information at the right times. Success will look like a reduction in poor feedback and customer service calls.</li>
-      <li>Boost year-round engagement through new wellness and financial tools. Success will look like increased usage overall and usage of these tools.</li>
-      <li>Provide employers with a centralized platform to demonstrate the value of their benefits, thus increasing employee retention.</li>
+      <li>Simplify the user experience by addressing friction points and offering key information at the right times. Success criteria: a reduction in poor feedback and customer service calls.</li>
+      <li>Boost year-round engagement through new wellness and financial tools. Success criteria: increased usage overall and usage of these tools.</li>
+      <li>Provide employers with a centralized platform to demonstrate the value of their benefits. Success criteria: improved employee retention.</li>
     </ul>
     <h3>Challenges and Constraints</h3>
     <ul>
@@ -59,13 +59,14 @@ pageNavItems:
     <h4>2022</h4>
     <ul>
       <li>Currently working on MMP iteration.</li>
-      <li>First client platform slated for April.</li>
+      <li>First client platform release slated for April.</li>
     </ul>
   </section>
 </section>
 <section id="poc" class="page-anchor">
   <section>
     <h2>Proof of Concept</h2>
+    <p>In 2020, we conducted user research on the pain points of the existing platform and built a proof of concept.</p>
     <h3>User Dashboard</h3>
     <p>The user dashboard brings together all of the platform’s tools in one place.</p>
     <p>In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
@@ -103,13 +104,34 @@ pageNavItems:
       img='tbs/poc/tbs-dashboard-benefits.png' 
       alt='separate modules displaying current benefits and anytime benefits'
       caption='My Current Benefits and Available Anytime Benefits modules'}}
+
+    <p>The user feedback we received after testing this dashboard taught us that users primarily care about the ease of executing core tasks, such as filing a claim and enrolling in benefits. The market is saturated with lifestyle apps and tools. Users don’t want more apps, but they are interested in aggregating their data onto a single platform.</p>
   </section>
 
   <section>
     <h3>Annual Enrollment</h3>
-    <p>During annual enrollment, the user will be prompted to enroll in next year’s benefits.</p>
-    <h4>Pension Enrolment</h4>
-    <p>This is the pension page. We introduced a number of decision support features to help guide the user through their selections.</p>
+    <p>During the annual enrollment window, the user is prompted to enroll in next year’s benefits. Historically, the enrollment flow took a "hub and spoke" approach. The user journey began on a "shopfront" page displaying all available benefits. The user would engage with each one separately. After enrolling in a benefit, they would be directed back to the "shopfront". In order to finalize their benefit selections, the user needed to submit all of them from the "shopfront" page.</p>
+    <p>This flow caused a lot of confusion. We learned from clients that employees routinely did not finalize their benefit selections because they thought they had already completed enrollment. Users told us that they had trouble understanding the steps in the enrollment process.</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/poc/tbs-enrolment-flow--old.png' 
+      alt=''
+      caption=''}}
+    <p>We therefore proposed a linear flow, featuring a progress bar and persistent CTAs at the bottom of the page to make the next steps clear. The user begins by selecting the benefits they want to engage with, and they are guided through the process of enrolling in each of them.</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/poc/tbs-enrolment-flow--new-1.png' 
+      alt=''
+      caption=''}}
+    <p>After completing our proof of concept, we conducted user testing on the updated benefit enrolment flow.</p>
+    <p>97% of users in Asia Pacific and 98% of users in the Europe and Middle East said the <strong>experience was simpler than before.</strong></p>
+    <p>98% of users in all markets felt <strong>the process was significantly improved.</strong></p>
+  </section>
+  <section>
+    <h4>Pension Enrollment</h4>
+    <p>This is the pension enrollment page. We introduced a number of decision support features to help guide the user through their selections.</p>
     {{> project-image 
       style='' 
       classes='has-shadow' 
@@ -142,25 +164,25 @@ pageNavItems:
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell medium-6">
-          <h4>Benefit Cost Summary</h4>
-          <p>The benefit cost summary helps the user understand how much they are spending on benefits. The user can expand each section to see a breakdown of their spending and their take home pay. This component dynamically updates based on the user’s selections.</p>
+          <h4>Cost Summary</h4>
+          <p>The cost summary helps the user understand how much they are spending on benefits. The user can expand each section to see a breakdown of their spending and their take home pay. This component dynamically updates based on the user’s selections.</p>
         </div>
         <div class="cell medium-6">
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs/poc/tbs-benefit-cost-summary-1.png' 
-            alt='benefit cost summary with all sections closed'}}
+            alt='cost summary with all sections closed'}}
             {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs/poc/tbs-benefit-cost-summary-2.png' 
-            alt='benefit cost summary with first section open'}}
+            alt='cost summary with first section open'}}
         </div>
       </div>
     </div>
 
-    <h4>Private Medical Enrolment</h4>
+    <h4>Private Medical Enrollment</h4>
     <p>This is the private medical benefit page. For private medical, the user can choose to cover dependents. They can also add or edit dependents.</p>
     <p>In testing, employees really valued the ability to add dependents on a per benefit basis, which is not something the current platform accommodates.</p>
 
@@ -182,16 +204,6 @@ They can also add or edit dependents.</p>
       alt='dependent selection'
       caption=''}}
 
-  </section>
-
-  <section>
-    <h3>User Feedback</h3>
-    <p>After completing our proof of concept, we conducted user testing on the updated benefit enrolment flow.</p>
-    <p>97% of users in Asia Pacific and 98% of users in the Europe and Middle East said the <strong>experience was simpler than before.</strong></p>
-    <p>98% of users in all markets felt <strong>the process was significantly improved.</strong></p>
-    
-    <p>Users primarily care about the ease of executing core tasks, such as filing a claim and enrolling in benefits.</p>
-    <p>The market is saturated with lifestyle apps and tools. Users don’t want more apps, but they are interested in aggregating their data onto a single platform.</p>
   </section>
 </section>
 
@@ -231,34 +243,28 @@ They can also add or edit dependents.</p>
     <p>Finally, clients can choose between light and dark mode, which impacts how their brand and theme colors are expressed.</p>
     <h4>Visual Assets</h4>
     <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
-    <p>Here's a client branded dashboard in dark and light mode:</p>
-    <div class="grid-container full">
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-6">
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs/delivery/tbs-dash-clienta-light-mode.png' 
-            alt='Client Dashboard in Light Mode'
-            caption='Client Dashboard in Light Mode'}}
-        </div>
-        <div class="cell medium-6">
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs/delivery/tbs-dash-clienta-dark-mode.png' 
-            alt='Client Dashboard in Dark Mode'
-            caption='Client Dashboard in Dark Mode'}}
-        </div>
-      </div>
-    </div>
+    <p>Here's a client branded dashboard in light mode:</p>
+    {{> project-image 
+      style='fade' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-dash-clienta-light-mode.png' 
+      alt='Client Dashboard in Light Mode'
+      caption='Client Dashboard in Light Mode'}}
+    <p>A here it is in dark mode:</p>
+    {{> project-image 
+      style='fade' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-dash-clienta-dark-mode.png' 
+      alt='Client Dashboard in Dark Mode'
+      caption='Client Dashboard in Dark Mode'}}
   </section>
 </section>
-<section id="delivery" class="page-anchor">
+<section id="mmp" class="page-anchor">
   <section>
-    <h2>Delivery (Ongoing)</h2>
+    <h2>Initial Release</h2>
+    <p>Delivery began in September 2021. The first client platform release is slated for April 2022. To that end, we are working on a minimum marketable product.</p>
     <h3>Benefit Selection</h3>
-    <p>When we revisited the enrolment flow in delivery, we knew we needed to rethink the step at which the user selects their benefits. Our original proof of concept design <span class="show-for-medium">(left)</span> showed all of the benefits in every category on one page. This was overwhelming for the user. In delivery<span class="show-for-medium"> (right)</span>, we present only one category of benefits on a page at a time, thus reducing cognitive overload.</p>
+    <p>When we revisited the enrolment flow in delivery, we knew we needed to rethink the step at which the user selects their benefits. Our original proof of concept design <span class="show-for-medium">(left)</span> showed all of the benefits in every category on one page. This was overwhelming for the user. In delivery<span class="show-for-medium"> (right)</span>, we present only one category of benefits on a page at a time, thus reducing cognitive overload. This adds pages and steps to the enrollment flow, but we feel the trade-off is worth it for clients that offer dozens of benefits (clients that offer very few benefits will still display all of them on a single page.)</p>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell medium-6">
@@ -266,7 +272,7 @@ They can also add or edit dependents.</p>
             style='' 
             classes='has-shadow' 
             img='tbs/poc/tbs-benefits-selection.png' 
-            alt=''
+            alt='original benefits selection design'
             caption='original design'}}
         </div>
         <div class="cell medium-6">
@@ -274,14 +280,93 @@ They can also add or edit dependents.</p>
             style='' 
             classes='has-shadow' 
             img='tbs/delivery/tbs-benefits-selection.png' 
-            alt=''
+            alt='updated benefits selection design'
             caption='updated design'}}
         </div>
       </div>
     </div>
   </section>
   <section>
-    <h3>Plan Selection</h3>
-    <p>When the user enrolls in a particular benefit, the way their benefit options are presented to them varies depending on how the benefit is structured by the carrier.</p>
+    <h3>Benefit Taxonomy</h3>
+    <p>When a user enrolls in a benefit, the plan options available to them depend on how the carrier has structured the benefit. Because Aon brokers countless benefits with different carriers across dozens of markets, we needed to create a flexible system of displaying plan options that would work for every possible benefit permutation. This challenge is unique to TBS and sets it apart from our smaller e-commerce benefits platforms.</p>
+    <p>We organized the benefit structures into categories: tiered, currency, and volume. Each benefit option is expressed as a discrete plan card that shows different information depending on the benefit structure.</p>
+    <p>All plan cards display:</p> 
+    <ul>
+      <li>the plan title, </li>
+      <li>a description, </li>
+      <li>participants (if relevant), </li>
+      <li>costs, </li>
+      <li>and a button to select the plan.</li>
+    </ul> 
+    <p>Additional information can be accessed by expanding the "More Details" and "Cost Summary" sections.</p>
+    <p>In addition to the cost to the employee, we also display the cost to the employer. This is important to our clients because it demonstrates their investment in their employees' wellbeing. We also display the combined total cost because it has tax implications in the UK market.</p>
+    <h4>Tiered Benefits Plan Cards</h4>
+    <p>ex: bronze plan, silver plan, gold plan</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-plan-card-arch--tiered.png' 
+      alt='tiered plan card wireframe'
+      caption='tiered plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs/delivery/tbs-plan-card--tiered.png' 
+      alt='tiered plan card prototype'
+      caption='tiered plan card prototype'}}
+    <h4>Currency Benefits Plan Cards</h4>
+    <p>ex: ???</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-plan-card-arch--currency.png' 
+      alt='currency plan card wireframe'
+      caption='currency plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs/delivery/tbs-plan-card--currency.png' 
+      alt='currency plan card prototype'
+      caption='currency plan card prototype'}}
+    <h4>Volume Benefits Plan Cards</h4>
+    <p>ex: 2x salary, 3x salary, 4x salary in coverage</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-plan-card-arch--volume.png' 
+      alt='volume plan card wireframe'
+      caption='volume plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs/delivery/tbs-plan-card--volume.png' 
+      alt='volume plan card prototype'
+      caption='volume plan card prototype'}}
+  </section>
+  <section>
+    <h3>Updated Cost Summary</h3>
+    <p>This is the original cost summary, covered earlier in this case study:</p>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs/poc/tbs-benefit-cost-summary-1.png' 
+            alt='original cost summary design'
+            caption='original cost summary design'}}
+        </div>
+      </div>
+    </div>
+    <p>However, once we got to delivery, we learned that it would need to accommodate much more information than we had anticipated. Clients wanted to highlight employer costs in this space, and employee points spending needed to be displayed (in non-US markets, it's a practice for employers to allot points to spend on benefits.) We therefore moved this information out of the rail and into a slide-in panel.</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs/delivery/tbs-enrolment-summary-cropped.png' 
+      alt='new cost summary panel'
+      caption='new cost summary panel'}}
+  </section>
+  <section>
+    <h3>[some kind of conclusion]</h3>
   </section>
 </section>
