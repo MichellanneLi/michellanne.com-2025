@@ -1,0 +1,256 @@
+---
+layout: project
+title: TBS User Dashboard
+tagline: An employee benefits platform
+
+clients: Multinational Fortune 500 Companies, such as Microsoft, Accenture, and Johnson & Johnson
+users: Employees of Aon client companies
+description: Aon's bespoke employee benefits platform TBS (Total Benefits Solutions) brings together multiple HR applications and carrier data. The user dashboard surfaces the tools and information that employees care about.
+
+roles: UX Designer, Team Lead
+
+heroimg: tbs-dashboard/tbs-dashboard-01.png
+
+pageNavItems:
+  -
+    anchor: background
+    title: Background
+  -
+    anchor: poc
+    title: Proof of Concept
+  -
+    anchor: initial-release
+    title: Initial Release (Ongoing)
+  -
+    anchor: next-steps
+    title: Next Steps
+
+---
+<section id="background" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h2>Background</h2>
+          <p>Aon's second largest vertical is insurance brokerage, which means we work with client companies and insurance carriers to negotiate employee benefits packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
+          <p>TBS was originally built in 2007. Since then, market expectations have changed. In 2020, my team was tasked with redesigning it. Our stakeholders shared with us the following concerns:</p>
+          {{> blockquote 
+            quote='New clients come back within a week asking for a user guide because employees are confused and don’t know how to use the site. They can’t navigate easily and reach out to the HR or contact center for help.'}}
+          {{> blockquote
+            quote='Clients expect us to move forward and keep up with industry standards and current consumer expectations. This is shown through UX. . .'}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>User Research</h3>
+          <p>In 2020, our solutions architect conducted user research on the pain points of the existing platform. In interviews with our clients' employees, they shared with him:</p>
+          {{>blockquote
+            quote='[TBS] can be a bit clunky. . . just getting there and remembering where options are and navigating is quite awkward. You don’t look at this system frequently enough, so you have to look for things each time. Normally use the system once a year within the benefits window. I do sometimes go in to double check and confirm my selections through the year. . . It would be good for it to be more intuitive and usable.'}}
+          {{>blockquote
+            quote='It is essential to be able to select benefits and options. Small bit of information with each.'}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>Goals</h3>
+          <p>Based on this feedback, we decided to begin with redesigning the user dashboard and articulated three primary goals:</p>
+          <ul>
+            <li>Surface the tools that employees need at their fingertips. Success criteria: a reduction in poor feedback and customer service calls.</li>
+            <li>Boost year-round engagement by highlighting new wellness and financial tools. Success criteria: increased usage overall and usage of these tools.</li>
+            <li>Provide employers with a centralized platform to demonstrate the value of their benefits. Success criteria: improved employee retention.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section>
+    <h3>Timeline</h3>
+    <h4>2020</h4>
+    <ul>
+      <li>Proof of concept prototypes delivered for UK and Singapore markets.</li>
+      <li>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either in-person prototype demonstration or video demonstration, followed by a survey.</li>
+    </ul>
+    <h4>2021</h4>
+    <ul>
+      <li>Entered delivery.</li>
+      <li>MVP iteration completed.</li>
+    </ul>
+    <h4>2022</h4>
+    <ul>
+      <li>Currently working on MMP iteration.</li>
+      <li>First client platform release slated for April.</li>
+    </ul>
+  </section> -->
+</section>
+
+<section id="poc" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h2>Proof of Concept</h2>
+          <p>In 2020, we delivered proof of concept prototypes for the UK and Singapore markets. Our solution architect completed concept and viability testing for the APAC (Asia Pacific) and EMEA (Europe, the Middle East, and Africa) markets, using either in-person prototype demonstration or video demonstration, followed by a survey.</p>
+          <p>Below is the UK market user dashboard. In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
+          {{> blockquote
+            quote='I liked the transparency that employees will have on the portal also everything would be easy to track as everything is mentioned at one place.'}}
+        </div>
+        <div class="cell"> 
+          {{> project-image 
+            style='' 
+            classes='has-shadow width-100' 
+            img='tbs-dashboard/tbs-dashboard-01.png' 
+            alt='tbs dashboard'
+            caption='TBS Dashboard'}}
+        </div>
+        <div class="cell medium-10">
+          <p>Each “module” on the dashboard represents a tool, such as:</p>
+          <ul>
+            <li>Personal Finance,</li>
+            <li>Total Rewards (or compensation),</li>
+            <li>Pensions, and</li>
+            <li>Health Score</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>Pensions and Health Tools</h3>
+          <p>The pensions and health score modules are new features we explored to boost engagment. Clicking on the pension module opens up tools to help the user understand their retirement outlook and model the impact of changing their contributions.</p>
+        </div>
+        <div class="cell medium-8">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-poc-dashboard-pension.png' 
+            alt='pension module'
+            caption='pension module'}}
+        </div>
+        <div class="cell">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-poc-pension-module-model-results.png' 
+            alt='pension modelling tools'
+            caption='pension modelling tools'}}
+        </div>
+        <div class="cell medium-10">
+          <p>Likewise, clicking on the health module opens up health tracking tools, such as a daily steps challenge and goals progression.</p>
+        </div>
+        <div class="cell medium-8">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-poc-dashboard-health.png' 
+            alt='health module'
+            caption='health module'}}
+        </div>
+        <div class="cell">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-poc-health-module-benchmark-active.png' 
+            alt=''
+            caption=''}}
+        </div>
+        <div class="cell medium-10">
+          <p>In user interviews, we received positive feedback for these new tools, with <strong>95.6% of users in APAC and 88% of users in EMEA agreeing that they are a value add</strong>. However, users also told us they are already using apps to track these types of metrics, so our additions have to compete or integrate with existing tools such as Fitbit. As a result, the business team decided not to move forward with these new features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>Benefits</h3>
+          <p>User can access both their current benefits and available anytime benefits. In user testing, this was highly valued in both the APAC and EMEA markets.</p>
+
+          {{> blockquote 
+            quote='Separation of the Anytime benefits and My benefits is a game changer.'}}
+        </div>
+        <div class="cell"> 
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-dashboard-benefits.png' 
+            alt='separate modules displaying current benefits and anytime benefits'
+            caption='My Current Benefits and Available Anytime Benefits modules'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="initial-release" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h2>Initial Release (Ongoing)</h2>
+          <p>Delivery began in Fall 2021. In revisiting the dashboard, we added a hero to anchor the page and to provide a space for client companies to convey their brand through photography.</p>
+          <p>Although we have plans to include some of the original dashboard tools that we envisioned in the proof of concept, most of them are not part of the initial release.</p>
+        </div>
+        <div class="cell">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-delivery-dashboard-v2-navy-dark-mode.png' 
+            alt='TBS Dashboard, v2'
+            caption='TBS Dashboard, v2'}}
+          <!-- fix misaligned text, add placeholder copy to CTA widget -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>Onboarding Module</h3>
+          <p>The onboarding module was introduced to help guide a new employee through setting up their profile and enrolling in benefits. When the user completes a task, it is marked as complete.</p>
+          <!-- add image of cta widget here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h3>Employer Content Modules</h3>
+          <p>We heard from clients that they wanted a place on the dashboard in which they could inject their own content. These employer content modules provide a flexible, templated solution.</p>
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-dashboard/tbs-delivery-dashboard-employer-content.png' 
+            alt='employer content module'
+            caption='employer content module'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="next-steps" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-10">
+          <h2>Next Steps</h2>
+          <p>Our initial release will go live in April.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
