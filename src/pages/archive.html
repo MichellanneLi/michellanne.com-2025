@@ -1,0 +1,82 @@
+
+    <h3>Benefit Selection</h3>
+    <p>When we revisited the enrollment flow in delivery, we knew we needed to rethink the step at which the user selects their benefits. Our original proof of concept design <span class="show-for-medium">(left)</span> showed all of the benefits in every category on one page. This was overwhelming for the user. In delivery<span class="show-for-medium"> (right)</span>, we present only one category of benefits on a page at a time, thus reducing cognitive overload. This adds pages and steps to the enrollment flow, but we feel the trade-off is worth it for clients that offer dozens of benefits (clients that offer very few benefits will still display all of them on a single page.)</p>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-annual-enrollment/tbs-poc-benefits-selection.png' 
+            alt='original benefits selection design'
+            caption='original design'}}
+        </div>
+        <div class="cell medium-6">
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-annual-enrollment/tbs-delivery-benefits-selection.png' 
+            alt='updated benefits selection design'
+            caption='updated design'}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Benefit Taxonomy</h3>
+    <p>When a user enrolls in a benefit, the plan options available to them depend on how the carrier has structured the benefit. Because Aon brokers countless benefits with different carriers across dozens of markets, we needed to create a flexible system of displaying plan options that would work for every possible benefit permutation. This challenge is unique to TBS and sets it apart from our smaller e-commerce benefits platforms.</p>
+    <p>We organized the benefit structures into categories: tiered, currency, and volume. Each benefit option is expressed as a discrete plan card that shows different information depending on the benefit structure.</p>
+    <p>All plan cards display:</p> 
+    <ul>
+      <li>the plan title, </li>
+      <li>a description, </li>
+      <li>participants (if relevant), </li>
+      <li>costs, </li>
+      <li>and a button to select the plan.</li>
+    </ul> 
+    <p>Additional information can be accessed by expanding the "More Details" and "Cost Summary" sections.</p>
+    <p>In addition to the cost to the employee, we also display the cost to the employer. This is important to our clients because it demonstrates their investment in their employees' wellbeing. We also display the combined total cost because it has tax implications in the UK market.</p>
+    <h4>Tiered Benefits Plan Cards</h4>
+    <p>ex: bronze plan, silver plan, gold plan</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs-annual-enrollment/tbs-plan-card-arch--tiered.png' 
+      alt='tiered plan card wireframe'
+      caption='tiered plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs-annual-enrollment/tbs-plan-card--tiered.png' 
+      alt='tiered plan card prototype'
+      caption='tiered plan card prototype'}}
+    <h4>Currency Benefits Plan Cards</h4>
+    <p>ex: ???</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs-annual-enrollment/tbs-plan-card-arch--currency.png' 
+      alt='currency plan card wireframe'
+      caption='currency plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs-annual-enrollment/tbs-plan-card--currency.png' 
+      alt='currency plan card prototype'
+      caption='currency plan card prototype'}}
+    <h4>Volume Benefits Plan Cards</h4>
+    <p>ex: 2x salary, 3x salary, 4x salary in coverage</p>
+    {{> project-image 
+      style='' 
+      classes='has-shadow' 
+      img='tbs-annual-enrollment/tbs-plan-card-arch--volume.png' 
+      alt='volume plan card wireframe'
+      caption='volume plan card wireframe'}}
+    {{> project-image 
+      style='' 
+      classes='' 
+      img='tbs-annual-enrollment/tbs-plan-card--volume.png' 
+      alt='volume plan card prototype'
+      caption='volume plan card prototype'}}
+  </section>
+  

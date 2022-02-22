@@ -19,8 +19,17 @@ pageNavItems:
     anchor: poc
     title: Proof of Concept
   -
+    anchor: tools
+    title: Pensions and Health Tools
+  -
+    anchor: benefits
+    title: Benefits
+  -
     anchor: initial-release
-    title: Initial Release (Ongoing)
+    title: Initial Release
+  -
+    anchor: onboarding-module
+    title: Onboarding Module
   -
     anchor: next-steps
     title: Next Steps
@@ -30,9 +39,9 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h2>Background</h2>
-          <p>Aon's second largest vertical is insurance brokerage, which means we work with client companies and insurance carriers to negotiate employee benefits packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
+          <p>Aon's second largest vertical is insurance brokering, which means we work with client companies and insurance carriers to negotiate employee benefits packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
           <p>TBS was originally built in 2007. Since then, market expectations have changed. In 2020, my team was tasked with redesigning it. Our stakeholders shared with us the following concerns:</p>
           {{> blockquote 
             quote='New clients come back within a week asking for a user guide because employees are confused and don’t know how to use the site. They can’t navigate easily and reach out to the HR or contact center for help.'}}
@@ -45,13 +54,11 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h3>User Research</h3>
-          <p>In 2020, our solutions architect conducted user research on the pain points of the existing platform. In interviews with our clients' employees, they shared with him:</p>
+          <p>In 2020, our architect conducted user research on the pain points of the existing platform. In interviews with our clients' employees, they explained that they struggled to locate tools and information on the existing TBS platform.</p>
           {{>blockquote
             quote='[TBS] can be a bit clunky. . . just getting there and remembering where options are and navigating is quite awkward. You don’t look at this system frequently enough, so you have to look for things each time. Normally use the system once a year within the benefits window. I do sometimes go in to double check and confirm my selections through the year. . . It would be good for it to be more intuitive and usable.'}}
-          {{>blockquote
-            quote='It is essential to be able to select benefits and options. Small bit of information with each.'}}
         </div>
       </div>
     </div>
@@ -59,7 +66,7 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h3>Goals</h3>
           <p>Based on this feedback, we decided to begin with redesigning the user dashboard and articulated three primary goals:</p>
           <ul>
@@ -95,12 +102,14 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h2>Proof of Concept</h2>
-          <p>In 2020, we delivered proof of concept prototypes for the UK and Singapore markets. Our solution architect completed concept and viability testing for the APAC (Asia Pacific) and EMEA (Europe, the Middle East, and Africa) markets, using either in-person prototype demonstration or video demonstration, followed by a survey.</p>
-          <p>Below is the UK market user dashboard. In user testing, employees liked that there are fewer clicks to access content compared to the existing platform.</p>
+          <p>In 2020, we delivered proof of concept prototypes for the UK and Singapore markets. Our architect completed concept and viability testing for the APAC (Asia Pacific) and EMEA (Europe, the Middle East, and Africa) markets, using either in-person prototype demonstration or video demonstration, followed by a survey.</p>
+          <p>Below is the UK market user dashboard. In testing, <strong>employees liked that there are fewer clicks to access content compared to the existing platform.</strong></p>
           {{> blockquote
             quote='I liked the transparency that employees will have on the portal also everything would be easy to track as everything is mentioned at one place.'}}
+          {{> blockquote
+            quote='Currently we have to dig into different windows and there are so many clicks that people really struggle with it. Everything is so clear and easy.'}}
         </div>
         <div class="cell"> 
           {{> project-image 
@@ -110,7 +119,7 @@ pageNavItems:
             alt='tbs dashboard'
             caption='TBS Dashboard'}}
         </div>
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <p>Each “module” on the dashboard represents a tool, such as:</p>
           <ul>
             <li>Personal Finance,</li>
@@ -122,14 +131,16 @@ pageNavItems:
       </div>
     </div>
   </section>
+</section>
+<section class="page-anchor" id="tools">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
-          <h3>Pensions and Health Tools</h3>
+        <div class="cell large-10">
+          <h2>Pensions and Health Tools</h2>
           <p>The pensions and health score modules are new features we explored to boost engagment. Clicking on the pension module opens up tools to help the user understand their retirement outlook and model the impact of changing their contributions.</p>
         </div>
-        <div class="cell medium-8">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -145,10 +156,10 @@ pageNavItems:
             alt='pension modelling tools'
             caption='pension modelling tools'}}
         </div>
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <p>Likewise, clicking on the health module opens up health tracking tools, such as a daily steps challenge and goals progression.</p>
         </div>
-        <div class="cell medium-8">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -164,17 +175,21 @@ pageNavItems:
             alt=''
             caption=''}}
         </div>
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <p>In user interviews, we received positive feedback for these new tools, with <strong>95.6% of users in APAC and 88% of users in EMEA agreeing that they are a value add</strong>. However, users also told us they are already using apps to track these types of metrics, so our additions have to compete or integrate with existing tools such as Fitbit. As a result, the business team decided not to move forward with these new features.</p>
+          {{> blockquote
+            quote='I need to be more motivated to use this, reason being that there are so many apps out that it can be confusing'}}
         </div>
       </div>
     </div>
   </section>
+</section>
+<section class="page-anchor" id="benefits">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
-          <h3>Benefits</h3>
+        <div class="cell large-10">
+          <h2>Benefits</h2>
           <p>User can access both their current benefits and available anytime benefits. In user testing, this was highly valued in both the APAC and EMEA markets.</p>
 
           {{> blockquote 
@@ -197,7 +212,7 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h2>Initial Release (Ongoing)</h2>
           <p>Delivery began in Fall 2021. In revisiting the dashboard, we added a hero to anchor the page and to provide a space for client companies to convey their brand through photography.</p>
           <p>Although we have plans to include some of the original dashboard tools that we envisioned in the proof of concept, most of them are not part of the initial release.</p>
@@ -206,29 +221,45 @@ pageNavItems:
           {{> project-image 
             style='' 
             classes='has-shadow' 
-            img='tbs-dashboard/tbs-delivery-dashboard-v2-navy-dark-mode.png' 
+            img='tbs-dashboard/tbs-delivery-dashboard-v2.png' 
             alt='TBS Dashboard, v2'
             caption='TBS Dashboard, v2'}}
-          <!-- fix misaligned text, add placeholder copy to CTA widget -->
         </div>
       </div>
     </div>
   </section>
+</section>
+<section class="page-anchor" id="onboarding-module">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
-          <h3>Onboarding Module</h3>
-          <p>The onboarding module was introduced to help guide a new employee through setting up their profile and enrolling in benefits. When the user completes a task, it is marked as complete.</p>
-          <!-- add image of cta widget here -->
+        <div class="cell large-10">
+          <h2>Onboarding Module</h2>
+          <p>The onboarding module was introduced to guide a new employee through setting up their profile and enrolling in benefits. When the user accomplishes a task, it is marked as complete.</p>
+        </div>
+        <div class="cell">
+          {{> project-image 
+            style='' 
+            classes='' 
+            img='tbs-dashboard/tbs-delivery-onboard-light.png' 
+            alt='Onboarding module'
+            caption='Onboarding module'}}
+          {{> project-image 
+            style='' 
+            classes='' 
+            img='tbs-dashboard/tbs-delivery-onboard-light-complete.png' 
+            alt='Onboarding module, Build Your Profile is complete'
+            caption='Onboarding module, Build Your Profile is complete'}}
         </div>
       </div>
     </div>
   </section>
+</section>
+<!-- <section id="employer-content-modules" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h3>Employer Content Modules</h3>
           <p>We heard from clients that they wanted a place on the dashboard in which they could inject their own content. These employer content modules provide a flexible, templated solution.</p>
           {{> project-image 
@@ -241,12 +272,12 @@ pageNavItems:
       </div>
     </div>
   </section>
-</section>
+</section> -->
 <section id="next-steps" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-10">
+        <div class="cell large-10">
           <h2>Next Steps</h2>
           <p>Our initial release will go live in April.</p>
         </div>
