@@ -37,7 +37,7 @@
 
 .project-hero__content {
   h1 {
-    margin-bottom: .25em;
+    margin-bottom: .1em;
   }
 
   @include breakpoint(medium) {
@@ -46,13 +46,16 @@
 }
 
 .project-hero__tagline {
-  font-size: 1.4em;
-  line-height: 1.3em;
-  margin-top: .5em;
-  margin-bottom: 1.5em;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1em;
   font-family: $gotham-narrow;
-  font-weight: 700;
+  font-weight: 500;
   color: $medium-gray;
+
+  @include breakpoint(medium) {
+    font-size: 1.3em;
+  }
 }
 
 .project-label {

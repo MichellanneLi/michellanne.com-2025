@@ -63,11 +63,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1em;
   margin-bottom: .5em;
   font-family: $gotham-narrow;
-  font-weight: 700;
+  font-weight: 500;
   color: $medium-gray;
 
   @include breakpoint(medium) {
@@ -80,7 +80,7 @@ h4 {
   line-height: 1em;
   margin-bottom: .5em;
   font-family: $gotham;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h5 {
