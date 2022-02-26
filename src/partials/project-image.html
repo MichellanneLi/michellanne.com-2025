@@ -1,22 +1,26 @@
-<figure class="project-image {{classes}}">
-	{{#ifequal style 'fade'}}
-	<div class="project-image__inner">
+<figure class="project-image">
+	<div class="project-image__inner {{classes}}">
+		<button class="button project-image-reveal-button" data-toggle="{{img}}">
+			<span class="fas fa-expand" title="View image at larger size"></span>
+		</button>
+		{{#ifequal style 'fade'}}
 		<div class="project-image__fade"></div>
-	{{/ifequal}}
-
-	<img src="{{root}}/assets/img/{{projectFolder}}/{{img}}" alt="{{alt}}" />
-
-	{{#ifequal style 'fade'}}
+		{{/ifequal}}
+		<img src="{{root}}/assets/img/{{projectFolder}}/{{img}}.png" alt="{{alt}}" />
 	</div>
-	{{/ifequal}}
 	<figcaption>{{caption}}</figcaption>
-	<button class="button project-image-reveal-button" data-toggle="{{id}}">
-		<span class="fas fa-expand" title="View image at larger size"></span>
-	</button>
 </figure>
 
-<div class="large reveal project-image-modal" id="{{id}}" data-reveal>
-  <img src="{{root}}/assets/img/{{projectFolder}}/{{img}}" alt="{{alt}}" />
+<div class="large reveal project-image-modal" id="{{img}}" data-reveal>
+	<figure class="project-image">
+		<div class="project-image__inner {{classes}}">
+			{{#ifequal style 'fade'}}
+			<div class="project-image__fade"></div>
+			{{/ifequal}}
+			<img src="{{root}}/assets/img/{{projectFolder}}/{{img}}.png" alt="{{alt}}" />
+		</div>
+		<figcaption>{{caption}}</figcaption>
+	</figure>
   <button class="close-button" data-close aria-label="Close" type="button">
     <span aria-hidden="true">&times;</span>
   </button>

@@ -1,6 +1,5 @@
 .project-image {
   margin: 1em 0;
-  position: relative;
 
   @include breakpoint(medium) {
     margin: 1.5em 0;
@@ -19,67 +18,14 @@
   }
 }
 
+.project-image__inner {
+  position: relative;
+}
+
 .has-shadow {
   img {
     box-shadow: 0 0 30px transparentize($black, .8);
   }
-}
-
-.small {
-  @include breakpoint(medium) {
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-.float-left {
-  @include breakpoint(medium) {
-    float: left;
-    margin-right: 1.5em;
-  }
-}
-
-.float-right {
-  @include breakpoint(medium) {
-    float: right;
-    margin-left: 1.5em;
-  }
-}
-
-.width-50 {
-  @include breakpoint(medium) {
-    width: 50%;
-  }
-}
-
-.width-60 {
-  @include breakpoint(medium) {
-    width: 60%;
-  }
-}
-
-.width-70 {
-  @include breakpoint(medium) {
-    width: 70%;
-  }
-}
-
-.width-80 {
-  @include breakpoint(medium) {
-    width: 80%;
-  }
-}
-
-.width-50 {
-  @include breakpoint(medium) {
-    width: 50%;
-    float: left;
-  }
-}
-
-.project-image__inner {
-  position: relative;
 }
 
 .project-image__fade {
@@ -97,81 +43,6 @@ background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-.project-mobile-wrapper {
-  display: flex;
-}
-
-.project-mobile {
-  margin: .5em 0;
-  width: calc(50% - .5em);
-
-  &:nth-child(2n+1) {
-    margin-right: .5em;
-  }
-
-  &:nth-child(2n+2) {
-    margin-left: .5em;
-  }
-
-  @include breakpoint(medium) {
-    width: auto;
-    margin: rhythm(.75) 0;
-
-    &:nth-child(2n+1) {
-      margin-right: 4.34783%;
-    }
-
-    &:nth-child(2n+2) {
-      margin-left: 4.34783%;
-    }
-  }
-
-  figcaption {
-    padding: 0 .75em;
-  }
-}
-
-.project-mobile__phone {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20% .5em;
-  border-radius: 1em;
-  box-shadow: 0 0 30px transparentize($black, .8);
-  background-color: $white-60;
-}
-
-.project-mobile__inner {
-  overflow: hidden;
-  display: block;
-  width: 100%;
-  position: relative;
-
-  img {
-    display: block;
-    width: 100%;
-  }
-}
-
-.project-mobile__shadow {
-  box-shadow: 0 0 5px transparentize($black, .9) inset;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.project-styleguide {
-  .project-image {
-    @include breakpoint(large) {
-      margin: 0 0 rhythm(.5);
-    }
-  }
-}
-
 .project-image-reveal-button {
   padding: .5em;
   margin: 0;
@@ -179,6 +50,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   position: absolute;
   bottom: 1em;
   right: 1em;
+  width: auto;
+  z-index: 100;
 
   &:hover {
     transform: scale(110%);
@@ -190,6 +63,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 
 .project-image-modal {
+  padding: 3em 1em 1em;
+
+  @include breakpoint(medium) {
+    padding: 3em;
+  }
+
   .close-button {
     background-color: transparent;
     color: $magenta;
@@ -212,4 +91,83 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       color: $fuchsia;
     }
   }
+
+  .project-image {
+    margin: 0;
+  }
 }
+
+// .project-mobile-wrapper {
+//   display: flex;
+// }
+
+// .project-mobile {
+//   margin: .5em 0;
+//   width: calc(50% - .5em);
+
+//   &:nth-child(2n+1) {
+//     margin-right: .5em;
+//   }
+
+//   &:nth-child(2n+2) {
+//     margin-left: .5em;
+//   }
+
+//   @include breakpoint(medium) {
+//     width: auto;
+//     margin: rhythm(.75) 0;
+
+//     &:nth-child(2n+1) {
+//       margin-right: 4.34783%;
+//     }
+
+//     &:nth-child(2n+2) {
+//       margin-left: 4.34783%;
+//     }
+//   }
+
+//   figcaption {
+//     padding: 0 .75em;
+//   }
+// }
+
+// .project-mobile__phone {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20% .5em;
+//   border-radius: 1em;
+//   box-shadow: 0 0 30px transparentize($black, .8);
+//   background-color: $white-60;
+// }
+
+// .project-mobile__inner {
+//   overflow: hidden;
+//   display: block;
+//   width: 100%;
+//   position: relative;
+
+//   img {
+//     display: block;
+//     width: 100%;
+//   }
+// }
+
+// .project-mobile__shadow {
+//   box-shadow: 0 0 5px transparentize($black, .9) inset;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 2;
+// }
+
+// .project-styleguide {
+//   .project-image {
+//     @include breakpoint(large) {
+//       margin: 0 0 rhythm(.5);
+//     }
+//   }
+// }
