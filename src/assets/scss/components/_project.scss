@@ -44,12 +44,14 @@
 }
 
 .project-hero__content {
+  padding: 1em 0;
+
   h1 {
-    margin-bottom: .1em;
+    margin-bottom: .2em;
   }
 
-  @include breakpoint(medium) {
-    padding: 1em 0 3em;
+  @include breakpoint(large) {
+    padding: 2em 0 3em;
   }
 }
 
