@@ -4,10 +4,20 @@
 		<div class="project-image__fade"></div>
 	{{/ifequal}}
 
-	<img src="{{root}}/assets/img/{{img}}" alt="{{alt}}" />
+	<img src="{{root}}/assets/img/{{projectFolder}}/{{img}}" alt="{{alt}}" />
 
 	{{#ifequal style 'fade'}}
 	</div>
 	{{/ifequal}}
 	<figcaption>{{caption}}</figcaption>
+	<button class="button project-image-reveal-button" data-toggle="{{id}}">
+		<span class="fas fa-expand" title="View image at larger size"></span>
+	</button>
 </figure>
+
+<div class="large reveal project-image-modal" id="{{id}}" data-reveal>
+  <img src="{{root}}/assets/img/{{projectFolder}}/{{img}}" alt="{{alt}}" />
+  <button class="close-button" data-close aria-label="Close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

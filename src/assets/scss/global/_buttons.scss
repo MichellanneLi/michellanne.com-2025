@@ -26,11 +26,6 @@ input[type='button'] {
     display: inline-block;
     padding: .75em 1.5em;
     width: auto;
-
-    &:active,
-    &:hover,
-    &:focus {
-    }
   }
 
   &:link,
@@ -43,6 +38,10 @@ input[type='button'] {
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:active {
+    background-color: $fuchsia;
   }
 }
 
