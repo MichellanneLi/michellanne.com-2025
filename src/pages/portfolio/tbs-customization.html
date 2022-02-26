@@ -9,7 +9,7 @@ description: For Aon's Fortune 500 clients, it's very important that their onlin
 
 roles: UX Designer, Team Lead
 
-heroimg: tbs-dash-clienta-light-mode-purple--full
+heroimg: tbs-dash-clienta-light-purple--full
 
 projectFolder: tbs-customization
 
@@ -18,11 +18,17 @@ pageNavItems:
     anchor: background
     title: Background
   -
+    anchor: customization-strategy
+    title: Customization Strategy
+  -
     anchor: theme-colors
     title: Theme Colors
   -
     anchor: branding
     title: Branding
+  -
+    anchor: light-dark-modes
+    title: Light and Dark Modes
   -
     anchor: application
     title: Application
@@ -36,13 +42,26 @@ pageNavItems:
           <h2>Background</h2>
           <p>Aon's second largest vertical is insurance brokering, which means we work with client companies and insurance carriers to negotiate employee benefits packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
           <p>Our clients invest a great deal of time and money into articulating their visual identities, messaging, and values, and they want their employees to see these elements of their brand when they log into TBS. In the past, Aon's configuration team wrote custom CSS for every individual client site. This was an inefficient and time-consuming process, and the resulting color combinations rarely met accessibility criteria.</p>
-          <p>We took a three-tiered approach to customization:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="customization-strategy" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Customization Strategy</h2>
+          <p>We took a unique approach to customization that gives clients enormous flexibility within a structured system:</p>
           <ul>
-            <li><strong>Tier 1: </strong>The client can select from one of eight theme colors and supply their own brand assets, such as photography and iconography.</li> 
-            <li><strong>Tier 2: </strong>The client can choose to apply their brand color <em>in addition to</em> the theme color. In some places, the brand color will override the theme color. However, we still apply the theme color to interactive elements, which have special accessibility requirements.</li>
-            <li><strong>Tier 3: </strong>For clients who want a greater degree of tailoring, we can offer that level of service for a surcharge.</li>
+            <li><strong>Theme color: </strong>Clients can select from one of eight theme colors.</li> 
+            <li><strong>Brand color: </strong>Clients can also opt to apply their brand color <em>in addition to</em> the theme color. In some places, the brand color will override the theme color. (We still use the theme palette for interactive elements, which have special accessibility requirements.) The method of applying the brand color varies depending on whether it is a light or dark hue.</li>
+            <li><strong>Brand assets: </strong>Additionally, clients supply their own brand assets, such as photography and iconography.</li>
+            <li><strong>Light and Dark Mode: </strong>Lastly, clients can choose to have their site in either light or dark mode.</li>
           </ul>
-          <p>Tier 3 was initially introduced to address concerns that clients would be dissatisfied with tiers 1 and 2. However, after providing several existing clients with mockups of the site customized with their brand color, their photography, and a theme color, all of them have been very satisfied with the results.</p>
+          <p>Initially, our business stakeholders were concerned that existing clients would be dissatisfied by the constraints placed on them by this structured approach. However, we have since demoed it to several existing clients, and all of them have been very satisfied with the results.</p>
+          <p>Here is a breakdown of the system:</p>
         </div>
         <div class="cell">
           {{> project-image 
@@ -53,10 +72,15 @@ pageNavItems:
             caption='Theming and Branding Diagram'}}
         </div>
         <div class="cell large-10">
-          <p>Below, we highlighted areas of the website to which the theme is applied and areas to which the client brand is applied.</p>
+          <p>Below, we highlighted areas of the website to which the theme is applied and areas to which the client brand is applied on the user dashboard.</p>
         </div>
         <div class="cell">
-          
+          {{> project-image 
+            style='' 
+            classes=''
+            img='tbs-dashboard-theming-branding' 
+            alt='The user dashboard with theming highlighted in pink and branding highlighted in green'
+            caption='The user dashboard with theming highlighted in pink and branding highlighted in green'}}
         </div>
       </div>
     </div>
@@ -68,61 +92,61 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Theme Colors</h2>
-          <p>The first thing we tackled in delivery was creating a system that allows clients to customize TBS with one of 8 theme colors.</p>
+          <p>Each theme color represents a full palette of hues that are applied to headings, backgrounds, interactive elements, data visualizations, etc. Below is a breakdown of the navy theme:</p>
         </div>
         <div class="cell">
-          <h5>Aqua Theme Components</h5>
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs-theme-aqua' 
-            alt='aqua theme components'
-            caption=''}}
-          <h5>Navy Theme Components</h5>
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-theme-navy' 
-            alt='navy theme components'
-            caption=''}}
-          <h5>Red Theme Components</h5>
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs-theme-red' 
-            alt='red theme components'
-            caption=''}}
+            alt='Navy theme breakdown'
+            caption='Navy theme breakdown'}}
         </div>
         <div class="cell large-10">
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs-theme-aqua-components' 
-            alt='aqua theme, applied'
-            caption=''}}
+          <p>And here's what it looks like when the pallete is applied to various site components:</p>
+        </div>
+        <div class="cell"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-theme-navy-components' 
-            alt='navy theme, applied'
-            caption=''}}
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs-theme-red-components' 
-            alt='red theme, applied'
-            caption=''}}
+            alt='Navy theme components'
+            caption='Navy theme components'}}
         </div>
       </div>
     </div>
   </section>
 </section>
-<section class="page-anchor" id="light-dark">
+<section class="page-anchor" id="branding">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h4>Light and Dark Modes</h4>
+          <h2>Branding</h2>
+          <h3>Client Brand Color</h3>
+          <p>If a client supplies their brand color, we apply it to select components. We have two different approaches to brand color application, depending on whether it's a darker or brighter hue.</p>
+          <h3>Visual Assets</h3>
+          <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
+          <p>Here's a client branded dashboard, customized with their brand color, the purple theme, and their own photography:</p>
+        </div>
+        <div class="cell"> 
+          {{> project-image 
+            style='fade' 
+            classes='has-shadow' 
+            img='tbs-dash-clientb-light' 
+            alt='Client Dashboard in Light Mode'
+            caption='Client Dashboard in Light Mode'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="page-anchor" id="light-dark-modes">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Light and Dark Modes</h2>
           <p>Finally, clients can choose between light and dark mode, which impacts how their brand and theme colors are expressed.</p>
         </div>
         <div class="cell">
@@ -138,36 +162,6 @@ pageNavItems:
             img='tbs-delivery-auth-dark' 
             alt='Log in page, dark mode'
             caption='Log in page, dark mode'}}
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
-<section class="page-anchor" id="branding">
-  <section>
-    <div class="grid-container full">
-      <div class="grid-x grid-padding-x">
-        <div class="cell large-10">
-          <h4>Branding</h4>
-          <p>Clients can also apply their brand colors to select components. We have two different approaches to brand color application, depending on whether it's a darker or brighter hue.</p>
-          <h4>Visual Assets</h4>
-          <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
-          <p>Here's a client branded dashboard in light mode:</p>
-        </div>
-        <div class="cell"> 
-          {{> project-image 
-            style='fade' 
-            classes='has-shadow' 
-            img='tbs-dash-clienta-light-mode-purple' 
-            alt='Client Dashboard in Light Mode'
-            caption='Client Dashboard in Light Mode'}}
-          <p>A here it is in dark mode:</p>
-          {{> project-image 
-            style='fade' 
-            classes='has-shadow' 
-            img='tbs-dash-clienta-dark-mode-purple' 
-            alt='Client Dashboard in Dark Mode'
-            caption='Client Dashboard in Dark Mode'}}
         </div>
       </div>
     </div>

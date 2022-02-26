@@ -48,6 +48,8 @@
 
   h1 {
     margin-bottom: .2em;
+    font-size: 2.5em;
+    line-height: 1.2em;
   }
 
   @include breakpoint(large) {
@@ -115,7 +117,7 @@
     }
 
     li {
-      margin-bottom: 1em;
+      margin-bottom: .75em;
 
       &:last-child {
         margin-bottom: 0;
@@ -124,6 +126,7 @@
 
     a {
       padding: 0;
+      line-height: 1.5em;
     }
   }
 }
