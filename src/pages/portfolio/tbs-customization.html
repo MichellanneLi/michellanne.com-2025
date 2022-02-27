@@ -30,8 +30,8 @@ pageNavItems:
     anchor: light-dark-modes
     title: Light and Dark Modes
   -
-    anchor: application
-    title: Application
+    anchor: all-together
+    title: Putting It All Together
 
 ---
 <section id="background" class="page-anchor">
@@ -92,15 +92,15 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Theme Colors</h2>
-          <p>Each theme color represents a full palette of hues that are applied to headings, backgrounds, interactive elements, data visualizations, etc. Below is a breakdown of the navy theme:</p>
+          <p>Each theme color represents a full palette of hues that are applied to headings, backgrounds, interactive elements, data visualizations, etc. Below is a breakdown of the green theme:</p>
         </div>
         <div class="cell">
           {{> project-image 
             style='' 
             classes='has-shadow' 
-            img='tbs-theme-navy' 
-            alt='Navy theme breakdown'
-            caption='Navy theme breakdown'}}
+            img='tbs-theme-green' 
+            alt='Green theme breakdown'
+            caption='Green theme breakdown'}}
         </div>
         <div class="cell large-10">
           <p>And here's what it looks like when the pallete is applied to various site components:</p>
@@ -109,9 +109,9 @@ pageNavItems:
           {{> project-image 
             style='' 
             classes='has-shadow' 
-            img='tbs-theme-navy-components' 
-            alt='Navy theme components'
-            caption='Navy theme components'}}
+            img='tbs-theme-green-components' 
+            alt='Green theme components'
+            caption='Green theme components'}}
         </div>
       </div>
     </div>
@@ -127,15 +127,15 @@ pageNavItems:
           <p>If a client supplies their brand color, we apply it to select components. We have two different approaches to brand color application, depending on whether it's a darker or brighter hue.</p>
           <h3>Visual Assets</h3>
           <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
-          <p>Here's a client branded dashboard, customized with their brand color, the purple theme, and their own photography:</p>
+          <p>Here's an article teaser, customized with: the gray theme, the client's brand color (yellow), and their own photography:</p>
         </div>
         <div class="cell"> 
           {{> project-image 
-            style='fade' 
+            style='' 
             classes='has-shadow' 
-            img='tbs-dash-clientb-light' 
-            alt='Client Dashboard in Light Mode'
-            caption='Client Dashboard in Light Mode'}}
+            img='tbs-hero-clientb-light' 
+            alt='Client branded teaser with gray theme'
+            caption='Client branded teaser with gray theme'}}
         </div>
       </div>
     </div>
@@ -147,21 +147,53 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Light and Dark Modes</h2>
-          <p>Finally, clients can choose between light and dark mode, which impacts how their brand and theme colors are expressed.</p>
+          <p>Choosing light mode will result in specific pieces of TBS having a white background, while choosing dark mode will result in those same pieces having a dark background. This impacts the overall mood of the site. Below is an example of how this applies to the log in page.</p>
         </div>
         <div class="cell">
           {{> project-image 
             style='' 
-            classes='' 
+            classes='has-shadow' 
             img='tbs-delivery-auth-light' 
             alt='Log in page, light mode'
             caption='Log in page, light mode'}}
           {{> project-image 
             style='' 
-            classes='' 
+            classes='has-shadow' 
             img='tbs-delivery-auth-dark' 
             alt='Log in page, dark mode'
             caption='Log in page, dark mode'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="page-anchor" id="all-together">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Putting It All Together</h2>
+          <p>The following are examples of the user dashboard, customized for several existing clients:</p>
+        </div>
+        <div class="cell">
+          {{> project-image 
+            style='fade' 
+            classes='has-shadow' 
+            img='tbs-dash-clienta-light-purple' 
+            alt='Purple theme + client brand (purple) color in light mode'
+            caption='Purple theme + client brand color (purple) in light mode'}}
+          {{> project-image 
+            style='fade' 
+            classes='has-shadow' 
+            img='tbs-dash-clientb-dark' 
+            alt='Gray theme + yellow client brand color in dark mode'
+            caption='Gray theme + client brand color (yellow) in dark mode'}}
+          {{> project-image 
+            style='fade' 
+            classes='has-shadow' 
+            img='tbs-dash-clientc-light' 
+            alt='Red theme + client brand color (red) in light mode'
+            caption='Red theme + client brand color (red) in light mode'}}
         </div>
       </div>
     </div>
