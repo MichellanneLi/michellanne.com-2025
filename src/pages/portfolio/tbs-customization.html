@@ -32,6 +32,9 @@ pageNavItems:
   -
     anchor: all-together
     title: Putting It All Together
+  -
+    anchor: client-feedback
+    title: Client Feedback
 
 ---
 <section id="background" class="page-anchor">
@@ -40,8 +43,8 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Background</h2>
-          <p>Aon's second largest vertical is insurance brokering, which means we work with client companies and insurance carriers to negotiate employee benefits packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
-          <p>Our clients invest a great deal of time and money into articulating their visual identities, messaging, and values, and they want their employees to see these elements of their brand when they log into TBS. In the past, Aon's configuration team wrote custom CSS for every individual client site. This was an inefficient and time-consuming process, and the resulting color combinations rarely met accessibility criteria.</p>
+          <p>Aon's second largest vertical is insurance brokering, which means we work with client companies and insurance carriers to negotiate employee benefit packages. As part of this service, we offer our client companies TBS, an online benefits portal through which their employees can enroll in benefits. TBS serves 17,000 clients and accounts for 1.4 billion in revenue.</p>
+          <p>Our clients invest a great deal of time and money into their branding, and they want to see their brands reflected on TBS. In the past, Aon's configuration team wrote custom CSS for every individual client site. This was an inefficient and time-consuming process, and the resulting color combinations rarely met accessibility criteria.</p>
         </div>
       </div>
     </div>
@@ -53,14 +56,13 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Customization Strategy</h2>
-          <p>We took a unique approach to customization that gives clients enormous flexibility within a structured system:</p>
+          <p>In response to our client's needs, we developed a unique approach to customization that provides enormous flexibility within a structured system:</p>
           <ul>
             <li><strong>Theme color: </strong>Clients can select from one of eight theme colors.</li> 
-            <li><strong>Brand color: </strong>Clients can also opt to apply their brand color <em>in addition to</em> the theme color. In some places, the brand color will override the theme color. (We still use the theme palette for interactive elements, which have special accessibility requirements.) The method of applying the brand color varies depending on whether it is a light or dark hue.</li>
+            <li><strong>Brand color: </strong>Clients can also opt to apply their brand color <em>in addition to</em> the theme color. In some places, the brand color will override the theme color. (We still use the theme palette for interactive elements, which have special accessibility requirements.)</li>
             <li><strong>Brand assets: </strong>Additionally, clients supply their own brand assets, such as photography and iconography.</li>
             <li><strong>Light and Dark Mode: </strong>Lastly, clients can choose to have their site in either light or dark mode.</li>
           </ul>
-          <p>Initially, our business stakeholders were concerned that existing clients would be dissatisfied by the constraints placed on them by this structured approach. However, we have since demoed it to several existing clients, and all of them have been very satisfied with the results.</p>
           <p>Here is a breakdown of the system:</p>
         </div>
         <div class="cell">
@@ -72,7 +74,7 @@ pageNavItems:
             caption='Theming and Branding Diagram'}}
         </div>
         <div class="cell large-10">
-          <p>Below, we highlighted areas of the website to which the theme is applied and areas to which the client brand is applied on the user dashboard.</p>
+          <p>Below, we highlighted areas of the user dashboard to which the theme is applied and areas to which the client brand is applied.</p>
         </div>
         <div class="cell">
           {{> project-image 
@@ -92,7 +94,7 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Theme Colors</h2>
-          <p>Each theme color represents a full palette of hues that are applied to headings, backgrounds, interactive elements, data visualizations, etc. Below is a breakdown of the green theme:</p>
+          <p>Each theme color represents a palette that is applied to headings, backgrounds, interactive elements, data visualizations, etc. Below is a breakdown of the green theme:</p>
         </div>
         <div class="cell">
           {{> project-image 
@@ -103,7 +105,7 @@ pageNavItems:
             caption='Green theme breakdown'}}
         </div>
         <div class="cell large-10">
-          <p>And here's what it looks like when the pallete is applied to various site components:</p>
+          <p>And here's what it looks like when the green theme pallete is applied to various site components:</p>
         </div>
         <div class="cell"> 
           {{> project-image 
@@ -124,18 +126,24 @@ pageNavItems:
         <div class="cell large-10">
           <h2>Branding</h2>
           <h3>Client Brand Color</h3>
-          <p>If a client supplies their brand color, we apply it to select components. We have two different approaches to brand color application, depending on whether it's a darker or brighter hue.</p>
+          <p>If a client supplies their brand color, we apply it to select components. Lighter brand colors are paired with gray text, and darker brand colors are paired with white text.</p>
           <h3>Visual Assets</h3>
           <p>We also encourage clients to provide their own photography, icons, and other brand assets.</p>
-          <p>Here's an article teaser, customized with: the gray theme, the client's brand color (yellow), and their own photography:</p>
+          <p>Here's an article teaser, customized for two different clients:</p>
         </div>
         <div class="cell"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
-            img='tbs-hero-clientb-light' 
+            img='tbs-teaser-clientb' 
             alt='Client branded teaser with gray theme'
-            caption='Client branded teaser with gray theme'}}
+            caption='Gray theme + client brand color (yellow)'}}
+          {{> project-image 
+            style='' 
+            classes='has-shadow' 
+            img='tbs-teaser-clientc' 
+            alt='Client branded teaser with red theme'
+            caption='Red theme + client brand color (red)'}}
         </div>
       </div>
     </div>
@@ -180,7 +188,7 @@ pageNavItems:
             style='fade' 
             classes='has-shadow' 
             img='tbs-dash-clienta-light-purple' 
-            alt='Purple theme + client brand (purple) color in light mode'
+            alt='Purple theme + client brand color (purple) in light mode'
             caption='Purple theme + client brand color (purple) in light mode'}}
           {{> project-image 
             style='fade' 
@@ -194,6 +202,20 @@ pageNavItems:
             img='tbs-dash-clientc-light' 
             alt='Red theme + client brand color (red) in light mode'
             caption='Red theme + client brand color (red) in light mode'}}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="page-anchor" id="client-feedback">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Client Feedback</h2>
+          <p>Initially, our business stakeholders were concerned that existing clients would be frustrated by the constraints placed on them with this structured approach.</p>
+          <p>To test the waters, we mocked up the website for several existing clients using our new customization system and demoed it to them on sales calls. All have been very satisfied with the results.</p>
         </div>
       </div>
     </div>
