@@ -48,23 +48,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   margin: 0;
   border-radius: 200px;
   position: absolute;
-  bottom: 1em;
+  top: 1em;
   right: 1em;
   width: auto;
   z-index: 100;
-  background-color: $white;
-  color: $magenta;
+  background-color: $magenta;
+  color: $white;
   box-shadow: 0 0 4px transparentize($black, .8);
+  font-size: 1.2em;
 
   &:hover,
   &:active {
     transform: scale(108%);
     box-shadow: 0 0 8px transparentize($black, .8);
-    background-color: $white;
   }
 
   &:active {
-    color: $fuchsia;
+    background-color: $fuchsia;
   }
 }
 
