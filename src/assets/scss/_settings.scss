@@ -67,7 +67,7 @@
 
 $mulish: "Mulish", sans-serif;
 $mulish: "Mulish", sans-serif;
-$gloock: "Gloock", serif;
+$mercury-display: "MercuryDisplayBold", serif;
 $fontawesome: "Font Awesome 7 Free", sans-serif;
 
 $global-font-size: 18px;
@@ -157,7 +157,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $gloock;
+$header-font-family: $mercury-display;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

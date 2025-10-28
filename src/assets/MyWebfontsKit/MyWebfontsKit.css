@@ -1,0 +1,57 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Mercury Display Bold Italic by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+
+ * Webfont: Mercury Display Bold by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+
+ * Webfont: Mercury Display Semibold Italic by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+
+ * Webfont: Mercury Display Semibold by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+
+ * Webfont: Mercury Display Italic by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+
+ * Webfont: Mercury Display Regular by Hoefler &amp; Co.
+ * URL: https://www.myfonts.com/collections/hoefler-and-co-foundry
+ 
+ * © 2025 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "MercuryDisplayBoldItalic";
+  src: url('webFonts/MercuryDisplayBoldItalic/font.woff2') format('woff2'), url('webFonts/MercuryDisplayBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MercuryDisplaySemiboldItalic";
+  src: url('webFonts/MercuryDisplaySemiboldItalic/font.woff2') format('woff2'), url('webFonts/MercuryDisplaySemiboldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MercuryDisplayRegular";
+  src: url('webFonts/MercuryDisplayRegular/font.woff2') format('woff2'), url('webFonts/MercuryDisplayRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MercuryDisplayBold";
+  src: url('webFonts/MercuryDisplayBold/font.woff2') format('woff2'), url('webFonts/MercuryDisplayBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MercuryDisplaySemibold";
+  src: url('webFonts/MercuryDisplaySemibold/font.woff2') format('woff2'), url('webFonts/MercuryDisplaySemibold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MercuryDisplayItalic";
+  src: url('webFonts/MercuryDisplayItalic/font.woff2') format('woff2'), url('webFonts/MercuryDisplayItalic/font.woff') format('woff');
+}
+
