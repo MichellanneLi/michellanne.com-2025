@@ -24,6 +24,10 @@ a {
   text-decoration: underline;
   display: inline-block;
   font-weight: 500;
+
+  &.has-arrow{
+    text-decoration: none;
+  }
 }
 
 a:active,
