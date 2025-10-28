@@ -14,7 +14,9 @@ import autoprefixer  from 'autoprefixer';
 import imagemin      from 'gulp-imagemin';
 
 
-const sass = require('gulp-sass');
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass');
+const sass = gulpSass(dartSass);
 const postcss = require('gulp-postcss');
 const uncss = require('postcss-uncss');
 
@@ -102,7 +104,7 @@ function sassBuild() {
     .pipe(sass({
       includePaths: PATHS.sass
     })
-    .on('error', $.sass.logError))
+    .on('error', sass.logError))
     .pipe(postcss(postCssPlugins))
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie11' })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
@@ -116,15 +118,23 @@ let webpackConfig = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [ "@babel/preset-env" ],
+            presets: [
+              ['@babel/preset-env', {
+                modules: 'auto'
+              }]
+            ],
             compact: false
           }
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js']
   },
   devtool: !PRODUCTION && 'source-map'
 }
