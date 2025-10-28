@@ -65,8 +65,8 @@
 // 1. Global
 // ---------
 
-$gotham: "Mulish", sans-serif;
-$gotham-narrow: "Mulish", sans-serif;
+$mulish: "Mulish", sans-serif;
+$mulish: "Mulish", sans-serif;
 $gloock: "Gloock", serif;
 $fontawesome: "Font Awesome 7 Free", sans-serif;
 
@@ -100,7 +100,7 @@ $foundation-palette: (
 
 $body-background: $white;
 $body-font-color: $dark-gray;
-$body-font-family: $gotham-narrow, Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $mulish, Helvetica, Roboto, Arial, sans-serif;
 $body-safe-padding: false;
 $body-antialiased: true;
 $global-margin: 1rem;
