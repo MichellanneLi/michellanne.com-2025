@@ -65,10 +65,10 @@
 // 1. Global
 // ---------
 
-$gotham: "Gotham SSm A", "Gotham SSm B", sans-serif;
-$gotham-narrow: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
-$mercury-display: "Mercury Display A", "Mercury Display B", serif;
-$fontawesome: "Font Awesome 5 Free", sans-serif;
+$gotham: "Mulish", sans-serif;
+$gotham-narrow: "Mulish", sans-serif;
+$gloock: "Gloock", serif;
+$fontawesome: "Font Awesome 7 Free", sans-serif;
 
 $global-font-size: 18px;
 $global-width: rem-calc(1200);
@@ -157,7 +157,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $mercury-display;
+$header-font-family: $gloock;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
