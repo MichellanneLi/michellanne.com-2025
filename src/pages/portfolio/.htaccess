@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Portfolio Access - Please enter your credentials"
+AuthUserFile /path/to/your/webroot/portfolio/.htpasswd
+Require valid-user
