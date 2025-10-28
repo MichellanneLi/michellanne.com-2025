@@ -1,11 +1,4 @@
 {{#each job}}
-	<h3 class="resume__job-header">
-		<a href="{{job.url}}">{{company}}</a>, 
-		<span class="resume__job-location">
-			{{#ifequal remote 'no'}}{{city}}, {{state}}{{/ifequal}}
-			{{#ifequal remote 'yes'}}Remote{{/ifequal}}
-		</span>
-	</h3>
 	{{#each titles}}
 		<div class="resume__position">
 			<span class="title">
@@ -16,6 +9,13 @@
 				{{#if endDate}}
 				&ndash; {{endDate}}
 				{{/if}}
+			</span>
+		</div>
+		<div class="resume__company">
+			<a href="{{../url}}">{{../company}}</a>,
+			<span class="resume__job-location">
+				{{#ifequal ../remote 'no'}}{{../city}}, {{../state}}{{/ifequal}}
+				{{#ifequal ../remote 'yes'}}Remote{{/ifequal}}
 			</span>
 		</div>
 
