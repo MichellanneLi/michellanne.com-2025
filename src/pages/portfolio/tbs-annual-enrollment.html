@@ -86,24 +86,6 @@ pageNavItems:
     </div>
   </section>
 </section>
-  <!-- <section>
-    <h3>Timeline</h3>
-    <h4>2020</h4>
-    <ul>
-      <li>Proof of concept prototypes delivered for UK and Singapore markets.</li>
-      <li>Concept and viability testing complete for Asia Pacific, Europe, and the Middle East, using either in-person prototype demonstration or video demonstration, followed by a survey.</li>
-    </ul>
-    <h4>2021</h4>
-    <ul>
-      <li>Entered delivery.</li>
-      <li>MVP iteration completed.</li>
-    </ul>
-    <h4>2022</h4>
-    <ul>
-      <li>Currently working on MMP iteration.</li>
-      <li>First client platform release slated for April.</li>
-    </ul>
-  </section> -->
 <section id="user-flow" class="page-anchor">
   <section>
     <div class="grid-container full">
@@ -135,7 +117,7 @@ pageNavItems:
         <div class="cell large-10">
           <p>The user begins by reviewing the benefits they enrolled in the previous year. They can choose to keep, modify, or decline them. For benefits that the user wants to modify, they are guided through the process of updating their elections.</p>
         </div>
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -147,7 +129,7 @@ pageNavItems:
           <p>Next, the user is shown new benefits they can enroll in for the coming year. Our proof of concept design showed all of the benefits in every category on one page. This was overwhelming and created cognitive overload.</p>
           <p>Below is the proof of concept:</p>
         </div> 
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -160,7 +142,7 @@ pageNavItems:
           <p>This change adds pages and steps to the enrollment flow, but we feel the trade-off is worth it for clients that offer dozens of benefits (clients that offer very few benefits will still display all of them on a single page.)</p>
           <p>Here is the revised version of this page:</p>
         </div> 
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -171,7 +153,7 @@ pageNavItems:
         <div class="cell large-10">
           <p>When the user has finished moving through all the benefit categories, they are asked to review and submit their elections.</p>
         </div> 
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -191,7 +173,11 @@ pageNavItems:
             caption=''}}
         </div> -->
         <div class="cell large-10">
-          <p>After we completed our proof of concept, our architect conducted user testing on the updated annual enrollment flow. <strong>97% of users in APAC (Asia Pacific) and 98% of users in EMEA (Europe, the Middle East, and Africa) said the experience was simpler than before. 98% of users in all markets felt the process was significantly improved.</strong></p>
+          <p>After we completed our proof of concept, our architect conducted user testing on the updated annual enrollment flow.</p>
+          <ul>
+            <li><strong>97% of users in APAC and 98% of users in EMEA </strong>said the experience was simpler than before.</li>
+            <li><strong>98% of users in all markets</strong> felt the process was significantly improved.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -207,7 +193,7 @@ pageNavItems:
           <h3>Pension Contributions</h3>
           <p>Below is the pension enrollment page:</p>
         </div>
-        <div class="cell"> 
+        <div class="cell large-8"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -218,7 +204,7 @@ pageNavItems:
         <div class="cell large-10">
           On this page, the user is encouraged to increase their contribution to derive maximum benefit from their employer match.
         </div>
-        <div class="cell"> 
+        <div class="cell large-8"> 
 
           {{> project-image 
             style='' 
@@ -230,13 +216,14 @@ pageNavItems:
         <div class="cell large-10">
           <p>The interactive retirement outlook chart enables the user to see the long term impact of their contribution choices. When the user updates their contribututions, the graph dynamically responds to their inputs.</p>
         </div>
-        <div class="cell"> 
+        <div class="cell large-6"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-poc-pension-chart-1' 
             alt='chart showing pension growth if user contributes 5 percent of their salary'}}
-
+        </div>
+        <div class="cell large-6"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -272,7 +259,7 @@ pageNavItems:
         <div class="cell large-10">
           <p>The cost summary evolved further in delivery when we learned that it would need to accommodate much more information than anticipated. Clients want to highlight employer costs in this space, and employee points spending needs to be displayed (in non-US markets, it's a practice for employers to allot points to spend on benefits.) We therefore moved this information out of the rail and into a slide-in panel.</p>
         </div>
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -292,7 +279,7 @@ pageNavItems:
           <h2>Adding Dependents</h2>
           <p>This is the private medical enrollment page.</p>
         </div>
-        <div class="cell">
+        <div class="cell large-8">
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -303,7 +290,7 @@ pageNavItems:
         <div class="cell large-10">
           <p>For private medical, the user can choose to cover dependents.</p>
         </div>
-        <div class="cell"> 
+        <div class="cell large-8"> 
           {{> project-image 
             style='' 
             classes='has-shadow' 
@@ -314,7 +301,7 @@ pageNavItems:
         <div class="cell large-10">
           <p>They can also add or edit dependents.</p>
         </div>
-        <div class="cell"> 
+        <div class="cell large-8"> 
           {{> project-image 
             style='fade' 
             classes='has-shadow' 
