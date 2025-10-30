@@ -1,15 +1,15 @@
 ---
 layout: project
 title: Expanding representation for non-college pathways
-tagline: Redesign of Indeed's education intake to reflect diverse upskilling experiences
+tagline: Redesign of Indeed's education intake
 
-clients: [Add client information]
-users: [Add user information]
-description: [Add project description - what problem did you solve and what was the impact?]
+clients:
+users:
+description: By helping job seekers represent diverse skilling experiences, I improved outcomes for those who don’t have college degrees. 
 
-roles: Senior UX Designer
+roles: UX Designer (Functional Lead), UX Content Designer
 
-collaborators: [Add collaborators - PM, Engineers, Researchers, etc.]
+collaborators: Product manager, Strategist, UX researcher, UX content designer, Engineers
 
 heroimg: [Add hero image filename without extension]
 
@@ -20,63 +20,74 @@ pageNavItems:
     anchor: background
     title: Background
   -
-    anchor: problem
-    title: Problem
+    anchor: content
+    title: Starting with content
   -
-    anchor: solution
-    title: Solution
+    anchor: design
+    title: Designing more comprehensive changes
   -
-    anchor: results
-    title: Results
-  -
-    anchor: next-steps
-    title: Next Steps
+    anchor: impact
+    title: Impact
 
 ---
 <section id="background" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell large-10">
+        <div class="cell medium-10 large-8">
           <h2>Background</h2>
-          <p>[Add context about Indeed, the education intake system, and why this project was needed]</p>
+          <p>I was on the Social Impact team at Indeed, and our remit was to advance the interests of job seekers facing systemic barriers (for example: veterans, refugees, and those with disabilities), with a particular focus on those without college degrees.</p>
+          <p>Through this work, we discovered that 47% of US job seekers on Indeed without a college degree have completed alternative skilling programs, such as trade schools, boot camps, and online courses.</p>
+          <p>We also learned that employers value these skilling programs. Employers we interviewed repeatedly described skilling programs as more than just proof of ability—they’re signals of a candidate’s mindset and personal qualities, such as: trainability, commitment to their field, and personal drive.</p>
+          <p>However, non-college skilling programs were underrepresented on Indeed resumes. In interviews with  job seekers, they showed us how our education intake lacked the flexibility to accommodate frameworks outside of secondary and higher education.</p>
+          <h3>Hypothesis</h3>
+          <p>My team hypothesized that helping job seekers represent diverse skilling experiences would improve outcomes for those who don’t have college degrees.</p>
+          <h3>Constraints</h3>
+          <p>The unique position of the Social Impact team meant that we didn’t own any products or surfaces. Our success depended on our ability to collaborate with other teams to make changes to their surfaces. In this case, that meant working with the Profile team, which owns Indeed’s education intake.</p>
+        </div>
+        <div class="cell medium-6 large-4">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='Education-before'
+            alt='original education intake screen'
+            caption='original education intake screen'}}
         </div>
       </div>
     </div>
   </section>
 </section>
 
-<section id="problem" class="page-anchor">
+<section id="content" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h2>Problem</h2>
-          <p>[Describe the problem - what wasn't working with the existing education intake?]</p>
-
-          <h3>User Research</h3>
-          <p>[Add any user research findings, pain points, or quotes]</p>
-
-          <h3>Goals</h3>
-          <p>[What were you trying to achieve?]</p>
+          <h2>Starting with content</h2>
+          <h3>Updating the form copy</h3>
+          <p>Education qualifications are a core component of the Indeed Profile and essential to matching candidates to job openings. Therefore, there is a very high bar to making any changes that have downstream impacts on data collection. In order to begin making traction with the Profile team, I started with the lowest LOE approach by asking: How far could we get just by tweaking content?</p>
+          <p>To ensure my work aligned with the Profile team’s institutional knowledge and perspective, I collaborated with their UXCD to explore the following changes:</p>
           <ul>
-            <li>[Goal 1]</li>
-            <li>[Goal 2]</li>
-            <li>[Goal 3]</li>
+            <li>Adding descriptive text with examples of the range of educational experiences job seekers could represent.</li>
+            <li>Swapping in new labels to replace “Level of education,” which was a point of confusion for job seekers attempting to add non-college experiences because it presumed a hierarchical understanding of education.</li>
+            <li>Using alternative labels for “School” and “School location” that spoke to more diverse institutions and settings.</li>
           </ul>
+          <!-- Add images -->
+          <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
         </div>
-      </div>
-    </div>
-  </section>
-</section>
-
-<section id="solution" class="page-anchor">
-  <section>
-    <div class="grid-container full">
-      <div class="grid-x grid-padding-x">
-        <div class="cell large-10">
-          <h2>Solution</h2>
-          <p>[Describe your design solution]</p>
+        <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
         </div>
         <div class="cell">
           {{> project-image
@@ -87,38 +98,149 @@ pageNavItems:
             caption='[image caption]'}}
         </div>
         <div class="cell large-10">
-          <p>[Add more details about the solution]</p>
+          <h3>Testing the new content</h3>
+          <p>This user feedback enabled us to refine our content recommendations, which we were then ready to AB test.</p>
+        </div>
+        <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
+        </div>
+        <div class="cell large-10">
+          <h3>Impact</h3>
+          <p>Overall, the content changes led to an increased intake of non-college educational experiences, as evidenced by increased usage of the following attributes in the “Level of education” input:</p>
+          <ul>
+            <li>Vocational Training: 18% increase overall, 22% increase among job seekers facing barriers</li>
+            <li>Online Course: 12% increase, 13% increase among job seekers facing barriers</li>
+            <li>Training Program: 18% increase, 25% increase among job seekers facing barriers</li>
+            <li>Furthermore, job seekers who used non-college education attributes saw an increase in positive connections and positive outcomes (compared to those who didn’t)</li>
+          </ul>
+          <h4>Positive connections:</h4>
+          <p><em>A collection of metrics focused on employer and job seeker engagement throughout the hiring process, including: messaging, sending an invitation to apply, and scheduling an interview</em></p>
+          <ul>
+            <li>Positive connections per job seeker: +38%</li>
+            <li>Percentage of job seekers with positive connections: +28%</li>
+          </ul>
+          <h4>Positive outcomes:</h4>
+          <p><em>A collection of metrics focused on employer and job seeker engagement throughout the hiring process, including: messaging, sending an invitation to apply, and scheduling an interview</em></p>
+          <ul>
+            <li>Positive outcomes per job seeker: +26%</li>
+            <li>Percentage of job seekers with positive outcomes: +9.7%</li>
+          </ul>
+          <p>We also confirmed that there was no harm to outcomes for job seekers with college degrees.</p>
+          <p>→ These findings convinced the Profile team to adopt our proposed content changes!</p>
         </div>
       </div>
     </div>
   </section>
 </section>
 
-<section id="results" class="page-anchor">
+<section id="design" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h2>Results</h2>
-          <p><strong>The redesign resulted in significant improvements:</strong></p>
+          <h2>Designing more comprehensive changes</h2>
+          <p>Our success at improving education intake using UX content gave us the credibility to move forward with exploring more comprehensive design changes.</p>
+          <h3>Concept testing new ideas</h3>
+          <p>I began by developing three new concepts that tailored the education intake form specifically for non-college education. Each concept had variations of the following changes: </p>
           <ul>
-            <li>171% increase in collection of non-college education attributes</li>
-            <li>62% of employers who were shown the prompt removed bachelors degree requirements</li>
-            <li>[Add any other metrics or outcomes]</li>
+            <li>Instead of two separate inputs for “Level of Education” and “Field of Study,” I collapsed these fields into a single input.</li>
+              <ul><li>Abstracting a degree from its subject matter is very particular to academia (ex: “a bachelor's degree in computer science.”) For other types of educational experiences, a single phrase is the norm (ex: “coding bootcamp.”)</li></ul>
+            <li>Instead of “School or training provider,” I experimented with options that spoke exclusively to training providers.</li>
+              <ul><li>Information about the provider was considered important by both job seekers and employers as a signifier of the rigor, relevance, and anticipated skill development level of the program.</li></ul>
+            <li>Enabling job seekers to add a certificate of completion:</li>
+              <ul>
+                <li>According to our research, the majority of employers and job seekers without a college degree felt it was important to include a certification of completion.</li>
+                <li>They felt these credentials indicated skill development to required standards. That the program had been completed in and of itself was also considered important to share.</li>
+              </ul>
+          </ul>
+          <p>Creating an education form tailored for non-college pathways required giving job seekers a way to specify the type of education they were adding. I designed three options, each mapping to a different form variation.</p>
+          <p>To test these concepts, my team recruited job seekers who had college degrees and who had completed alternate skilling routes. Each participant reviewed and attempted to use the design concepts to reflect their most recent skilling experience. Participants then compared and ranked the concepts.</p>
+          <p>Here were the results:</p>
+          <h4>The forked path approach</h4>
+          <ul>
+            <li>→ In user testing, all job seekers preferred this design to the other options because the choice between types of education was most easily understood.</li>
+            <li>When participants engaged with the “forked path”, they were more likely to select the “Add training course or program” option.</li>
+            <li>“I like this one here, how y'all have that one set up. So just go ahead on and add training programming. And at the bottom, we have examples. It's all just set up right there. It makes it a whole lot more attention grabbing, more, I mean, right there in your face.”</li>
+            <li>However, the label “School or curriculum provider” was  confusing to some testers. “Curriculum provider” didn’t feel appropriate for certain skilling routes and prompted more precise responses than desired - such as listing a specific instructor instead of a training organization.</li>
+          </ul>
+          <h4>The tabbed selection</h4>
+          <ul>
+            <li>The tab labels: “Degree-based” and “Other learning” were confusing to some testers. “Degree-based” led some to assume they did not have the option to add their High School diplomas. “Other learning” appeared to be positioned as less valuable than degree programs and was too ambiguous. </li>
+            <li>“Other learnings, that kinda threw it off, I would say. I like the first one (“forked path”). It tells you what other learnings is. I mean, other learnings is a throw off.”</li>
+          </ul>
+          <h4>The toggle</h4>
+          <p>Most participants didn’t notice the toggle and believed that the form wasn’t meant to capture alternate skilling routes.</p>
+        </div>
+        <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
+        </div>
+        <div class="cell large-10">
+          <h3>Quantifying job seeker interest</h3>
+          <p>With such a strong signal in favor of the forked path concept, it was time to take a quantitative approach by opportunity sizing real world job seeker interest in the “training” fork. Working with our team’s strategist, I created this user flow to facilitate a fake door test. You can see that, regardless of which fork the user chose, they would be taken to the same education intake. </p>
+        </div>
+        <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
+        </div>
+        <div class="cell large-10">
+          <h3>Test Analysis</h3>
+          <p>Overall, results look sufficiently promising to continue testing the forked path approach!</p>
+          <ul>
+            <li>In the test group, the “add training program” option accounted for roughly 1 in 5 selections.</li>
+            <li>Job seekers in the test group were overall more likely to add non-college education attributes:</li>
+            <ul>
+              <li>Online  course: 25% increase</li>
+              <li>Bootcamp: 67% increase</li>
+              <li>Training program: 43% increase</li>
+              <li>Vocational training: 17% decrease</li>
+            </ul>
           </ul>
         </div>
+        <div class="cell large-10">
+          <h3>Refining the solution</h3>
+          <p>Seeing that the fake door test results indicated sufficient demand for a dedicated pathway for training representation, I wanted to revisit the UX content for the education intake form.</p>
+          <p>At this point, it had been determined that fundamentally changing the form inputs for non-college education was going to create too much downstream churn for other teams, so I focused on refining the labels of the existing fields. </p>
+        </div>
+        <div class="cell">
+          {{> project-image
+            style=''
+            classes='has-shadow'
+            img='[image-filename]'
+            alt='[image description]'
+            caption='[image caption]'}}
+        </div>
       </div>
     </div>
   </section>
 </section>
 
-<section id="next-steps" class="page-anchor">
+<section id="impact" class="page-anchor">
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h2>Next Steps</h2>
-          <p>[What are the next steps or future considerations for this project?]</p>
+          <h2>Impact</h2>
+          <p>Finally, it was time to fully roll out the new approach to collecting non-college education! It has been one of the biggest wins for the Social Impact team.</p>
+          <p>Our redesigned education intake has resulted in:</p>
+          <ul>
+            <li>17% - 171% increase in collection of non-college education attributes</li>
+            <li>2% increase in job seekers with complete profiles</li>
+            <li>1.9% increase in positive outcomes for job seekers who add non-college education</li>
+          </ul>
         </div>
       </div>
     </div>

@@ -11,8 +11,12 @@
           <h1>{{title}}</h1>
           <p class="project-hero__tagline">{{tagline}}</p>
           <p>{{description}}</p>
+          {{#if clients}}
           <p><span class="project-label">Clients Include: </span>{{clients}}</p>
+          {{/if}}
+          {{#if users}}
           <p><span class="project-label">Users: </span>{{users}}</p>
+          {{/if}}
           <p><span class="project-label">My Role:</span> {{roles}}</p>
           <p><span class="project-label">Collaborators:</span> {{collaborators}}</p>
         </div>
