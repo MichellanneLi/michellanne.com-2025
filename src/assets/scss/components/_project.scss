@@ -130,3 +130,22 @@
     }
   }
 }
+
+.project-impact {
+  // background-color: $fuchsia;
+  background: #BC0461;
+  background: linear-gradient(145deg, rgba(188, 4, 97, 1) 50%, rgba(160, 0, 88, 1) 100%);
+  padding: 1em 2.5em !important;
+  color: $white !important;
+
+  h3{
+    font-family: $mercury-display;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 700;
+  }
+
+  h3, h4, h5{
+    color: $white !important;
+  }
+}
