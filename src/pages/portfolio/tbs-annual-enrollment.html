@@ -76,7 +76,7 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h3>Challenges and Constraints</h3>
-          <p>Given the scope and complexity of TBS, we identified the following challenges and constraints:</p>
+          <p>Given the scope and complexity of TBS, these were our challenges and constraints:</p>
           <ul>
             <li>Reducing friction around benefits enrollment, without being able to impact the structure of benefits or enrollment requirements (those are dictated by the carriers.)</li>
             <li>Building in flexibility to account for individual configurations for each of Aon's 17,000 clients.</li>
@@ -92,7 +92,14 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>User Flow</h2>
-          <p>The old enrollment flow took a "hub and spoke" approach. The user journey began with a view of all available benefits, displayed as a "benefit matrix." After selecting and making elections for a benefit, the user was routed back to the benefit matrix. In order to complete enrollment, they needed to submit all of their elections from the benefit matrix page. This last step was frequently missed by employees, and the result was that many missed out on their benefits enrollment window.</p>
+          <h3>Legacy enrollment flow</h3>
+          <p>The old enrollment flow took a "hub and spoke" approach.</p> 
+          <ul>
+            <li>The user would review all available benefits, displayed as a "benefit matrix."</li>
+            <li>After making elections for a single benefit, the user was routed back to the benefit matrix.</li>
+            <li>In order to complete enrollment, they needed to submit all of their elections from the benefit matrix page.</li>
+          </ul>
+          <p>Due to the circuitous nature of this flow and the lack of a clear beginning and end, this last step was frequently missed by employees, and <strong>the result was that many missed their benefits enrollment window</strong>.</p>
         </div>
         <div class="cell large-8"> 
           {{> project-image 
@@ -102,7 +109,8 @@ pageNavItems:
             alt='legacy enrollment flow'
             caption='legacy enrollment flow'}}
         </div>
-        <div class="cell large-10">          
+        <div class="cell large-10"> 
+          <h3>New enrollment flow</h3>    
           <p>For the redesigned TBS, I proposed a linear approach similiar to one that had great success in similar products in the US market.</p>
         </div>
         <div class="cell">
@@ -114,9 +122,7 @@ pageNavItems:
             caption='new enrollment flow'}}
         </div>
         <div class="cell large-10">
-          <p>In this linear flow, the user begins by reviewing the benefits they enrolled in the previous year. They can choose to keep, modify, or decline them. For benefits that the user wants to modify, they are guided through the process of updating their elections.</p>
-          <p>Next, the user is shown new benefits they can enroll in for the coming year. Our proof of concept design showed all of the benefits in every category on one page. This was overwhelming and created cognitive overload.</p>
-          <p>Below is the proof of concept:</p>
+          <p>The user begins by reviewing the benefits they enrolled in the previous year. They can choose to keep, modify, or decline them.</p>
         </div>
         <div class="cell large-6">
           {{> project-image 
@@ -126,27 +132,29 @@ pageNavItems:
             alt='Benefits from the previous year'
             caption='Benefits from the previous year'}}
         </div> 
+        <div class="cell large-10">
+          <p>Next, the user is shown new benefits they can enroll in for the coming year.</p>
+          <p>In my first draft, all of the new benefits were displayed on one page. For employers who offer dozens of benefits, this was overwhelming and created cognitive overload.</p>
+          <p>In my next iteration, I redesigned the page to only display benefits for a single category at a time (such as health & fitness, financial wellbeing, or lifestyle.) Breaking up the benefit categories over multiple pages added steps to the enrollment flow, but significantly improved the cognitive load.</p>
+        </div>
         <div class="cell large-6">
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-poc-benefits-selection' 
             alt='Benefits selection page v1'
-            caption='New benefits'}}
+            caption='New benefits first draft'}}
         </div>
-        <div class="cell large-10">
-          <p>For clients that offer dozens of benefits, I created this alternate version of the new benefits page, which only displays benefits for a given category (such as health & fitness, financial wellbeing, or lifestyle.) Breaking up the new benefits over multiple pages adds steps to the enrollment flow, but reduces the cognitive load of seeing all of those benefits on a single page.</p>
-        </div> 
-        <div class="cell large-8">
+        <div class="cell large-6">
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-delivery-category' 
             alt='Benefits selection page v2'
-            caption='New benefits alternate'}}
+            caption='New benefits second draft'}}
         </div>
         <div class="cell large-10">
-          <p>When the user has finished moving through all the benefit categories, they are asked to review and submit their elections. And, once submitted, the user is given explicit confirmation that they have completed enrollment.</p>
+          <p>In order to ensure that the process had a clear end point, when the user has finished moving through all the benefit categories, they are asked to review and submit their elections. Once submitted, the user is given explicit confirmation that they have completed enrollment. These steps were missing from the original user journey, which was partly why users didn't know how to complete enrollment.</p>
         </div> 
         <div class="cell large-6">
           {{> project-image 
@@ -164,6 +172,10 @@ pageNavItems:
             alt=''
             caption='Confirmation page'}}
         </div>
+        <!-- Progress Bar -->
+        <!-- <div class="cell large-10">
+          <p>I also added a progress bar and clear CTAs so that users would understand the steps needed to select their desired benefits and make elections.</p>
+        </div> -->
         <div class="cell large-10">
           <div class="project-impact">
             <h3>User feedback</h3>
@@ -184,10 +196,13 @@ pageNavItems:
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
           <h2>Decision Support</h2>
-          <p>Throughout annual enrollment, I introduced a number of decision support features to help guide the user through their elections.</p>
+          <p>Throughout the enrollment flow, I introduced decision support features to help guide the user through their elections.</p>
+          <!-- Plan cards
+          <h3>Plan cards</h3>
+          <p>Different types of benefits had different plan tiers and election structure. To this end, I designed plan cards that display key information to help users differentiate between their options and multi-step election flows to enable users to add dependents and beneficiaries. </p> -->
           <h3>Pension Contributions</h3>
-          <p>On the pension enrollment page, the user is encouraged to increase their contribution to derive maximum benefit from their employer match.</p>
-          <p>The interactive retirement outlook chart enables the user to see the long term impact of their contribution choices. When the user updates their contribututions, the graph dynamically responds to their inputs.</p>
+          <p>On the pension page, the user is encouraged to increase their contribution to derive maximum benefit from their employer match.</p>
+          <p>The interactive retirement outlook chart enables the user to see the long term impact of their contribution choices. When they update their contribututions, the graph dynamically responds to the new inputs.</p>
         </div>
          <div class="cell large-6"> 
           {{> project-image 
@@ -217,35 +232,29 @@ pageNavItems:
   <section>
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
-        <div class="cell large-10">
+        <div class="cell medium-6 large-8">
           <h3>Cost Summary</h3>
-          <p>The cost summary helps the user understand how much they are spending on benefits. I created this component in response to hearing that users were adding up the costs of their benefits on pieces of paper while completing enrollment. The cost summary dynamically updates based on the user’s selections to show them their total spending and how it impacts their paycheck. The terms "Benefits Spend" and "Take Home Pay" are particular to the UK market. I worked with a UK-based subject matter expert to ensure that I was using plain language and not industry jargon.</p>
-        </div>
-        <div class="cell medium-6 large-4">
-          {{> project-image 
-            style='' 
-            classes='has-shadow' 
-            img='tbs-poc-benefit-cost-summary-1' 
-            alt='cost summary with all sections closed'
-            caption='Cost summary v1'}}
+          <p>One of the most important features I designed was the cost summary, a dynamic pricing calculator that helps the user understand how their elections will impact their take home pay. I created this component in response to hearing that users were adding up the costs of their benefits on pieces of paper while completing enrollment. Because some benefits are billed monthly and others annually, the user can toggle between both views.</p>
+          <p><strong>Note:</strong> The terms "Benefits Spend" and "Take Home Pay" are particular to the UK market. I worked with a UK-based subject matter expert to ensure that I was using plain language and not industry jargon.</p>
         </div>
         <div class="cell medium-6 large-4">
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-poc-benefit-cost-summary-2' 
-            alt='cost summary with first section open'}}
+            alt='cost summary with first section open'
+            caption='Cost summary first draft'}}
         </div>
-        <div class="cell large-10">
-          <p>The cost summary evolved further when we learned that it would need to accommodate much more information than anticipated. Clients want to highlight employer costs in this space, and employee points spending needs to be displayed (in non-US markets, it's a practice for employers to allot points to spend on benefits.) I therefore moved this information out of the rail and into a slide-in panel.</p>
+        <div class="cell medium-6">
+          <p>The cost summary evolved further when we learned that it would need to accommodate much more information than anticipated. Clients wanted to highlight employer costs in this space, and employee points spending needs to be displayed (in non-US markets, it's a practice for employers to allot points to spend on benefits.) I therefore moved this information out of the rail and into a slide-in panel.</p>
         </div>
-        <div class="cell large-8">
+        <div class="cell medium-6">
           {{> project-image 
             style='' 
             classes='has-shadow' 
             img='tbs-delivery-enrolment-summary' 
             alt='new cost summary panel'
-            caption='Cost summary v2'}}
+            caption='Cost summary second draft'}}
         </div>
       </div>
     </div>
@@ -292,7 +301,8 @@ pageNavItems:
         <div class="cell large-10">
           <div class="project-impact">
             <h2>Impact</h2>
-            <p>During sales calls, our clients were so impressed that our biggest client added 32 new markets to their contract. User testing validated that participants completed enrollment with minimal friction, understood benefit selection, and easily navigated using the progress bar. The redesign directly addressed the support burden that threatened client retention.</p>
+            <p>During sales calls, our clients were so impressed that <strong>our biggest client added 32 new markets to their contract</strong>.</p>
+            <p>User testing validated that <strong>participants completed enrollment with minimal friction</strong>, understood benefit selection, and easily navigated using the progress bar. The redesign directly addressed the support burden that threatened client retention.</p>
           </div>
         </div>
       </div>
