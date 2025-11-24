@@ -47,9 +47,9 @@
   padding: 1em 0;
 
   h1 {
-    margin-bottom: .2em;
+    margin-bottom: .5em;
     font-size: 2.5em;
-    line-height: 1.2em;
+    line-height: 1em;
   }
 
   @include breakpoint(large) {
@@ -71,7 +71,7 @@
 }
 
 .project-label {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .project-nav {
@@ -132,20 +132,20 @@
 }
 
 .project-impact {
-  // background-color: $fuchsia;
-  background: #BC0461;
-  background: linear-gradient(145deg, rgba(188, 4, 97, 1) 50%, rgba(160, 0, 88, 1) 100%);
-  padding: 1em 2.5em !important;
-  color: $white !important;
+  padding: 2em 2.5em !important;
+  margin: 1em 0;
+  // color: $white !important;
+  background: #FEF7FA;
+  background: -webkit-linear-gradient(145deg, rgba(254, 247, 250, 1) 0%, rgba(253, 239, 245, 1) 80%, rgba(252, 225, 236, 1) 100%);
+  background: -moz-linear-gradient(145deg, rgba(254, 247, 250, 1) 0%, rgba(253, 239, 245, 1) 80%, rgba(252, 225, 236, 1) 100%);
+  background: linear-gradient(145deg, rgba(254, 247, 250, 1) 0%, rgba(253, 239, 245, 1) 80%, rgba(252, 225, 236, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FEF7FA", endColorstr="#FCE1EC", GradientType=0);
 
-  h3{
-    font-family: $mercury-display;
-    font-size: 1.5em;
-    line-height: 1em;
-    font-weight: 700;
-  }
 
-  h3, h4, h5{
-    color: $white !important;
+  .divider {
+    margin: 2em 0;
+    height: 1px;
+    width: 100%;
+    background-color: $light-gray;
   }
 }

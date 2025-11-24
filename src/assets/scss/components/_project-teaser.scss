@@ -20,7 +20,7 @@
 
 .project-teaser__content {
   h2 {
-    margin-bottom: .1em;
+    margin-bottom: .25em;
   }
 
   @include breakpoint(medium) {
@@ -38,6 +38,6 @@
 
   @include breakpoint(medium) {
     // font-size: 1.1em;
-    margin-bottom: .75em;
+    margin-bottom: 1em;
   }
 }
