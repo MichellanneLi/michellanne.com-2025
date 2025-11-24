@@ -16,6 +16,16 @@
     color: $medium-gray;
     display: block;
   }
+
+  &.mobile {
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    @include breakpoint(medium) {
+      width: 400px;
+    }
+  }
 }
 
 .project-image__inner {
