@@ -24,10 +24,10 @@ pageNavItems:
     title: Starting with content
   -
     anchor: design
-    title: Designing more comprehensive changes
+    title: Concept testing
   -
     anchor: impact
-    title: Impact
+    title: Rollout and Impact
 
 ---
 <section id="background" class="page-anchor">
@@ -82,7 +82,7 @@ pageNavItems:
           </ol>
         </div>
         <p>After a round of user testing, I incorportated the feedback into the second draft. It was then ready for AB testing.</p>
-        <div class="cell small-8 medium-3">
+        <div class="cell small-6 medium-3">
           {{> project-image
             size='mobile'
             style='fade-mobile'
@@ -91,31 +91,31 @@ pageNavItems:
             alt='original education intake screen'
             caption='Original'}}
         </div>
-        <div class="cell small-8 medium-3">
+        <div class="cell small-6 medium-3">
           {{> project-image
             size='mobile'
             style='fade-mobile'
             classes='has-shadow'
             img='Content-option-a'
-            alt='Updated content: Option A'
+            alt='1st draft: Option A'
             caption='1st draft: Option A'}}
         </div>
-        <div class="cell small-8 medium-3">
+        <div class="cell small-6 medium-3">
           {{> project-image
             size='mobile'
             style='fade-mobile'
             classes='has-shadow'
             img='Content-option-b'
-            alt='Updated content: Option B'
+            alt='1st draft: Option B'
             caption='1st draft: Option B'}}
         </div> 
-        <div class="cell small-8 medium-3">
+        <div class="cell small-6 medium-3">
           {{> project-image
             size='mobile'
             style='fade-mobile'
             classes='has-shadow'
             img='Content-iterated'
-            alt='Iterated content'
+            alt='2nd draft'
             caption='2nd draft'}}
         </div>
         <div class="cell medium-10">
@@ -167,85 +167,155 @@ pageNavItems:
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h2>Designing more comprehensive changes</h2>
+          <h2>Concept testing</h2>
           <p>Our success at improving education intake using UX content gave us the credibility to move forward with exploring more comprehensive design changes.</p>
-          <h3>Concept testing new ideas</h3>
-          <p>I began by developing three new concepts that tailored the education intake form specifically for non-college education. Each concept had variations of the following changes: </p>
-          <ul>
-            <li>Instead of two separate inputs for “Level of Education” and “Field of Study,” I collapsed these fields into a single input.</li>
-              <ul><li>Abstracting a degree from its subject matter is very particular to academia (ex: “a bachelor's degree in computer science.”) For other types of educational experiences, a single phrase is the norm (ex: “coding bootcamp.”)</li></ul>
-            <li>Instead of “School or training provider,” I experimented with options that spoke exclusively to training providers.</li>
-              <ul><li>Information about the provider was considered important by both job seekers and employers as a signifier of the rigor, relevance, and anticipated skill development level of the program.</li></ul>
-            <li>Enabling job seekers to add a certificate of completion:</li>
-              <ul>
-                <li>According to our research, the majority of employers and job seekers without a college degree felt it was important to include a certification of completion.</li>
-                <li>They felt these credentials indicated skill development to required standards. That the program had been completed in and of itself was also considered important to share.</li>
-              </ul>
-          </ul>
-          <p>Creating an education form tailored for non-college pathways required giving job seekers a way to specify the type of education they were adding. I designed three options, each mapping to a different form variation.</p>
-          <p>To test these concepts, my team recruited job seekers who had college degrees and who had completed alternate skilling routes. Each participant reviewed and attempted to use the design concepts to reflect their most recent skilling experience. Participants then compared and ranked the concepts.</p>
-          <p>Here were the results:</p>
-          <h4>The forked path approach</h4>
-          <ul>
-            <li>→ In user testing, all job seekers preferred this design to the other options because the choice between types of education was most easily understood.</li>
-            <li>When participants engaged with the “forked path”, they were more likely to select the “Add training course or program” option.</li>
-            <li>“I like this one here, how y'all have that one set up. So just go ahead on and add training programming. And at the bottom, we have examples. It's all just set up right there. It makes it a whole lot more attention grabbing, more, I mean, right there in your face.”</li>
-            <li>However, the label “School or curriculum provider” was  confusing to some testers. “Curriculum provider” didn’t feel appropriate for certain skilling routes and prompted more precise responses than desired - such as listing a specific instructor instead of a training organization.</li>
-          </ul>
-          <h4>The tabbed selection</h4>
-          <ul>
-            <li>The tab labels: “Degree-based” and “Other learning” were confusing to some testers. “Degree-based” led some to assume they did not have the option to add their High School diplomas. “Other learning” appeared to be positioned as less valuable than degree programs and was too ambiguous. </li>
-            <li>“Other learnings, that kinda threw it off, I would say. I like the first one (“forked path”). It tells you what other learnings is. I mean, other learnings is a throw off.”</li>
-          </ul>
-          <h4>The toggle</h4>
-          <p>Most participants didn’t notice the toggle and believed that the form wasn’t meant to capture alternate skilling routes.</p>
-        </div>
-        <div class="cell">
+          <h3>Tailoring the form</h3>
+          <p>I began by developing three new concepts that tailored the education intake form specifically for training programs. Each concept included a variation of the following changes: </p>
+          <p><strong>Collapsed “Level of Education” and “Field of Study” into a single input.</strong> 
+          <p>Abstracting a degree from its subject matter is very particular to academia (ex: “a master's in computer science.”) Our research showed that, for other types of education, a single phrase is the norm (ex: “coding bootcamp.”)</p>
           {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='level-of-education-alt'
+            alt='alternative inputs for level of education and field of study'
+            caption=''}}
+          <p><strong>Labels that asked for information about training providers</strong> instead of broad labels that might speak to a greater variety of institutions. Information about the provider was considered important by both job seekers and employers as a signifier of the rigor, relevance, and anticipated skill development level of the program.</p>
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='training-provider-alt'
+            alt='input for training provider'
+            caption=''}}
+          <p><strong>Ability to indicate completion.</strong> According to our research, the majority of employers and job seekers felt proof of completion indicated a standard of skill development and achievement.</p>
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='completion'
+            alt='checkbox to indicate completion and input for certificate of completion url'
+            caption=''}}
+        </div>
+        <div class="cell large-10">
+          <h3>Selecting type of education</h3>
+          <p>Providing a version of the intake form specific to training programs necessitated creating a way for users to select the type of education they want to represent. Here are the 3 different approaches I designed and the results of user testing:</p>
+        </div>
+        <div class="cell medium-6">
+          <h4>The forked path</h4>
+          <p>For this concept, users were presented with 2 options: “Add secondary or higher education” or “Add training course or program.” If they chose the former, they were routed to the original education form. If they chose the latter, they were routed to the training program intake form.</p>
+          <ul>
+            <li>In user testing, <strong>all job seekers preferred this design</strong> because the choice between adding “secondary or higher education” and “training course or program” was most easily understood.</li>
+            <li>When participants engaged with this concept, they were <strong>more likely to select the training program option.</strong></li>
+            <li>However, the label “School or curriculum provider” was confusing. It didn’t feel appropriate for some types of training and prompted more precise responses than desired, such as a specific instructor instead of a training organization.</li>
+          </ul>
+          <blockquote>“I like this one here, how y'all have that one set up. So just go ahead on and add training programming. And at the bottom, we have examples. It's all just set up right there. It makes it a whole lot more attention grabbing, more, I mean, right there in your face.”</blockquote>
+        </div>
+        <div class="cell medium-6">
+          {{> project-image
+            size=''
             style=''
             classes='has-shadow'
-            img='[image-filename]'
-            alt='[image description]'
-            caption='[image caption]'}}
+            img='Concept-A-1'
+            alt='Forked path screen'
+            caption='Forked path screen'}}
+
+            {{> project-image
+            size=''
+            style=''
+            classes='has-shadow'
+            img='Concept-A-4'
+            alt='Form tailored for training intake'
+            caption='Training intake form'}}
         </div>
+        <div class="cell medium-6">
+          <h4>The tabbed form</h4>
+          <p>This concept featured tabs for “Degree-based” amd “Other learning.”</p>
+          <p><strong>The tabs were confusing to some testers.</strong> “Degree-based” led some to assume they did not have the option to add their High School diplomas. “Other learning” appeared to be positioned as less valuable than degree programs and was too ambiguous.</p>
+          <blockquote>“Other learnings, that kinda threw it off, I would say. I like the first one (“forked path”). It tells you what other learnings is. I mean, other learnings is a throw off.”</blockquote>
+        </div>
+        <div class="cell medium-6">
+          {{> project-image
+            size=''
+            style=''
+            classes='has-shadow'
+            img='Concept-B-3'
+            alt='Form with tabs for degree-based education and other learning'
+            caption='Tabbed form'}}
+        </div>
+        <div class="cell medium-6">
+          <h4>The toggle</h4>
+          <p>This concept featured a toggle asking “Is this secondary or higher education?” </p>
+          <p>Most participants <strong>didn’t notice the toggle</strong> and <strong>believed that the form wasn’t meant to capture alternate skilling routes.</strong></p>
+        </div>
+        <div class="cell medium-6">
+          {{> project-image
+            size=''
+            style=''
+            classes='has-shadow'
+            img='Concept-C-3'
+            alt='Form with a toggle for secondary or higher education'
+            caption='Toggle form'}}
+        </div>
+
         <div class="cell large-10">
           <h3>Quantifying job seeker interest</h3>
-          <p>With such a strong signal in favor of the forked path concept, it was time to take a quantitative approach by opportunity sizing real world job seeker interest in the “training” fork. Working with our team’s strategist, I created this user flow to facilitate a fake door test. You can see that, regardless of which fork the user chose, they would be taken to the same education intake. </p>
+          <p>With such a strong signal in favor of the forked path concept, it was time to take a quantitative approach by opportunity sizing real world job seeker interest in the training program fork. Working with our team’s strategist, I created this user flow to facilitate a fake door test. You can see that, regardless of which fork the user chose, they would be taken to the same education intake screen.</p>
         </div>
         <div class="cell">
           {{> project-image
+            size=''
             style=''
-            classes='has-shadow'
-            img='[image-filename]'
-            alt='[image description]'
-            caption='[image caption]'}}
+            classes=''
+            img='fake-door-test'
+            alt='fake door test flow'
+            caption='Fake door test flow'}}
         </div>
         <div class="cell large-10">
-          <h3>Test Analysis</h3>
-          <p>Overall, results look sufficiently promising to continue testing the forked path approach!</p>
-          <ul>
-            <li>In the test group, the “add training program” option accounted for roughly 1 in 5 selections.</li>
-            <li>Job seekers in the test group were overall more likely to add non-college education attributes:</li>
+          <div class="project-impact">
+            <h2>Test Analysis</h2>
+            <p>Overall, results look sufficiently promising to move forward with the forked path approach!</p>
+            <p>In the test group, <strong>the “Add training program" fork accounted for roughly 1 in 5 selections</strong>.</p>
+            <p>Furthermore, <strong>job seekers were overall more likely to add non-college education attributes</strong>:</p>              
             <ul>
-              <li>Online  course: 25% increase</li>
-              <li>Bootcamp: 67% increase</li>
-              <li>Training program: 43% increase</li>
-              <li>Vocational training: 17% decrease</li>
+              <li>Online  course: <strong>+25%</strong></li>
+              <li>Bootcamp: <strong>+67%</strong></li>
+              <li>Training program: <strong>+43%</strong></li>
+              <li>Vocational training: <strong>-17%</strong></li>
             </ul>
-          </ul>
+          </div>
         </div>
         <div class="cell large-10">
           <h3>Refining the solution</h3>
           <p>Seeing that the fake door test results indicated sufficient demand for a dedicated pathway for training representation, I wanted to revisit the UX content for the education intake form.</p>
-          <p>At this point, it had been determined that fundamentally changing the form inputs for non-college education was going to create too much downstream churn for other teams, so I focused on refining the labels of the existing fields. </p>
+          <p>At this point, it had been determined that fundamentally changing the form inputs for non-college education was going to create too much downstream churn for other teams, so I focused on refining the labels of the existing fields. After another round of user testing, I finalized the content.</p>
         </div>
-        <div class="cell">
+        <div class="cell medium-4">
           {{> project-image
-            style=''
+            size=''
+            style='fade-mobile'
             classes='has-shadow'
-            img='[image-filename]'
-            alt='[image description]'
-            caption='[image caption]'}}
+            img='Content-2-option-a'
+            alt='3rd draft: Option A'
+            caption='3rd draft: Option A'}}
+        </div>
+        <div class="cell medium-4">
+          {{> project-image
+            size=''
+            style='fade-mobile'
+            classes='has-shadow'
+            img='Content-2-option-b'
+            alt='3rd draft: Option B'
+            caption='3rd draft: Option B'}}
+        </div>
+        <div class="cell medium-4">
+          {{> project-image
+            size=''
+            style='fade-mobile'
+            classes='has-shadow'
+            img='Content-2-final'
+            alt='Finalized content'
+            caption='Finalized content'}}
         </div>
       </div>
     </div>
@@ -257,14 +327,27 @@ pageNavItems:
     <div class="grid-container full">
       <div class="grid-x grid-padding-x">
         <div class="cell large-10">
-          <h2>Impact</h2>
+          <h2>Rollout and Impact</h2>
           <p>Finally, it was time to fully roll out the new approach to collecting non-college education! It has been one of the biggest wins for the Social Impact team.</p>
-          <p>Our redesigned education intake has resulted in:</p>
-          <ul>
-            <li>17% - 171% increase in collection of non-college education attributes</li>
-            <li>2% increase in job seekers with complete profiles</li>
-            <li>1.9% increase in positive outcomes for job seekers who add non-college education</li>
-          </ul>
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='final-forked-path-flow'
+            alt='completed redesigned education intake'
+            caption='The completed redesigned education intake'}}
+        </div>
+
+        <div class="cell large-10">
+          <div class="project-impact">
+            <h2>Results</h2>
+            <p>Our redesigned education intake has resulted in:</p>
+            <ul>
+              <li><strong>+17%–171%</strong> collection of non-college education attributes</li>
+              <li><strong>+2%</strong> job seekers with complete profiles</li>
+              <li><strong>+1.9%</strong> positive outcomes for job seekers who add non-college education</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
