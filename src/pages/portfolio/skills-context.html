@@ -1,0 +1,241 @@
+---
+layout: project
+title: Contextualizing job seeker skills
+tagline: User studies on candidate representation
+
+clients: 
+users: Job seekers and employers
+description: These studies advanced Indeed’s ability to contextualize job seeker skills via agentic experiences on both employer and job seeker-facing surfaces.
+
+roles: UX Designer (Functional Lead), UX Researcher
+
+collaborators: Product manager, Strategist, UX researcher
+
+heroimg: Candidates-CN
+
+projectFolder: skills-context 
+
+pageNavItems:
+  -
+    anchor: background
+    title: Background
+  -
+    anchor: employers
+    title: Helping employers evaluate skills
+  -
+    anchor: jobseekers
+    title: Helping job seekers represent skills
+  -
+    anchor: impact
+    title: Impact
+
+---
+<section id="background" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Background</h2>
+          <!-- This section is too long, needs to tell the story more clearly -->
+          <p>I was on the Social Impact team at Indeed, and our remit was to advance the interests of job seekers without college degrees.</p>
+          <p>To that end, we sought to advance the practice of skills-first hiring, i.e., hiring based on skills rather than proxies for skills (like college degrees.)</p>
+          <p>Through this work, we discovered that <strong>81% of employers say they prioritize skills over degrees, but 52% still recruit from degree programs</strong>.</p>
+          <p>That’s because, <strong>to assess skills, employers need context</strong>.</p>
+          <h3>Problem space</h3>
+          <p>The bulleted list of skills that is standard on resumes (including Indeed resumes) doesn’t provide the background necessary for evaluation. Indeed’s eye-tracking studies indicate that <strong>employers first review listed skills and then seek contextual evidence within other resume sections</strong>, especially work experience descriptions, to validate those skills.</p>
+          <p>Additionally, we found that <strong>job seekers without college degrees really struggle to craft effective resumes</strong>:</p>
+          <ul>
+            <li>Many of them have diverse work histories and don’t know which skills to showcase.</li>
+            <li>Some pack their resumes with many skill variations for keyword matching, creating long, bloated lists which are viewed negatively by employers. </li>
+            <li>Some add skills that are not evidenced in other parts of their resumes.</li>
+          </ul>
+
+          <h3>Hypothesis</h3>
+          <p>I hypothesized that <strong>helping job seekers craft strong resumes that contextualize their skills would result in better outcomes</strong>, particularly for job seekers without college degrees.</p>
+          <h3>Constraints</h3>
+          <p>My team did not own any surfaces. We therefore needed to collaborate with and obtain buy-in from the Candidate Management team and the Profile team.</p>
+          <p>I approached this challenges by approaching designers and product managers on these teams to establish relationships, share learnings, and solicit feedback.</p>
+          <!-- Maybe come back to this?? -->
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="employers" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Helping employers evaluate skills</h2>
+          <h3>AI skills highlighting</h3>
+          <p>I started by conducting a competitive analysis of how other platforms highlight skills and designed a concept for Indeed’s candidate management interface. In this design, relevant skills appear alongside work experience, and clicking a skill chip highlights where that skill is demonstrated in the candidate’s background. </p>
+          <!-- emphasize AI driven features -->
+        </div>
+        <div class="cell medium-8">
+          {{> project-image
+            size=''
+            style=''
+            classes='has-shadow'
+            img='Candidates-CN'
+            alt='AI skills highlighting for employers'
+            caption='AI skills highlighting for employers'}}
+        </div>
+        <div class="cell large-10">
+          <div class="project-impact">
+            <h2>Findings</h2>
+            <p>The results of the study validated our hypothesis: <strong>employers <em>did</em> find it easier to evaluate candidates’ skills with this interface</strong>.</p>
+            <p>However, <strong>highlighting skills only worked for robust resumes</strong> that already did a good job representing those skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="jobseekers" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <h2>Helping job seekers represent skills</h2>
+          <p>I realized that, any interventions on the candidate management surface would be limited because:</p>
+          <ul>
+            <li>Contextualizing skills is only beneficial if those skills are well represented, and we knew that job seekers who don’t have college degrees really struggle with this. For our employer study, I had created mocks using fake resumes that were much more robust and well crafted than the majority of real life resumes.</li>
+            <li>Most employers don’t utilize Indeed’s candidate management tools. Rather, they upload resumes from Indeed into applicant tracking systems. So, any interventions on Indeed would be limited by that reality.</li>
+          </ul>
+          <p>Therefore, <strong>I decided to spearhead a job-seeker side study, focused on helping job seekers write better resumes as part of the job application funnel</strong>.</p>
+          <p>I knew that AI-assisted applications were already on the roadmap, and I wanted to make sure the new suite of features included guidance on showcasing job-relevant skills as well as efforts to mitigate skills bloat.</p>
+          <h3>Key research objectives</h3>
+          <p>My study aimed to:</p>
+          <ul>
+            <li>Evaluate the usability and clarity of resume-improvement tasks.</li>
+            <li>Gauge perceived value of tailoring resumes with relevant skills.</li>
+            <li>Assess comprehension of linking skills to specific work experiences.</li>
+          </ul>
+          <h3>Methodology</h3>
+          <p>This was an unmoderated study in which participants were asked to complete the following tasks for a given concept and then reflect on their experience:</p>
+          <ul>
+            <li>Add a skill to the skills list</li>
+            <li>Add a skill to the work experience description</li>
+            <li>Remove an irrelevant skill</li>
+          </ul>
+          <!-- need to consolidate all of this information -->
+          <h3>Concepts</h3>
+          <p>For this study, I developed 3 concepts:</p>
+          <h4>Option A: “Tailor your resume”</h4>
+          <ul>
+            <li>Explicitly instructs job seekers to update their resumes</li>
+            <li>Organized by <em>resume section</em></li>
+          </ul>
+          <h4>Option B: “Tailor your resume”</h4>
+          <ul>
+            <li>Also explicitly instructs job seekers to update their resumes</li>
+            <li>Organized by <em>skill</em></li>
+          </ul>
+          <h4>Option C: “Employer preview”</h4>
+          <ul>
+            <li>Implicitly prompts job seekers to improve their resumes</li>
+            <li>Shows users how they will appear to employers on Indeed</li>
+          </ul>
+        </div>
+        <div class="cell medium-3">
+          {{> project-image
+            size='mobile'
+            style=''
+            classes='has-shadow'
+            img='Tailor-resume-A'
+            alt='Tailor your resume concept A'
+            caption='Option A'}}
+        </div>
+        <div class="cell medium-3">
+          {{> project-image
+            size='mobile'
+            style=''
+            classes='has-shadow'
+            img='Tailor-resume-B'
+            alt='Tailor your resume concept B'
+            caption='Option B'}}
+        </div>
+        <div class="cell medium-3">
+          {{> project-image
+            size='mobile'
+            style=''
+            classes='has-shadow'
+            img='Employer-preview'
+            alt='Employer preview concept'
+            caption='Option C'}}
+        </div>
+        <div class="cell"> 
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='Tailor-resume-flow-A'
+            alt='Tailor your resume flow A'
+            caption='Option A user flow'}}
+
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='Tailor-resume-flow-B'
+            alt='Tailor your resume flow B'
+            caption='Option B user flow'}}
+
+          {{> project-image
+            size=''
+            style=''
+            classes=''
+            img='Employer-preview-flow'
+            alt='Employer preview flow'
+            caption='Option C user flow'}}
+        </div>
+        <div class="cell large-10">
+          <div class="project-impact">
+            <h2>Top level findings</h2>
+            <h3>Job seekers understand the importance of tailoring resumes, and they appreciate having a tool to do so.</h3>
+            <ul>
+              <li>Job seekers believe tailoring their resumes will make them more competitive and increase their chances of being moved forward in the hiring process.</li>
+              <li>They are very aware that employers use ATS, and they view tailoring as a way to ensure that their resumes contain the right keywords to be screened in.</li>
+            </ul>
+            <blockquote>“It's really helpful in Tailoring or targeting my resume and job application so that it meets the demands of, you know, the initial screening process and passes it.”</blockquote>
+            <h3>Job seekers are open to AI assistance in adding skills and experience to their resumes.</h3>
+            <ul>
+              <li>Many participants assumed AI was being used to scan their resumes, provide suggestions, or even write parts of their resume, and they spoke of it in either a neutral or a positive light.</li>
+              <li>Some participants requested additional assistance when adding new content to their work experience. One participant specifically requested an example or "some form of inspiration," while another asked for an AI assistant.</li>
+            </ul>
+            <blockquote>I would expect to be able to click on tailor your resume and it would use maybe some AI technology to change my resume to look the best for this job.</blockquote>
+            <h3>Job seekers see value in adding skills and experience to their resumes, but are uncertain about removing irrelevant skills.</h3>
+            <ul>
+              <li>Job seekers understand that the experience section is more important than listed skills.</li>
+              <li>65% of participants were personally interested in using all of the available tailoring options (add work experience, add skills, remove skills.)</li>
+            </ul>
+            <blockquote>“if I had to say the most impactful of them all would be to edit your work experience because your work experience shows that you have that skill and it shows how'd you apply, how did you apply it in your previous job or workspace. So it's more detailed than just adding a skill.”</blockquote>
+            <blockquote>“Do they look at the skills or do they look at the experience? I'm not sure. . . I would imagine work experience, uh, is better, at least that provides an example, um, on how those skills have been used in your, um, previous work history.”</blockquote>
+            <h3>Job seekers need guidance around skills curation</h3>
+            <ul>
+              <li>Most participants understood that removing irrelevant skills would help employers focus on relevant qualifications.</li>
+              <li>However, none felt that removing skills was as impactful as adding skills or work experience.</li>
+              <li>A couple participants were concerned that fewer skills would make them less competitive.</li>
+            </ul>
+            <blockquote>Hide a skill can be great to kind of keep a recruiter's focus on relevant parts of your resume, but. . . I feel like it makes it seem like you don't have as many skills even though you're only focusing on the relevant skills.</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<section id="impact" class="page-anchor">
+  <section>
+    <div class="grid-container full">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-10">
+          <div class="project-impact">
+            <h2>Impact</h2>
+            <p>Skills contextualization was baked into Indeed’s AI resume tailoring and AI profile recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+

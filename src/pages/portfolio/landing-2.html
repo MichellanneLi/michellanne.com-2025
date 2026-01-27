@@ -1,0 +1,40 @@
+---
+layout: default
+title: Portfolio
+
+project:
+  -
+    title: Expanding non-college representation
+    tagline: Redesign of Indeed's education intake
+    img: indeed-education/Forked-path-hero.png
+    url: indeed-education.html
+    description: By helping job seekers represent diverse skilling experiences, I improved outcomes for those who don’t have college degrees. 
+  -
+    title: Benefits enrollment, simplified
+    tagline: An improved annual enrollment process
+    img: tbs-annual-enrollment/tbs-delivery-category.png
+    url: tbs-annual-enrollment.html
+    description: Benefits enrollment can be confusing and opaque. This annual enrollment process creates transparency and reduces friction for users.
+  -
+    title: Contextualizing job seeker skills
+    tagline: An improved annual enrollment process
+    img: skills-context/Candidates-CN.png
+    url: skills-context.html
+    description: These studies advanced Indeed’s ability to contextualize job seeker skills via agentic experiences on both employer and job seeker-facing surfaces.
+
+---
+
+<div class="grid-container full">
+  <div class="grid-x grid-padding-x">
+    <div class="cell large-8 large-offset-1">
+      <div class="portfolio-header">
+        <h1>{{title}}</h1>
+        <!-- <p>Case studies are coming soon!</p>
+        <p>In the meantime, you can view my <a href="https://docs.google.com/presentation/d/1vslM0PicVUAejWJYicJ0KqQPCqtzyMbxOqaVd6GnMtY/edit?usp=sharing">portfolio slide deck</a>.</p> -->
+      </div>
+    </div>
+    <div class="cell large-10 large-offset-1"> 
+      {{> project-teaser}}
+    </div>
+  </div>
+</div>
