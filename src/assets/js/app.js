@@ -45,7 +45,11 @@ $(window).scroll(function() {
 ////////////////////////////////////////
 // Mobile Nav Trigger
 ////////////////////////////////////////
-$('.main-nav__trigger').click(function() {
+$('.main-nav__trigger').on('touchend click', function(e) {
+  // touchend fires more reliably than click on position:fixed elements in iOS Safari
+  if (e.type === 'touchend') {
+    e.preventDefault(); // prevent the subsequent synthetic click from double-firing
+  }
   if ($(this).hasClass('is-active')) {
     $(this).removeClass('is-active');
     $('.site-header').removeClass('is-active');

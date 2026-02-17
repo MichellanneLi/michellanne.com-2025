@@ -92,6 +92,7 @@
   background-color: transparent;
   float: right;
   display: block;
+  touch-action: manipulation;
 
   @include breakpoint(medium) {
     display: none;
