@@ -11,15 +11,13 @@
 
 
   @include breakpoint(medium) {
-    min-height: calc(100vh - 10px);
-
     h1 {
       font-size: 4em;
     }
 
-    @media (orientation: landscape) and (max-height: 500px) {
+    @media (max-height: 500px) {
       h1 {
-        font-size: 2em;
+        font-size: 1.4em;
       }
     }
   }
